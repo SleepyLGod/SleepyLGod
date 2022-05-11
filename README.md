@@ -1,7 +1,5 @@
-- 👋 Hi, I’m dong!
+- 👋 Hi, I’m Dong!
 - 👀 I’m interested in distributed, web, and databases.
-- 🌱 I’m currently learning something about distributed storage
-- 💞️ I’m looking to collaborate on blabla~~
 
 <!---
 SleepyLGod/SleepyLGod is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
