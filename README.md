@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-<img src="https://github-readme-stats.vercel.app/api?username=SleepyLGod&show_icons=true&theme=vue&count_private=true" alt="logo" height="190" align="right" style="margin: 10px; margin-bottom: 20px;" />
+<img src="https://github-readme-stats.vercel.app/api?username=SleepyLGod&show_icons=true&theme=vue&count_private=true" alt="logo" height="165" align="right" style="margin: 10px; margin-bottom: 20px;" />
 
 - 🎓 Undergraduate study. @HUST China
 - 🔭 Research includes databases, distributed, blockchain and k-v storage, etc.
@@ -14,9 +14,9 @@
 
 <details>
 
-<summary>My GitHub Stats👇</summary>
+<summary> :octocat: My GitHub Stats 👇</summary>
 
-<img src="https://raw.githubusercontent.com/SleepyLGod/github-profile-summary-cards/master/profile-summary-card-output/nord_bright/0-profile-details.svg" alt="logo" height="190" align="left" style="margin: 10px; margin-bottom: 20px;" />
+<img src="https://raw.githubusercontent.com/SleepyLGod/github-profile-summary-cards/master/profile-summary-card-output/nord_bright/0-profile-details.svg" alt="logo" height="193" align="left" style="margin: 10px; margin-bottom: 20px;" />
 
 <img src="https://raw.githubusercontent.com/SleepyLGod/github-profile-summary-cards/master/profile-summary-card-output/nord_bright/1-repos-per-language.svg" alt="logo" height="190" align="left" style="margin: 10px; margin-bottom: 20px;" />
 
@@ -24,7 +24,6 @@
 
 </details>
 
-###### 💾 EOF
 
 <!---
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=SleepyLGod&layout=compact&hide=html,tex)](https://github.com/anuraghazra/github-readme-stats)
