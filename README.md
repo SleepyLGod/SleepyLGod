@@ -4,7 +4,7 @@
 
 - 🎓 Undergraduate study. @HUST China
 - 🔭 Research includes databases, distributed, blockchain and k-v storage, etc.
-- 🏆 Used to participate in some contests. **Won** the 1st prize🥇 of [the 17th **"Challenge Cup"** National College Student Curricular Academic Science and Technology Works Competition](http://mse.hust.edu.cn/info/1180/11133.htm). 
+- 🏆 Used to participate in some contests. **Won the 1st prize🥇** of [the 17th **"Challenge Cup"** National College Student Curricular Academic Science and Technology Works Competition](http://mse.hust.edu.cn/info/1180/11133.htm). 
 - 🚀 Participated in **six** innovation projects for college students, one **national** project and one **provincial** project included.
 - 👑 Founder of [JumboArbitrage](https://github.com/JumboArbitrage) and [HUST-FOCUS](https://github.com/HUST-FOCUS).
 - ⚖️  Currently working on open-source software. Previously completed labs including cmu-15-445, mit6.824, and tinykv, etc.
