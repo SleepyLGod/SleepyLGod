@@ -12,6 +12,7 @@
 - 📫 Reach me at 2441164168lhd@gmail.com
 - 🏠 Blog homepage at [Rookie's Notes](https://dong-8.gitbook.io/rookies-notes/).
 
+<!---
 <details>
 
 <summary> :octocat: My GitHub Stats 👇</summary>
@@ -23,6 +24,11 @@
 <img src="https://raw.githubusercontent.com/SleepyLGod/github-profile-summary-cards/master/profile-summary-card-output/nord_bright/4-productive-time.svg" alt="logo" height="190" align="middle" style="margin: 10px; margin-bottom: 20px;" />
 
 </details>
+--->
+
+
+
+
 
 
 <!---
