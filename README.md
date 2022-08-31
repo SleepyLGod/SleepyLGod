@@ -22,7 +22,7 @@
 <diV>
 
   <div align="center">
-    <a href="#"><img alt="Dong's Github Stats" src="https://github-readme-stats.vercel.app/api?username=SleepyLGod&show_icons=true&include_all_commits=true&count_private=true&theme=react&hide_border=true&bg_color=0D1117&title_color=5ce1e6&icon_color=5ce1e6" height="200"/></a>
+    <a href="#"><img alt="Dong's Github Stats" src="https://github-readme-stats.vercel.app/api?username=SleepyLGod&show_icons=true&count_private=true&theme=react&hide_border=true&bg_color=0D1117&title_color=5ce1e6&icon_color=5ce1e6" height="200"/></a>
     <a href="#"><img alt="Dong's Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SleepyLGod&hide=html,tex&langs_count=10&layout=compact&theme=react&hide_border=true&bg_color=0D1117&title_color=5ce1e6&icon_color=5ce1e6" height="200"/></a>
    <!---
    <p align="center"> <img src="https://komarev.com/ghpvc/?username=SleepyLGod&label=Profile%20views&color=0e75b6&style=flat" alt="SleepyLGod" /> </p>
@@ -50,10 +50,6 @@
 <div align="center">
 <img src="https://raw.githubusercontent.com/halfrost/halfrost/master/icons/header_.png">
 </div>
-
-
-
-
 
 
 
