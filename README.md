@@ -38,10 +38,14 @@
   <div> 
 </div>
 
+#### 
+
 <div align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=SleepyLGod&column=8&theme=onedark" />
 </div>
 <br/>
+
+  <diV>
 
 <img src="https://raw.githubusercontent.com/halfrost/halfrost/master/icons/header_.png">
 
