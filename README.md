@@ -51,36 +51,3 @@
 <img src="https://raw.githubusercontent.com/halfrost/halfrost/master/icons/header_.png">
 </div>
 
-
-
-
-
-
-
-<!---
-------------------------------------------- dustbin -------------------------------------------------------
---->
-
-<!---
-<details>
-
-<summary> :octocat: My GitHub Stats 👇</summary>
-
-<img src="https://raw.githubusercontent.com/SleepyLGod/github-profile-summary-cards/master/profile-summary-card-output/nord_bright/0-profile-details.svg" alt="logo" height="193" align="left" style="margin: 10px; margin-bottom: 20px;" />
-
-<img src="https://raw.githubusercontent.com/SleepyLGod/github-profile-summary-cards/master/profile-summary-card-output/nord_bright/1-repos-per-language.svg" alt="logo" height="190" align="left" style="margin: 10px; margin-bottom: 20px;" />
-
-<img src="https://raw.githubusercontent.com/SleepyLGod/github-profile-summary-cards/master/profile-summary-card-output/nord_bright/4-productive-time.svg" alt="logo" height="190" align="middle" style="margin: 10px; margin-bottom: 20px;" />
-
-</details>
---->
-
-<!---
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=SleepyLGod&layout=compact&hide=html,tex)](https://github.com/anuraghazra/github-readme-stats)
---->
-<!---
-[![](https://raw.githubusercontent.com/SleepyLGod/github-profile-summary-cards/master/profile-summary-card-output/nord_bright/1-repos-per-language.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)[![](https://raw.githubusercontent.com/SleepyLGod/github-profile-summary-cards/master/profile-summary-card-output/nord_bright/4-productive-time.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
-
-[![](https://raw.githubusercontent.com/SleepyLGod/github-profile-summary-cards/master/profile-summary-card-output/nord_bright/2-most-commit-language.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
-[![](https://raw.githubusercontent.com/SleepyLGod/github-profile-summary-cards/master/profile-summary-card-output/nord_bright/3-stats.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
---->
