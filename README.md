@@ -3,7 +3,7 @@
 <img src="https://github-readme-stats.vercel.app/api?username=SleepyLGod&show_icons=true&theme=vue&count_private=true" alt="logo" height="165" align="right" style="margin: 10px; margin-bottom: 20px;" />
 --->
 - 🎓 Undergraduate study. @HUST China
-- 🔭 Research includes databases, distributed, blockchain and k-v storage, etc.
+- 🔭 Research includes web3, Databases, Distributed, HPC, KV Storage, etc.
 - 🏆 Used to participate in some contests. **Won the 1st prize🥇** of [the 17th **"Challenge Cup"** National College Student Curricular Academic Science and Technology Works Competition](http://mse.hust.edu.cn/info/1180/11133.htm). 
 - 🚀 Participated in **six** innovation projects for college students, one **national** project and one **provincial** project included.
 - 👑 Founder of [JumboArbitrage](https://github.com/JumboArbitrage) and [HUST-FOCUS](https://github.com/HUST-FOCUS).
