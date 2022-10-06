@@ -9,7 +9,7 @@
 - 👑 Founder of [JumboArbitrage](https://github.com/JumboArbitrage) and [HUST-FOCUS](https://github.com/HUST-FOCUS).
 - :octocat:  Currently working on open-source software. Previously completed labs including cmu-15-445, mit6.824, and tinykv, etc.
 - ✨ **Fun fact**: [**A repo receiving some stars**](https://github.com/SleepyLGod/qwidget-demo) including several Qt components that mimic css rendering I forked and revised when I'm university freshman.
-- 📫 Reach me at 2441164168lhd@gmail.com
+- 📫 Reach me at 2441164168+lhd@gmail.com
 - 🏠 Blog homepage at [Rookie's Notes](https://dong-8.gitbook.io/rookies-notes/).
 
 ### Languages & Tools
