@@ -11,7 +11,7 @@
 - 🏆 Used to participate in some contests. **Won the 1st prize🥇** of [the 17th **"Challenge Cup"** National College Student Curricular Academic Science and Technology Works Competition](http://mse.hust.edu.cn/info/1180/11133.htm). 
 - 🚀 Participated in **six** innovation projects for college students, one **national** project and one **provincial** project included.
 - 👑 Founder of [**JumboArbitrage**](https://github.com/JumboArbitrage) and [**HUST-FOCUS**](https://github.com/HUST-FOCUS).
-- :octocat:  Currently working on open-source software. Previously completed labs including cmu-15-445, mit6.824, mit6.s081, tinykv, etc.
+- :octocat: Currently working on open-source software. Previously completed labs including cmu-15-445, mit6.824, mit6.s081, tinykv, etc.
 - ✨ **Fun fact**: [**A repo receiving some stars**](https://github.com/SleepyLGod/qwidget-demo) including several Qt components that mimic css rendering I forked and revised when I'm university freshman.
 - 📫 Reach me at 2441164168+lhd@gmail.com
 - 🏠 Blog homepage at [Rookie's Notes](https://dong-8.gitbook.io/rookies-notes/).
