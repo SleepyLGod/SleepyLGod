@@ -2,10 +2,12 @@
 <img src="./icons/header_1.png">
 </div>
 
+<div>
+<img src="https://count.getloli.com/get/@SleepyLGod?theme=gelbooru" alt="logo" height="45" align="right" style="margin: 10px; margin-bottom: 20px;" />
+</div>
+
 ## Hi there 👋 
-<!---
-<img src="https://github-readme-stats.vercel.app/api?username=SleepyLGod&show_icons=true&theme=vue&count_private=true" alt="logo" height="165" align="right" style="margin: 10px; margin-bottom: 20px;" />
---->
+
 - 🎓 Undergraduate study. @HUST China
 - 🔭 Research includes Web3, Databases, Distributed, HPC, KV Storage, etc.
 - 🏆 Used to participate in some contests. **Won the 1st prize🥇** of [the 17th **"Challenge Cup"** National College Student Curricular Academic Science and Technology Works Competition](http://mse.hust.edu.cn/info/1180/11133.htm). 
