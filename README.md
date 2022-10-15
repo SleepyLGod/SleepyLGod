@@ -24,29 +24,24 @@
 ### Github Stats <img src="./icons/github.gif" alt="github" width="20" height="18"/>
 
 <diV>
-
   <div align="center">
-    <a href="#"><img alt="Dong's Github Stats" src="https://github-readme-stats.vercel.app/api?username=SleepyLGod&show_icons=true&count_private=true&theme=react&icon_color=5CBDD8&bg_color=15,123175,5B2749,777777&hide_title=true&hide_border=true" height="200"/></a>
-    <a href="#"><img alt="Dong's Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SleepyLGod&hide=html,tex&langs_count=10&layout=compact&theme=react&icon_color=5CBDD8&bg_color=15,123175,5B2749,777777&hide_title=true&hide_border=true" height="200"/></a>
+    <a href="#"><img alt="Dong's Github Stats" src="https://github-readme-stats.vercel.app/api?username=SleepyLGod&show_icons=true&count_private=true&theme=react&icon_color=00D5A9&bg_color=15,123175,5B2749,777777&hide_border=true" height="200"/></a>
+    <a href="#"><img alt="Dong's Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SleepyLGod&hide=html,tex&langs_count=10&layout=compact&theme=react&icon_color=00D5A9&bg_color=15,123175,5B2749,777777&hide_border=true" height="200"/></a>
     <br/>
-    <i><b>:octocat: Note:</b> Top languages is only a metric of the languages my public code consists of and doesn't reflect experience or skill level.</i><p align="center"> <img src="https://komarev.com/ghpvc/?username=SleepyLGod&label=Profile%20views&color=1EC198&style=flat" alt="SleepyLGod" /> </p>
+    <i><b>:octocat: Note:</b> Top languages is only a metric of the languages my public code consists of and doesn't reflect experience or skill level.</i>
+    <br/>
+    <p align="center"> <img src="https://komarev.com/ghpvc/?username=SleepyLGod&label=Profile%20views&color=1EC198&style=flat" alt="SleepyLGod" /> </p>
   </div>
-
-  <hr/>
-
   <div align="center">
     <a href="#"><img alt="Dong's Activity Graph" src="https://activity-graph.herokuapp.com/graph?username=SleepyLGod&custom_title=HaodongLu's%20Contribution%20Graph&bg_color=464555&color=00D5A9&line=FF659D&point=F6EBFF&hide_border=true" /></a>
   <div>
-</div>
-
-#### 
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=SleepyLGod&column=8&theme=onedark" />
+  <br/>
+  <div align="center">
+    <img src="https://github-profile-trophy.vercel.app/?username=SleepyLGod&column=8&theme=onedark" />
+  </div>
 </div>
 <br/>
-
-  <diV>
+<diV>
   
 <div align="center">
 <img src="./icons/header_.png">
