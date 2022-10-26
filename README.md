@@ -16,7 +16,7 @@
 - :octocat: Currently working on closed-source software. Previously completed labs including cmu-15-445, mit6.824, mit6.s081, tinykv, etc.
 - ✨ **Fun fact**: [**A repo receiving some stars**](https://github.com/SleepyLGod/qwidget-demo) including several Qt components that mimic css rendering I forked and revised when I'm university freshman.
 - 📫 Reach me at 2441164168+lhd@gmail.com
-- 🏠 Blog homepage at [Rookie's Notes](https://dong-8.gitbook.io/rookies-notes/).
+- 🏠 Blog homepage at [Rookie's Notes](https://rookiedong.gitbook.io/notes).
 <p> <img src="https://komarev.com/ghpvc/?username=SleepyLGod&label=Profile%20views&color=1EC198&style=flat" alt="SleepyLGod" /> </p>
 
 ### Languages & Tools <img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/>
