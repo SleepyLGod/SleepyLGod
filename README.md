@@ -28,13 +28,13 @@
 
 <diV>
   <div align="center">
-    <a href="#"><img alt="Dong's Github Stats" src="https://github-readme-stats.vercel.app/api?username=SleepyLGod&show_icons=true&count_private=true&theme=react&icon_color=00D5A9&bg_color=15,123175,5B2749,777777&hide_border=true" height="220"/></a>
-    <a href="#"><img alt="Dong's Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SleepyLGod&hide=html,tex&langs_count=10&layout=compact&theme=react&icon_color=00D5A9&bg_color=15,123175,5B2749,777777&hide_border=true" height="220"/></a>
+    <a href="#"><img alt="Dong's Github Stats" src="https://github-readme-stats.vercel.app/api?username=SleepyLGod&show_icons=true&count_private=true&theme=react&icon_color=00D5A9&bg_color=15,123175,5B2749,777777&hide_border=true" height="180"/></a>
+    <a href="#"><img alt="Dong's Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SleepyLGod&hide=html,tex&langs_count=10&layout=compact&theme=react&icon_color=00D5A9&bg_color=15,123175,5B2749,777777&hide_border=true" height="180"/></a>
     <div style="font-family:;font-style:italic;"><i><b>:octocat:Top languages is only a metric of the languages my public code consists of and doesn't reflect experience or skill level.</b><i/></div>
     <br> 
     </div>
   <div align="center">
-    <a href="#"><img alt="Dong's Activity Graph" src="https://activity-graph.herokuapp.com/graph?username=SleepyLGod&custom_title=HaodongLu's%20Contribution%20Graph&bg_color=464555&color=00D5A9&line=FF659D&point=F6EBFF&hide_border=true" height="325" align="center""  /></a>
+    <a href="#"><img alt="Dong's Activity Graph" src="https://activity-graph.herokuapp.com/graph?username=SleepyLGod&custom_title=HaodongLu's%20Contribution%20Graph&bg_color=464555&color=00D5A9&line=FF659D&point=F6EBFF&hide_border=true" height="300" align="center""  /></a>
   <div>
   <br/>
   <div align="center">
