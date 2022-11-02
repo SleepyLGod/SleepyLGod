@@ -1,5 +1,5 @@
 <div align="center">
-<img src="./icons/header_1.png">
+    <a href="#"><img src="./icons/header_1.png"></a>
 </div>
 
 <!-- <a href="https://github.com/SleepyLGod/">
@@ -10,7 +10,7 @@
 </a> -->
 </br>
 <h3 align="center">
-    <img src="https://readme-typing-svg.herokuapp.com/?font=Roboto+Mono&size=32&width=250&color=46BEA3duration=2600&lines=👋Hi+there👋" height="80"/>
+    <a href="#"><img src="https://readme-typing-svg.herokuapp.com/?font=Roboto+Mono&size=32&width=250&color=46BEA3duration=2600&lines=👋Hi+there👋" height="70"/></a>
 </h3>
 
 <!--     <img src="https://count.getloli.com/get/@SleepyLGod?theme=gelbooru" alt="logo" height="60" align="right" style="margin: 10px; margin-bottom: 20px;" /> -->
@@ -24,8 +24,8 @@
 - ✨ **Fun fact**: [**A repo receiving some stars**](https://github.com/SleepyLGod/qwidget-demo) including several Qt components that mimic css rendering I forked and revised when I'm university freshman.
 - 📫 Reach me at 2441164168+lhd@gmail.com
 - 🏠 Blog homepage at [Rookie's Notes](https://rookiedong.gitbook.io/notes).
-- <p> <img src="https://komarev.com/ghpvc/?username=SleepyLGod&label=Profile%20views&color=1EC198&style=flat" alt="SleepyLGod" />
-    <img src="https://custom-icon-badges.herokuapp.com/github/last-commit/SleepyLGod/SleepyLGod" alt="SleepyLGod"/> </p>
+- <p> <a href="#"><img src="https://komarev.com/ghpvc/?username=SleepyLGod&label=Profile%20views&color=1EC198&style=flat" alt="SleepyLGod" />
+    <img src="https://custom-icon-badges.herokuapp.com/github/last-commit/SleepyLGod/SleepyLGod" alt="SleepyLGod"/></a> </p>
 
 ## 🤗 Languages & Tools &nbsp;&nbsp;<img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/>
 
@@ -51,12 +51,12 @@
   <div>
   <br/>
   <div align="center">
-    <img src="https://github-profile-trophy.vercel.app/?username=SleepyLGod&column=7&theme=onedark&no-frame=true&row=1&&margin-w=20&no-bg=true" height="130"/>
+    <a href="#"><img src="https://github-profile-trophy.vercel.app/?username=SleepyLGod&column=7&theme=onedark&no-frame=true&row=1&&margin-w=20&no-bg=true" height="130"/></a>
   </div>
 </div>
 <br/>
 <div>
   
 <div align="center">
-<img src="./icons/header_.png">
+    <a href="#"><img src="./icons/header_.png"></a>
 </div>
