@@ -8,15 +8,14 @@
         Dong's Profile
     </h3>
 </a> -->
-
-<!-- # Hi there 👋  -->
-
-<div>
-<img src="https://count.getloli.com/get/@SleepyLGod?theme=gelbooru" alt="logo" height="60" align="right" style="margin: 10px; margin-bottom: 20px;" />
+</br>
+<div align="center">
+    <img src="https://readme-typing-svg.herokuapp.com/?font=Roboto+Mono&size=32&width=250&color=FFC2F9E5&duration=6666&lines=👋Hi+there👋" height="60"/>
 </div>
 
-### [![Typing SVG](https://readme-typing-svg.herokuapp.com/?font=Roboto+Mono&size=32&width=800&color=FFC2F9E5&duration=6666&lines=👋+Hi+there+👋)](https://git.io/typing-svg)
+<!--     <img src="https://count.getloli.com/get/@SleepyLGod?theme=gelbooru" alt="logo" height="60" align="right" style="margin: 10px; margin-bottom: 20px;" /> -->
 
+<!-- # Hi there 👋  -->
 - 🎓 Undergraduate study. @HUST China
 - 🔭 Research includes Web3, Databases, Distributed, HPC, KV Storage, etc.
 - 🏆 Used to participate in some contests. **Won the 1st prize🥇** of [the 17th **"Challenge Cup"** National College Student Curricular Academic Science and Technology Works Competition](http://mse.hust.edu.cn/info/1180/11133.htm). 
@@ -26,9 +25,8 @@
 - ✨ **Fun fact**: [**A repo receiving some stars**](https://github.com/SleepyLGod/qwidget-demo) including several Qt components that mimic css rendering I forked and revised when I'm university freshman.
 - 📫 Reach me at 2441164168+lhd@gmail.com
 - 🏠 Blog homepage at [Rookie's Notes](https://rookiedong.gitbook.io/notes).
-<p> <img src="https://komarev.com/ghpvc/?username=SleepyLGod&label=Profile%20views&color=1EC198&style=flat" alt="SleepyLGod" />
-    <img src="https://custom-icon-badges.herokuapp.com/github/last-commit/SleepyLGod/SleepyLGod" alt="SleepyLGod"/> 
-</p>
+- <p> <img src="https://komarev.com/ghpvc/?username=SleepyLGod&label=Profile%20views&color=1EC198&style=flat" alt="SleepyLGod" />
+    <img src="https://custom-icon-badges.herokuapp.com/github/last-commit/SleepyLGod/SleepyLGod" alt="SleepyLGod"/> </p>
 
 ## 🤗 Languages & Tools <img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/>
 
