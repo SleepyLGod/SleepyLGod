@@ -46,9 +46,9 @@
     </div>
     <br> 
   </div>
-  <div align="center">
+<!--   <div align="center">
     <a href="#"><img alt="Dong's Activity Graph" src="https://activity-graph.herokuapp.com/graph?username=SleepyLGod&custom_title=HaodongLu's%20Contribution%20Graph&bg_color=464555&color=00D5A9&line=FF659D&point=F6EBFF&hide_border=true" align="center" /></a>
-  <div>
+  <div> -->
   <br/>
   <div align="center">
     <a href="#"><img src="https://github-profile-trophy.vercel.app/?username=SleepyLGod&column=7&theme=onedark&no-frame=true&row=1&&margin-w=20&no-bg=true" height="130"/></a>
