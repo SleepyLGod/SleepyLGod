@@ -15,7 +15,7 @@
 
 <!--     <img src="https://count.getloli.com/get/@SleepyLGod?theme=gelbooru" alt="logo" height="60" align="right" style="margin: 10px; margin-bottom: 20px;" /> -->
 <!-- # Hi there 👋  -->
-- 🎓 Undergraduate study. @HUST China
+- 🎓 Undergraduate study. @HUST China @UCB USA
 - 🔭 Research includes Web3, Databases, Distributed, HPC, KV Storage, etc.
 - 🏆 Used to participate in some contests. **Won the 1st prize🥇** of [the 17th **"Challenge Cup"** National College Student Curricular Academic Science and Technology Works Competition](http://mse.hust.edu.cn/info/1180/11133.htm). 
 - 🚀 Participated in **six** innovation projects for college students, one **national** project and one **provincial** project included.
