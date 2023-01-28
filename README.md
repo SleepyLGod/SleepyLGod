@@ -14,15 +14,15 @@
 </h3>
 
 <!--     <img src="https://count.getloli.com/get/@SleepyLGod?theme=gelbooru" alt="logo" height="60" align="right" style="margin: 10px; margin-bottom: 20px;" /> -->
+
 <!-- # Hi there 👋  -->
-- 🎓 Undergraduate study. @HUST China @UCB USA
-- 🔭 Research includes Web3, Databases, Distributed, HPC, KV Storage, etc.
-- 🏆 Used to participate in some contests. **Won the 1st prize🥇** of [the 17th **"Challenge Cup"** National College Student Curricular Academic Science and Technology Works Competition](http://mse.hust.edu.cn/info/1180/11133.htm). 
-- 🚀 Participated in **six** innovation projects for college students, one **national** project and one **provincial** project included.
+- 🎓 <font face="Times new Roman">Undergraduate study. @HUST China @UCB USA</font>
+- 🔭 Research includes Blockchain, Web3, Databases, Distributed, KV Storage, HPC, etc.
+- 🏆 Used to participate in some contests. [**Won the first prize🥇**](http://mse.hust.edu.cn/info/1180/11133.htm) of the 17th **"Challenge Cup"** National College Student Curricular Academic Science and Technology Works Competition. 
 - 👑 Founder of [**JumboArbitrage**](https://github.com/JumboArbitrage) and [**HUST-FOCUS**](https://github.com/HUST-FOCUS).
-- :octocat: Currently working on closed-source software. Previously completed labs including cmu-15-445, mit6.824, mit6.s081, tinykv, etc.
-- ✨ **Fun fact**: [**A repo receiving some stars**](https://github.com/SleepyLGod/qwidget-demo) including several Qt components that mimic css rendering I forked and revised when I'm university freshman.
-- 📫 Reach me at 2441164168+lhd@gmail.com
+- :octocat: Currently working on some fantastic ideas.
+- ✨ **Fun fact**: [**A repo receiving some stars**](https://github.com/SleepyLGod/qwidget-demo) including several interesting Qt components when I'm a freshman at HUST.
+- 📫 Reach me at **haodong.lu.me@gmail.com**
 - 🏠 Homepage at [Sleepylgod.github.io](https://sleepylgod.github.io/) && [Rookie's Notes](https://rookiedong.gitbook.io/notes).
 - <p> <a href="#"><img src="https://komarev.com/ghpvc/?username=SleepyLGod&label=Profile%20views&color=1EC198&style=flat" alt="SleepyLGod" />
     <img src="https://custom-icon-badges.herokuapp.com/github/last-commit/SleepyLGod/SleepyLGod" alt="SleepyLGod"/></a> </p>
@@ -48,8 +48,8 @@
   </div>
 <!--   <div align="center">
     <a href="#"><img alt="Dong's Activity Graph" src="https://activity-graph.herokuapp.com/graph?username=SleepyLGod&custom_title=HaodongLu's%20Contribution%20Graph&bg_color=464555&color=00D5A9&line=FF659D&point=F6EBFF&hide_border=true" align="center" /></a>
-  <div> -->
-  <br/>
+  <div> 
+  <br/> -->
   <div align="center">
     <a href="#"><img src="https://github-profile-trophy.vercel.app/?username=SleepyLGod&column=7&theme=onedark&no-frame=true&row=1&&margin-w=20&no-bg=true" height="130"/></a>
   </div>
