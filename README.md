@@ -21,7 +21,7 @@
 - 🏆 Used to participate in some contests. [**Won the first prize🥇**](http://mse.hust.edu.cn/info/1180/11133.htm) of the 17th **"Challenge Cup"** National College Student Curricular Academic Science and Technology Works Competition. 
 - 👑 Founder of [**JumboArbitrage**](https://github.com/JumboArbitrage) and [**HUST-FOCUS**](https://github.com/HUST-FOCUS).
 - :octocat: Currently working on some fantastic ideas.
-- ✨ **Fun fact**: [**A repo receiving some stars**](https://github.com/SleepyLGod/qwidget-demo) including several interesting Qt components when I'm a freshman at HUST.
+- ✨ **Fun fact**: [**A repo received some stars**](https://github.com/SleepyLGod/qwidget-demo) including several interesting Qt components when I'm a freshman at HUST.
 - 📫 Reach me at **haodong.lu.me@gmail.com**
 - 🏠 Homepage at [Sleepylgod.github.io](https://sleepylgod.github.io/) && [Rookie's Notes](https://rookiedong.gitbook.io/notes).
 - <p> <a href="#"><img src="https://komarev.com/ghpvc/?username=SleepyLGod&label=Profile%20views&color=1EC198&style=flat" alt="SleepyLGod" />
