@@ -14,7 +14,7 @@
 </h3>
 
 <div align="center">
-    <img src="./icons/assests//borderseperator.gif">
+    <a href="#"><img src="./icons/assests//borderseperator.gif"></a>
 </div>
 
 <!--     <img src="https://count.getloli.com/get/@SleepyLGod?theme=gelbooru" alt="logo" height="60" align="right" style="margin: 10px; margin-bottom: 20px;" /> -->
@@ -125,24 +125,36 @@
     
 <div>
   <div align="center">
-    <a href="#"><img alt="Dong's Github Stats" src="https://github-readme-stats.vercel.app/api?username=SleepyLGod&show_icons=true&count_private=true&theme=react&icon_color=00D5A9&bg_color=15,123175,5B2749,777777&hide_border=true" height="210"/></a>
-    <a href="#"><img alt="Dong's Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SleepyLGod&hide=html,tex&langs_count=10&layout=compact&theme=react&icon_color=00D5A9&bg_color=15,123175,5B2749,777777&hide_border=true" height="210"/></a>
+    <a href="#">
+        <img alt="Dong's Github Stats" src="https://github-readme-stats.vercel.app/api?username=SleepyLGod&show_icons=true&count_private=true&theme=react&icon_color=00D5A9&bg_color=15,123175,5B2749,777777&hide_border=true" height="210"/>
+      </a>
+    <a href="#">
+        <img alt="Dong's Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SleepyLGod&hide=html,tex&langs_count=10&layout=compact&theme=react&icon_color=00D5A9&bg_color=15,123175,5B2749,777777&hide_border=true" height="210"/>
+      </a>
     <div style="font-family:;font-style:italic;">
-        <i><b>:octocat:Top languages is only a metric of the languages my public code consists of and doesn't reflect experience or skill level.</b><i/>
-    </div>
-    <br> 
+        <i>
+            <b> :octocat:Top languages is only a metric of the languages my public code consists of and doesn't reflect experience or skill level.
+            </b>
+            <i/>
+            </div>
+        <br> 
   </div>
+      
   <div align="center">
-    <a href="#"><img alt="Dong's Activity Graph" src="https://github-readme-activity-graph.cyclic.app/graph?username=SleepyLGod&custom_title=HaodongLu's%20Contribution%20Graph&bg_color=3E0053&color=00D5A9&line=FF659D&point=F6EBFF&hide_border=true" align="center" /></a>
+    <a href="#">
+        <img alt="Dong's Activity Graph" src="https://github-readme-activity-graph.cyclic.app/graph?username=SleepyLGod&custom_title=HaodongLu's%20Contribution%20Graph&bg_color=3E0053&color=00D5A9&line=FF659D&point=F6EBFF&hide_border=true" align="center" />
+      </a>
   <div> 
   <br/>
   <div align="center">
-    <a href="#"><img src="https://github-profile-trophy.vercel.app/?username=SleepyLGod&column=7&theme=onedark&no-frame=true&row=1&&margin-w=20&no-bg=true" height="130"/></a>
+    <a href="#">
+        <img src="https://github-profile-trophy.vercel.app/?username=SleepyLGod&column=7&theme=onedark&no-frame=true&row=1&&margin-w=20&no-bg=true" height="130"/>
+      </a>
   </div>
 </div>
 <br/>
 <div>
 
 <div align="center">
-    <a href="#"><img src="./icons/header_.png"></a>
+    <a href="#"><img src="./icons/header_1.png"></a>
 </div>
