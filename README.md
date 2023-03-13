@@ -51,6 +51,12 @@
     <img align="center" alt="Join My Discord Server" height="50" width="50" src="./icons/assests//discordlogo.png"/>
     <span>Dong#2107</span>
 </p> 
+    
+<div align="center">
+    
+[![spotify-github-profile](https://spotify-github-profile.vercel.app/api/view?uid=31gepfdtbzi2ycsdpdthguc5z3cy&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=false)](https://github.com/kittinan/spotify-github-profile)
+
+</div>
 
 ## 😀 &nbsp; *Languages & Tools* &nbsp;&nbsp;
 <!-- 
