@@ -2,7 +2,7 @@
     <a href="#"><img src="./icons/header_statue.png"></a>
 </div>
 
-<div class="mdui-drawer" id="content-drawer">
+<!-- <div class="mdui-drawer" id="content-drawer">
     <marquee direction=right height=40% scrollamount=20 scrolldelay=90 width=60%> 
         <img border=0 width=100% src="./icons/pictures/20221122225952.png"> <br>
         <img border=0 width=100% src="./icons/pictures/20221216182312.png"><br>
@@ -10,7 +10,23 @@
         <img border=0 width=100% src="./icons/pictures/IMG_5467.PNG"><br>
         <img border=0 width=100% src="./icons/pictures/IMG_5466.PNG"><br>
     </marquee>
-</div>
+</div> -->
+
+<!-- <html>
+<script type="text/javascript">
+ps=new Array("./icons/pictures/20221122225952.png","./icons/pictures/20221216182312.png","./icons/pictures/7165484483180773986.PNG","./icons/pictures/IMG_5467.PNG");
+var i=0;
+function hanshu()
+{
+   i++;
+   if(i>=ps.length)
+     i=0;
+    document.getElementById("tu").src=ps[i];
+}
+setInterval(hanshu,1000);
+</script>
+<img  id="tu" width=300px height=200px></img>
+</html> -->
 
 <!-- <a href="https://github.com/SleepyLGod/">
     <h3 align="center">
