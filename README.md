@@ -1,6 +1,17 @@
 <div align="center">
     <a href="#"><img src="./icons/header_statue.png"></a>
 </div>
+
+<div class="mdui-drawer" id="content-drawer">
+    <marquee direction=right height=40% scrollamount=20 scrolldelay=90 width=60%> 
+        <img border=0 width=100% src="./icons/pictures/20221122225952.png"> <br>
+        <img border=0 width=100% src="./icons/pictures/20221216182312.png"><br>
+        <img border=0 width=100% src="./icons/pictures/7165484483180773986.PNG"><br>
+        <img border=0 width=100% src="./icons/pictures/IMG_5467.PNG"><br>
+        <img border=0 width=100% src="./icons/pictures/IMG_5466.PNG"><br>
+    </marquee>
+</div>
+
 <!-- <a href="https://github.com/SleepyLGod/">
     <h3 align="center">
         <img src="https://i.imgur.com/5XG3bRq.png" width="280"><br>
