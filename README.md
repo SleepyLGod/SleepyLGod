@@ -12,18 +12,30 @@
     </marquee>
 </div> -->
 
-<html>
+<!-- <html>
 <head>
     <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
-    <div id="container">
-        <div id="banner">
-            <img src="./icons/pictures/20221122225952.png" />
-            <img src="./icons/pictures/20221216182312.png" />
-            <img src="./icons/pictures/7165484483180773986.PNG" />
-        </div>
-    </div>
-</html>
+<div class="loopimg">
+    <ul>
+        <li>
+            <img src="./icons/pictures/20221122225952.png" height="200px"/>
+        </li>
+        <li>
+            <img src="./icons/pictures/20221216182312.png" height="200px"/>
+        </li>
+        <li>
+            <img src="./icons/pictures/7165484483180773986.PNG" height="200px"/>
+        </li>
+        <li>
+            <img src="./icons/pictures/IMG_5467.PNG" height="200px"/>
+        </li>
+        <li>
+            <img src="./icons/pictures/IMG_5466.PNG" height="200px"/>
+        </li>
+    </ul>
+</div>
+</html> -->
 
 <!-- <html>
 <script type="text/javascript">
