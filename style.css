@@ -36,34 +36,3 @@
   transform: translateX(-2086.24px);
   }
  }
-
-
-#container { /* 容器大小和图片大小一致 */
-	width: 400px;
-	height: 300px;
-	overflow: hidden;
-}
-
-#photo { /* 图片宽度*图片数量 */
-	width: 1200px;
-	animation: switch 1s ease-out infinite;
-}
-
-#photo > img { /* 图片大小 */
-	float: left;
-	width: 400px;
-	height: 300px;
-}
-
-@keyframes switch {
-	0%, 25% {
-		margin-left: 0;
-	}
-	35%, 60% {
-		margin-left: -400px;  /* 图片宽度 */
-	}
-	70%, 100% {
-		margin-left: -800px; /* 图片宽度*2 */
-	}
-} 
-
