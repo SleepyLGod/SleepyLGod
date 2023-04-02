@@ -1,3 +1,43 @@
+.loopimg{
+ width: 4173px;
+ height: 200px;
+ margin: 0px auto;
+ padding: 0px;
+ overflow: hidden;
+}
+.loopimg > ul { 
+ width: 100%;
+ /*动画名称*/
+ animation-name: move;
+ /*动画时间*/
+ animation-duration: 15s;
+ /*动画次数*/
+ animation-iteration-count: infinite;
+ /*匀速*/
+ animation-timing-function: linear;
+ }
+.loopimg > ul > li {
+ float: left;
+ list-style: none;
+ }
+#foot {
+ border: 1px solid black;
+ height: 80px;
+ width: 100%;
+ text-align: center;
+}
+@keyframes move {
+  /*动画起始位置*/
+  0% {
+  transform: translateX(0px);
+  }
+ /*动画结束状态*/
+ 100% {
+  transform: translateX(-2086.24px);
+  }
+ }
+
+
 #container { /* 容器大小和图片大小一致 */
 	width: 400px;
 	height: 300px;
@@ -25,4 +65,5 @@
 	70%, 100% {
 		margin-left: -800px; /* 图片宽度*2 */
 	}
-}
+} 
+
