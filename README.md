@@ -12,6 +12,19 @@
     </marquee>
 </div> -->
 
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+    <div id="container">
+        <div id="banner">
+            <img src="./icons/pictures/20221122225952.png" />
+            <img src="./icons/pictures/20221216182312.png" />
+            <img src="./icons/pictures/7165484483180773986.PNG" />
+        </div>
+    </div>
+</html>
+
 <!-- <html>
 <script type="text/javascript">
 ps=new Array("./icons/pictures/20221122225952.png","./icons/pictures/20221216182312.png","./icons/pictures/7165484483180773986.PNG","./icons/pictures/IMG_5467.PNG");
