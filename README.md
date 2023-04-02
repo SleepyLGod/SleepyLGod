@@ -35,8 +35,7 @@
             <img src="https://custom-icon-badges.herokuapp.com/github/last-commit/SleepyLGod/SleepyLGod" alt="SleepyLGod"/>
         </a>
     </p>
-</div>
-
+    
 <p align="center">
   <a href="https://www.linkedin.com/in/von-lu/" target="_blank">
     <img align="center" alt="linkedin logo" height="50" width="50" src="./icons/assests//linkedinlogo.png"/>
@@ -51,9 +50,7 @@
     <img align="center" alt="Join My Discord Server" height="50" width="50" src="./icons/assests//discordlogo.png"/>
     <span>Dong#2107</span>
 </p> 
-    
-<div align="center">
-    
+        
 <!-- [![spotify-github-profile](https://spotify-github-profile.vercel.app/api/view?uid=31gepfdtbzi2ycsdpdthguc5z3cy&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=false)](https://github.com/kittinan/spotify-github-profile) -->
 [![spotify-github-profile](https://spotify-github-profile.vercel.app/api/view?uid=31gepfdtbzi2ycsdpdthguc5z3cy&cover_image=true&theme=novatorem&show_offline=false&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=false)](https://github.com/kittinan/spotify-github-profile)
 
