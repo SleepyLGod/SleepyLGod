@@ -12,7 +12,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: lowlighter/metrics@latest
+      - uses: SleepyLGod/metrics@latest
         with:
           filename: metrics.plugin.skyline.city.svg
           token: NOT_NEEDED
