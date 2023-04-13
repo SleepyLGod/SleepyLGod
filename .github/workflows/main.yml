@@ -12,6 +12,7 @@ jobs:
     permissions:
       contents: write
     steps:
+      - name: Metrics embed
       - uses: lowlighter/metrics@latest
         with:
           filename: metrics.plugin.skyline.city.svg
