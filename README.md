@@ -178,7 +178,8 @@ setInterval(hanshu,1000);
 <!-- 
 &nbsp;&nbsp;<img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/><img src="./icons/github.gif" alt="github" width="20" height="18"/>
 -->
-    
+
+<!------------------------------------------------------------------- 暂时注释掉 --------------------------------
 <div>
   <div align="center">
     <a href="#">
@@ -195,7 +196,9 @@ setInterval(hanshu,1000);
             </div>
         <br> 
   </div>
-      
+--->
+
+
   <div align="center">
     <a href="#">
         <img alt="Dong's Activity Graph" src="https://github-readme-activity-graph.cyclic.app/graph?username=SleepyLGod&custom_title=HaodongLu's%20Contribution%20Graph&bg_color=3E0053&color=00D5A9&line=FF659D&point=F6EBFF&hide_border=true" align="center" />
