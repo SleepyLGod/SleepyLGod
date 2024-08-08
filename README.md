@@ -72,8 +72,8 @@ setInterval(hanshu,1000);
 <!--     <img src="https://count.getloli.com/get/@SleepyLGod?theme=gelbooru" alt="logo" height="60" align="right" style="margin: 10px; margin-bottom: 20px;" /> -->
 
 <!-- # Hi there 👋  -->
-- 🎓 *<font face="Times new Roman">Undergraduate study. @HUST China @UCB USA</font>*
-- 🔭 *Research includes Blockchain, Web3, Databases, Distributed, KV Storage, HPC, etc.*
+- 🎓 *<font face="Times new Roman">MPhil study. @CUHK HKSAR</font>*
+- 🔭 *Research includes LLMSys, MLSys, DBMS, Distributed, K-V Storage, etc.*
 - 🏆 *Used to participate in some contests. [**Won the first prize🥇**](http://mse.hust.edu.cn/info/1180/11133.htm) of the 17th **"Challenge Cup"** National College Student Curricular Academic Science and Technology Works Competition.*
 - 👑 *Founder of [**JumboArbitrage**](https://github.com/JumboArbitrage) and [**HUST-FOCUS**](https://github.com/HUST-FOCUS).*
 - :octocat: *Currently working on some fantastic ideas.*
@@ -104,7 +104,7 @@ setInterval(hanshu,1000);
 </p> 
         
 <!-- [![spotify-github-profile](https://spotify-github-profile.vercel.app/api/view?uid=31gepfdtbzi2ycsdpdthguc5z3cy&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=false)](https://github.com/kittinan/spotify-github-profile) -->
-[![spotify-github-profile](https://spotify-github-profile.vercel.app/api/view?uid=31gepfdtbzi2ycsdpdthguc5z3cy&cover_image=true&theme=novatorem&show_offline=false&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=false)](https://github.com/kittinan/spotify-github-profile)
+[![spotify-github-profile](https://spotify-github-profile.kittinanx.com/api/view.svg?uid=31gepfdtbzi2ycsdpdthguc5z3cy&redirect=true][https://spotify-github-profile.kittinanx.com/api/view.svg?uid=31gepfdtbzi2ycsdpdthguc5z3cy&cover_image=true&theme=default&show_offline=true&background_color=121212&interchange=false&bar_color_cover=true)](https://github.com/kittinan/spotify-github-profile)
 
 </div>
 
@@ -200,11 +200,10 @@ setInterval(hanshu,1000);
 
 
   <div align="center">
-    <a href="#">
+<!--     <a href="#">
         <img alt="Dong's Activity Graph" src="https://github-readme-activity-graph.cyclic.app/graph?username=SleepyLGod&custom_title=HaodongLu's%20Contribution%20Graph&bg_color=3E0053&color=00D5A9&line=FF659D&point=F6EBFF&hide_border=true" align="center" />
-      </a>
+      </a> -->
   <div> 
-  <br/>
   <div align="center">
     <a href="#">
         <img src="https://github-profile-trophy.vercel.app/?username=SleepyLGod&column=7&theme=onedark&no-frame=true&row=1&&margin-w=20&no-bg=true" height="130"/>
