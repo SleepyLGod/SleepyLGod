@@ -118,38 +118,29 @@ setInterval(hanshu,1000);
 
 <!-- color: 00D5A9-->
 <p align="left"> 
+    <a href="https://www.linux.org/" target="_blank"> 
+        <img src="https://readme-components.vercel.app/api?component=logo&logo=linux&text=false&animation=spin&fill=black&textfill=9847B9&" alt="linux" /> 
+    </a> 
     <a href="https://www.w3schools.com/cpp/" target="_blank"> 
         <img src="https://readme-components.vercel.app/api?component=logo&logo=cplusplus&text=false&animation=spin&fill=black&textfill=9847B9&" alt="cplusplus" /> 
     </a> 
     <a href="https://www.cprogramming.com/" target="_blank">
         <img src="https://readme-components.vercel.app/api?component=logo&logo=c&text=false&animation=spin&fill=black&textfill=9847B9&" alt="c"/>
-    </a> 
-    <a href="https://git-scm.com/" target="_blank"> 
-        <img src="https://readme-components.vercel.app/api?component=logo&logo=git&text=false&animation=spin&fill=black&textfill=9847B9&" alt="git" /> 
-    </a> 
-    <a href="https://www.linux.org/" target="_blank"> 
-        <img src="https://readme-components.vercel.app/api?component=logo&logo=linux&text=false&animation=spin&fill=black&textfill=9847B9&" alt="linux" /> 
+    </a>
+    <a href="https://www.python.org" target="_blank"> 
+        <img src="https://readme-components.vercel.app/api?component=logo&logo=python&text=false&animation=spin&fill=black&textfill=9847B9&" alt="python" /> 
     </a> 
     <a href="https://www.java.com" target="_blank"> 
         <img src="https://readme-components.vercel.app/api?component=logo&logo=java&text=false&animation=spin&fill=black&textfill=9847B9&" alt="java" /> 
     </a> 
+<!--     <a href="https://kotlinlang.org" target="_blank"> 
+        <img src="https://readme-components.vercel.app/api?component=logo&logo=kotlin&text=false&animation=spin&fill=black&textfill=9847B9&" alt="kotlin" /> 
+    </a> -->
     <a href="https://golang.org" target="_blank"> 
         <img src="https://readme-components.vercel.app/api?component=logo&logo=go&text=false&animation=spin&fill=black&textfill=9847B9&" alt="go" /> 
     </a> 
-    <a href="https://docs.docker.com/" target="_blank">
-        <img src="https://readme-components.vercel.app/api?component=logo&logo=docker&text=false&animation=spin&fill=black&textfill=9847B9&" alt="docker" /> 
-    </a> 
-    <a href="https://kubernetes.io/docs/home/" target="_blank"> 
-        <img src="https://readme-components.vercel.app/api?component=logo&logo=kubernetes&text=false&animation=spin&fill=black&textfill=9847B9&" alt="k8s" /> 
-    </a> 
     <a href="https://doc.rust-lang.org/book/" target="_blank"> 
         <img src="https://readme-components.vercel.app/api?component=logo&logo=rust&text=false&animation=spin&fill=black&textfill=9847B9&" alt="rust" /> 
-    </a>
-    <a href="https://kotlinlang.org" target="_blank"> 
-        <img src="https://readme-components.vercel.app/api?component=logo&logo=kotlin&text=false&animation=spin&fill=black&textfill=9847B9&" alt="kotlin" /> 
-    </a>
-    <a href="https://www.mysql.com/" target="_blank"> 
-        <img src="https://readme-components.vercel.app/api?component=logo&logo=mysql&text=false&animation=spin&fill=black&textfill=9847B9&" alt="mysql" /> 
     </a>
     <a href="https://www.w3.org/html/" target="_blank"> 
         <img src="https://readme-components.vercel.app/api?component=logo&logo=html5&text=false&animation=spin&fill=black&textfill=9847B9&" alt="html5" />
@@ -160,14 +151,23 @@ setInterval(hanshu,1000);
     <a href="http://nodejs.cn/" target="_blank"> 
         <img src="https://readme-components.vercel.app/api?component=logo&logo=node.js&text=false&animation=spin&fill=black&textfill=9847B9&" alt="nodejs"/>
     </a>
-    <a href="https://redis.io/" target="_blank"> 
-        <img src="https://readme-components.vercel.app/api?component=logo&logo=redis&text=false&animation=spin&fill=black&textfill=9847B9&" alt="redis" /> 
+    <a href="https://www.mysql.com/" target="_blank"> 
+        <img src="https://readme-components.vercel.app/api?component=logo&logo=mysql&text=false&animation=spin&fill=black&textfill=9847B9&" alt="mysql" /> 
     </a>
-    <a href="https://nginx.org/en/docs/" target="_blank"> 
+<!--     <a href="https://redis.io/" target="_blank"> 
+        <img src="https://readme-components.vercel.app/api?component=logo&logo=redis&text=false&animation=spin&fill=black&textfill=9847B9&" alt="redis" /> 
+    </a> -->
+<!--     <a href="https://nginx.org/en/docs/" target="_blank"> 
         <img src="https://readme-components.vercel.app/api?component=logo&logo=nginx&text=false&animation=spin&fill=black&textfill=9847B9&" alt="nginx" /> 
+    </a>  -->
+    <a href="https://git-scm.com/" target="_blank"> 
+        <img src="https://readme-components.vercel.app/api?component=logo&logo=git&text=false&animation=spin&fill=black&textfill=9847B9&" alt="git" /> 
     </a> 
-    <a href="https://www.python.org" target="_blank"> 
-        <img src="https://readme-components.vercel.app/api?component=logo&logo=python&text=false&animation=spin&fill=black&textfill=9847B9&" alt="python" /> 
+    <a href="https://docs.docker.com/" target="_blank">
+        <img src="https://readme-components.vercel.app/api?component=logo&logo=docker&text=false&animation=spin&fill=black&textfill=9847B9&" alt="docker" /> 
+    </a> 
+    <a href="https://kubernetes.io/docs/home/" target="_blank"> 
+        <img src="https://readme-components.vercel.app/api?component=logo&logo=kubernetes&text=false&animation=spin&fill=black&textfill=9847B9&" alt="k8s" /> 
     </a> 
     <a href="https://doc.qt.io/" target="_blank"> 
         <img src="https://readme-components.vercel.app/api?component=logo&logo=qt&text=false&animation=spin&fill=black&textfill=9847B9&" alt="Qt" /> 
