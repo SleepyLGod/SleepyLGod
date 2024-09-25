@@ -1,6 +1,8 @@
+<!--
 <div align="center">
     <a href="#"><img src="./icons/header_statue.png"></a>
-</div>
+</div> 
+-->
 
 <!-- <div class="mdui-drawer" id="content-drawer">
     <marquee direction=right height=40% scrollamount=20 scrolldelay=90 width=60%> 
@@ -73,12 +75,14 @@ setInterval(hanshu,1000);
 
 <!-- # Hi there 👋  -->
 - 🎓 *<font face="Times new Roman">MPhil study. @CUHK HKSAR</font>*
-- 🔭 *Research includes LLMSys, MLSys, DBMS, Distributed, K-V Storage, etc.*
+- 🔭 *Research includes LLMSys, MLSys, DBMS, K-V Storage, etc.*
 - 🏆 *Used to participate in some contests. [**Won the first prize🥇**](http://mse.hust.edu.cn/info/1180/11133.htm) of the 17th **"Challenge Cup"** National College Student Curricular Academic Science and Technology Works Competition.*
 - 👑 *Founder of [**JumboArbitrage**](https://github.com/JumboArbitrage) and [**HUST-FOCUS**](https://github.com/HUST-FOCUS).*
-- :octocat: *Currently working on some fantastic ideas.*
-- ✨ ***Fun fact**: [**A repo received some stars**](https://github.com/SleepyLGod/qwidget-demo) including several interesting Qt components when I'm a freshman at HUST.* <!-- - 📫 *Reach me at **haodong.lu.me@gmail.com***-->
 - 🏠 *Homepage at [**sleepylgod.github.io**](https://sleepylgod.github.io/) & [**Rookie's Notes**](https://rookiedong.gitbook.io/notes).*
+<!-- -- 
+- :octocat: *Currently working on some fantastic ideas.*
+✨ ***Fun fact**: [**A repo received some stars**](https://github.com/SleepyLGod/qwidget-demo) including several interesting Qt components when I was a freshman at HUST.*  📫 *Reach me at **haodong.lu.me@gmail.com***
+-->
 
 <div align="center">
     <p align="center"> 
@@ -124,9 +128,9 @@ setInterval(hanshu,1000);
     <a href="https://www.w3schools.com/cpp/" target="_blank"> 
         <img src="https://readme-components.vercel.app/api?component=logo&logo=cplusplus&text=false&animation=spin&fill=black&textfill=9847B9&" alt="cplusplus" /> 
     </a> 
-    <a href="https://www.cprogramming.com/" target="_blank">
+<!--     <a href="https://www.cprogramming.com/" target="_blank">
         <img src="https://readme-components.vercel.app/api?component=logo&logo=c&text=false&animation=spin&fill=black&textfill=9847B9&" alt="c"/>
-    </a>
+    </a> -->
     <a href="https://www.python.org" target="_blank"> 
         <img src="https://readme-components.vercel.app/api?component=logo&logo=python&text=false&animation=spin&fill=black&textfill=9847B9&" alt="python" /> 
     </a> 
@@ -142,26 +146,38 @@ setInterval(hanshu,1000);
     <a href="https://doc.rust-lang.org/book/" target="_blank"> 
         <img src="https://readme-components.vercel.app/api?component=logo&logo=rust&text=false&animation=spin&fill=black&textfill=9847B9&" alt="rust" /> 
     </a>
-    <a href="https://www.w3.org/html/" target="_blank"> 
+<!--     <a href="https://www.w3.org/html/" target="_blank"> 
         <img src="https://readme-components.vercel.app/api?component=logo&logo=html5&text=false&animation=spin&fill=black&textfill=9847B9&" alt="html5" />
-    </a> 
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> 
-        <img src="https://readme-components.vercel.app/api?component=logo&logo=javascript&text=false&animation=spin&fill=black&textfill=9847B9&" alt="javascript" /> 
+    </a>  -->
+    <a href="[https://developer.mozilla.org/en-US/docs/Web/JavaScript](https://www.typescriptlang.org/)" target="_blank"> 
+        <img src="https://readme-components.vercel.app/api?component=logo&logo=typescript&text=false&animation=spin&fill=black&textfill=9847B9&" alt="typescript" /> 
     </a> 
     <a href="http://nodejs.cn/" target="_blank"> 
         <img src="https://readme-components.vercel.app/api?component=logo&logo=node.js&text=false&animation=spin&fill=black&textfill=9847B9&" alt="nodejs"/>
     </a>
-    <a href="https://www.mysql.com/" target="_blank"> 
+<!--     <a href="https://www.mysql.com/" target="_blank"> 
         <img src="https://readme-components.vercel.app/api?component=logo&logo=mysql&text=false&animation=spin&fill=black&textfill=9847B9&" alt="mysql" /> 
-    </a>
+    </a> -->
 <!--     <a href="https://redis.io/" target="_blank"> 
         <img src="https://readme-components.vercel.app/api?component=logo&logo=redis&text=false&animation=spin&fill=black&textfill=9847B9&" alt="redis" /> 
     </a> -->
 <!--     <a href="https://nginx.org/en/docs/" target="_blank"> 
         <img src="https://readme-components.vercel.app/api?component=logo&logo=nginx&text=false&animation=spin&fill=black&textfill=9847B9&" alt="nginx" /> 
     </a>  -->
-    <a href="https://git-scm.com/" target="_blank"> 
+<!--     <a href="https://git-scm.com/" target="_blank"> 
         <img src="https://readme-components.vercel.app/api?component=logo&logo=git&text=false&animation=spin&fill=black&textfill=9847B9&" alt="git" /> 
+    </a>  -->
+    <a href="https://pytorch.org/" target="_blank">
+        <img src="https://readme-components.vercel.app/api?component=logo&logo=pytorch&text=false&animation=spin&fill=black&textfill=9847B9&" alt="pytorch" /> 
+    </a> 
+    <a href="https://github.com/tensorflow/tensorflow" target="_blank">
+        <img src="https://readme-components.vercel.app/api?component=logo&logo=tensorflow&text=false&animation=spin&fill=black&textfill=9847B9&" alt="tensorflow" /> 
+    </a> 
+    <a href="https://openai.com/" target="_blank">
+        <img src="https://readme-components.vercel.app/api?component=logo&logo=openai&text=false&animation=spin&fill=black&textfill=9847B9&" alt="openai" /> 
+    </a> 
+    <a href="https://www.nvidia.com/en-us/" target="_blank">
+        <img src="https://readme-components.vercel.app/api?component=logo&logo=Nvidia&text=false&animation=spin&fill=black&textfill=9847B9&" alt="Nvidia" /> 
     </a> 
     <a href="https://docs.docker.com/" target="_blank">
         <img src="https://readme-components.vercel.app/api?component=logo&logo=docker&text=false&animation=spin&fill=black&textfill=9847B9&" alt="docker" /> 
@@ -212,6 +228,7 @@ setInterval(hanshu,1000);
 </div>
 <br/>
 <div>
+
 
 <div align="center">
     <a href="#"><img src="./icons/header_1.png"></a>
