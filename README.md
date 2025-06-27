@@ -11,12 +11,12 @@
 <!--     <img src="https://count.getloli.com/get/@SleepyLGod?theme=gelbooru" alt="logo" height="60" align="right" style="margin: 10px; margin-bottom: 20px;" /> -->
 
 <!-- # Hi there 👋  -->
-- 🎓 *<font face="Times new Roman">MPhil study. @CUHK HKSAR</font>*
+- 🎓 *<font face="Times new Roman">PhD study. @CUHK HKSAR</font>*
 - 🔭 *Research includes LLMSys, MLSys, DBMS, K-V Storage, etc.*
 - 🏆 *Used to participate in some contests. [**Won the first prize🥇**](http://mse.hust.edu.cn/info/1180/11133.htm) of the 17th **"Challenge Cup"** National College Student Curricular Academic Science and Technology Works Competition.*
 - 👑 *Founder of [**JumboArbitrage**](https://github.com/JumboArbitrage) and [**HUST-FOCUS**](https://github.com/HUST-FOCUS).*
-- 🏠 *Homepage at [**sleepylgod.github.io**](https://sleepylgod.github.io/) & [**Rookie's Notes**](https://rookiedong.gitbook.io/notes).*
 <!-- -- 
+- 🏠 *Homepage at [**sleepylgod.github.io**](https://sleepylgod.github.io/) & [**Rookie's Notes**](https://rookiedong.gitbook.io/notes).*
 - :octocat: *Currently working on some fantastic ideas.*
 ✨ ***Fun fact**: [**A repo received some stars**](https://github.com/SleepyLGod/qwidget-demo) including several interesting Qt components when I was a freshman at HUST.*  📫 *Reach me at **haodong.lu.me@gmail.com***
 -->
