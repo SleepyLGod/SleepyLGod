@@ -1,17 +1,20 @@
 </br>
 
 <h3 align="center">
-    <a href="#"><img src="https://readme-typing-svg.herokuapp.com/?font=Roboto+Mono&size=32&width=250&color=C264EF&duration=2600&lines=👋Hi+there👋" height="70"/></a>
+  <a href="#">
+    <img
+      src="https://readme-typing-svg.demolab.com/?font=Dancing+Script&size=38&width=340&height=70&color=C264EF&duration=2600&lines=%F0%9F%91%8B+Hi+there+%F0%9F%91%8B"
+      alt="Typing SVG"
+    />
+  </a>
 </h3>
 
 <div align="center">
     <a href="#"><img src="./icons/assests//borderseperator.gif"></a>
 </div>
 
-<!--     <img src="https://count.getloli.com/get/@SleepyLGod?theme=gelbooru" alt="logo" height="60" align="right" style="margin: 10px; margin-bottom: 20px;" /> -->
-
-<!-- # Hi there 👋  -->
-- 🎓 *<font face="Times new Roman">PhD study. @CUHK HKSAR</font>*
+<!-- # Hi there 👋 
+- 🎓 *PhD study. @CUHK HKSAR*
 - 🔭 *Research includes LLMSys, MLSys, DBMS, K-V Storage, etc.*
 - 🏆 *Used to participate in some contests. [**Won the first prize🥇**](http://mse.hust.edu.cn/info/1180/11133.htm) of the 17th **"Challenge Cup"** National College Student Curricular Academic Science and Technology Works Competition.*
 - 👑 *Founder of [**JumboArbitrage**](https://github.com/JumboArbitrage) and [**HUST-FOCUS**](https://github.com/HUST-FOCUS).*
@@ -21,35 +24,50 @@
 ✨ ***Fun fact**: [**A repo received some stars**](https://github.com/SleepyLGod/qwidget-demo) including several interesting Qt components when I was a freshman at HUST.*  📫 *Reach me at **haodong.lu.me@gmail.com***
 -->
 
+- 🎓 *𝒫𝒽𝒟 𝓈𝓉𝓊𝒹𝓎. @𝒞𝒰𝐻𝒦 𝐻𝒦𝒮𝒜𝑅*
+- 🔭 *𝑅𝑒𝓈𝑒𝒶𝓇𝒸𝒽 𝒾𝓃𝒸𝓁𝓊𝒹𝑒𝓈 𝐿𝐿𝑀𝒮𝓎𝓈, 𝑀𝐿𝒮𝓎𝓈, 𝐷𝐵𝑀𝒮, 𝒦-𝒱 𝒮𝓉𝑜𝓇𝒶𝑔𝑒, 𝑒𝓉𝒸.*
+- 🏆 *𝒰𝓈𝑒𝒹 𝓉𝑜 𝓅𝒶𝓇𝓉𝒾𝒸𝒾𝓅𝒶𝓉𝑒 𝒾𝓃 𝓈𝑜𝓂𝑒 𝒸𝑜𝓃𝓉𝑒𝓈𝓉𝓈. [**𝒲𝑜𝓃 𝓉𝒽𝑒 𝒻𝒾𝓇𝓈𝓉 𝓅𝓇𝒾𝓏𝑒🥇**](http://mse.hust.edu.cn/info/1180/11133.htm) 𝑜𝒻 𝓉𝒽𝑒 17𝓉𝒽 **"𝒞𝒽𝒶𝓁𝓁𝑒𝓃𝑔𝑒 𝒞𝓊𝓅"** 𝒩𝒶𝓉𝒾𝑜𝓃𝒶𝓁 𝒞𝑜𝓁𝓁𝑒𝑔𝑒 𝒮𝓉𝓊𝒹𝑒𝓃𝓉 𝒞𝓊𝓇𝓇𝒾𝒸𝓊𝓁𝒶𝓇 𝒜𝒸𝒶𝒹𝑒𝓂𝒾𝒸 𝒮𝒸𝒾𝑒𝓃𝒸𝑒 𝒶𝓃𝒹 𝒯𝑒𝒸𝒽𝓃𝑜𝓁𝑜𝑔𝓎 𝒲𝑜𝓇𝓀𝓈 𝒞𝑜𝓂𝓅𝑒𝓉𝒾𝓉𝒾𝑜𝓃.*
+- 👑 *𝐹𝑜𝓊𝓃𝒹𝑒𝓇 𝑜𝒻 [**𝒥𝓊𝓂𝒷𝑜𝒜𝓇𝒷𝒾𝓉𝓇𝒶𝑔𝑒**](https://github.com/JumboArbitrage) 𝒶𝓃𝒹 [**𝐻𝒰𝒮𝒯-𝐹𝒪𝒞𝒰𝒮**](https://github.com/HUST-FOCUS).*
+
+<!-- 
+- 🎓 *𝓟𝓱𝓓 𝓼𝓽𝓾𝓭𝔂. @𝓒𝓤𝓗𝓚 𝓗𝓚𝓢𝓐𝓡*
+- 🔭 *𝓡𝓮𝓼𝓮𝓪𝓻𝓬𝓱 𝓲𝓷𝓬𝓵𝓾𝓭𝓮𝓼 𝓛𝓛𝓜𝓢𝔂𝓼, 𝓜𝓛𝓢𝔂𝓼, 𝓓𝓑𝓜𝓢, 𝓚-𝓥 𝓢𝓽𝓸𝓻𝓪𝓰𝓮, 𝓮𝓽𝓬.*
+- 🏆 *𝓤𝓼𝓮𝓭 𝓽𝓸 𝓹𝓪𝓻𝓽𝓲𝓬𝓲𝓹𝓪𝓽𝓮 𝓲𝓷 𝓼𝓸𝓶𝓮 𝓬𝓸𝓷𝓽𝓮𝓼𝓽𝓼. [**𝓦𝓸𝓷 𝓽𝓱𝓮 𝓯𝓲𝓻𝓼𝓽 𝓹𝓻𝓲𝔃𝓮🥇**](http://mse.hust.edu.cn/info/1180/11133.htm) 𝓸𝓯 𝓽𝓱𝓮 17𝓽𝓱 **"𝓒𝓱𝓪𝓵𝓵𝓮𝓷𝓰𝓮 𝓒𝓾𝓹"** 𝓝𝓪𝓽𝓲𝓸𝓷𝓪𝓵 𝓒𝓸𝓵𝓵𝓮𝓰𝓮 𝓢𝓽𝓾𝓭𝓮𝓷𝓽 𝓒𝓾𝓻𝓻𝓲𝓬𝓾𝓵𝓪𝓻 𝓐𝓬𝓪𝓭𝓮𝓶𝓲𝓬 𝓢𝓬𝓲𝓮𝓷𝓬𝓮 𝓪𝓷𝓭 𝓣𝓮𝓬𝓱𝓷𝓸𝓵𝓸𝓰𝔂 𝓦𝓸𝓻𝓴𝓼 𝓒𝓸𝓶𝓹𝓮𝓽𝓲𝓽𝓲𝓸𝓷.*
+- 👑 *𝓕𝓸𝓾𝓷𝓭𝓮𝓻 𝓸𝓯 [**𝓙𝓾𝓶𝓫𝓸𝓐𝓻𝓫𝓲𝓽𝓻𝓪𝓰𝓮**](https://github.com/JumboArbitrage) 𝓪𝓷𝓭 [**𝓗𝓤𝓢𝓣-𝓕𝓞𝓒𝓤𝓢**](https://github.com/HUST-FOCUS).*
+-->
+
 <div align="center">
     <p align="center"> 
         <a href="#">
-            <img src="https://komarev.com/ghpvc/?username=SleepyLGod&label=Profile%20views&color=9B3EB4&style=flat" alt="SleepyLGod" /> &nbsp;&nbsp;&nbsp; 
+            <img src="https://komarev.com/ghpvc/?username=SleepyLGod&label=Profile%20views&color=9B3EB4&style=flat" alt="SleepyLGod" /> 
             <img src="https://custom-icon-badges.herokuapp.com/github/last-commit/SleepyLGod/SleepyLGod" alt="SleepyLGod"/>
         </a>
     </p>
+    <p align="center">
+      <a href="https://www.linkedin.com/in/von-lu/" target="_blank">
+        <img align="center" alt="linkedin logo" height="50" width="50" src="./icons/assests//linkedinlogo.png"/>
+      </a>
+      <a href="https://profile-summary-for-github.herokuapp.com/user/SleepyLGod" target="_blank">
+        <img align="center" alt="github logo" height="50" width="50" src="./icons/assests//githublogo.png"/>
+      </a>
+      <a href="mailto:haodong.lu.me@gmail.com" target="_blank">
+        <img align="center" alt="gmail logo" height="50" width="50" src="./icons/assests//gmailogo.png" />
+      </a>
+      <a>
+        <img align="center" alt="Join My Discord Server" height="50" width="50" src="./icons/assests//discordlogo.png"/>
+        <span>Dong#2107</span>
+      </a>
+    </p> 
+</div>
+
+<div align="center">
     
-<p align="center">
-  <a href="https://www.linkedin.com/in/von-lu/" target="_blank">
-    <img align="center" alt="linkedin logo" height="50" width="50" src="./icons/assests//linkedinlogo.png"/>
-  </a> &nbsp;&nbsp;
-  <a href="https://profile-summary-for-github.herokuapp.com/user/SleepyLGod" target="_blank">
-    <img align="center" alt="github logo" height="50" width="50" src="./icons/assests//githublogo.png"/>
-  </a> &nbsp;&nbsp;
-  <a href="mailto:haodong.lu.me@gmail.com" target="_blank">
-    <img align="center" alt="gmail logo" height="50" width="50" src="./icons/assests//gmailogo.png" />
-  </a> &nbsp;&nbsp;
-  <a>
-    <img align="center" alt="Join My Discord Server" height="50" width="50" src="./icons/assests//discordlogo.png"/>
-    <span>Dong#2107</span>
-</p> 
-        
 <!-- [![spotify-github-profile](https://spotify-github-profile.vercel.app/api/view?uid=31gepfdtbzi2ycsdpdthguc5z3cy&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=false)](https://github.com/kittinan/spotify-github-profile) -->
 [![spotify-github-profile](https://spotify-github-profile.kittinanx.com/api/view.svg?uid=31gepfdtbzi2ycsdpdthguc5z3cy&redirect=true][https://spotify-github-profile.kittinanx.com/api/view.svg?uid=31gepfdtbzi2ycsdpdthguc5z3cy&cover_image=true&theme=default&show_offline=true&background_color=121212&interchange=false&bar_color_cover=true)](https://github.com/kittinan/spotify-github-profile)
 
 </div>
 
-## 😀 &nbsp; *Languages & Tools* &nbsp;&nbsp;
+## 😀 &nbsp; *𝓛𝓪𝓷𝓰𝓾𝓪𝓰𝓮𝓼 & 𝓣𝓸𝓸𝓵𝓼* &nbsp;&nbsp;
 
 <!-- color: 00D5A9-->
 <p align="left"> 
@@ -121,7 +139,7 @@
     </a> 
 </p>
 
-## <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="35px">&nbsp;  *Github Stats* 
+## <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="35px">&nbsp;  *𝓖𝓲𝓽𝓱𝓾𝓫 𝓢𝓽𝓪𝓽𝓼* 
 
 <div align="center">
   <a href="https://github.com/anuraghazra/github-readme-stats">
