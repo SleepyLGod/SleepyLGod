@@ -104,9 +104,6 @@
     <a href="https://github.com/tensorflow/tensorflow" target="_blank">
         <img src="https://readme-components.vercel.app/api?component=logo&logo=tensorflow&text=false&animation=spin&fill=black&textfill=9847B9&" alt="tensorflow" /> 
     </a> 
-    <a href="https://openai.com/" target="_blank">
-        <img src="https://readme-components.vercel.app/api?component=logo&logo=openai&text=false&animation=spin&fill=black&textfill=9847B9&" alt="openai" /> 
-    </a> 
     <a href="https://www.nvidia.com/en-us/" target="_blank">
         <img src="https://readme-components.vercel.app/api?component=logo&logo=Nvidia&text=false&animation=spin&fill=black&textfill=9847B9&" alt="Nvidia" /> 
     </a> 
@@ -119,22 +116,27 @@
     <a href="https://doc.qt.io/" target="_blank"> 
         <img src="https://readme-components.vercel.app/api?component=logo&logo=qt&text=false&animation=spin&fill=black&textfill=9847B9&" alt="Qt" /> 
     </a>
+    <a href="https://openai.com/" target="_blank">
+    <img src="https://readme-components.vercel.app/api?component=logo&logo=openai&text=false&animation=spin&fill=black&textfill=9847B9&" alt="openai" /> 
+    </a> 
 </p>
 
 ## <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="35px">&nbsp;  *Github Stats* 
 
-
-  <div align="center">
-  <div> 
-  <div align="center">
-    <a href="#">
-        <img src="https://github-profile-trophy.vercel.app/?username=SleepyLGod&column=7&theme=onedark&no-frame=true&row=1&&margin-w=20&no-bg=true" height="130"/>
-      </a>
-  </div>
+<div align="center">
+  <a href="https://github.com/anuraghazra/github-readme-stats">
+    <img height="165" src="https://github-readme-stats.vercel.app/api?username=SleepyLGod&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" alt="GitHub stats"/>
+  </a>
+  <a href="https://github.com/denvercoder1/github-readme-streak-stats">
+    <img height="165" src="https://streak-stats.demolab.com?user=SleepyLGod&theme=tokyonight&hide_border=true" alt="GitHub streak"/>
+  </a>
 </div>
-<br/>
-<div>
 
+<div align="center">
+  <a href="https://github.com/vn7n24fzkq/github-profile-summary-cards">
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=SleepyLGod&theme=tokyonight" alt="profile details"/>
+  </a>
+</div>
 
 <div align="center">
     <a href="#"><img src="./icons/header_1.png"></a>
