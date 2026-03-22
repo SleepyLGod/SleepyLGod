@@ -137,6 +137,12 @@
     <a href="https://openai.com/" target="_blank">
     <img src="https://readme-components.vercel.app/api?component=logo&logo=openai&text=false&animation=spin&fill=black&textfill=9847B9&" alt="openai" /> 
     </a> 
+    <!-- <a href="https://gemini.google.com/" target="_blank">
+    <img src="https://readme-components-eta.vercel.app/api?component=logo&logo=gemini&text=false&animation=spin&fill=black&textfill=9847B9&" alt="gemini" /> 
+    </a> -->
+    <a href="https://claude.ai/" target="_blank">
+    <img src="https://readme-components-eta.vercel.app/api?component=logo&logo=claude&text=false&animation=spin&fill=black&textfill=9847B9&" alt="claude" /> 
+    </a> 
 </p>
 
 ## <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="35px">&nbsp;  *𝓖𝓲𝓽𝓱𝓾𝓫 𝓢𝓽𝓪𝓽𝓼* 
