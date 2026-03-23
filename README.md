@@ -24,14 +24,17 @@
 ✨ ***Fun fact**: [**A repo received some stars**](https://github.com/SleepyLGod/qwidget-demo) including several interesting Qt components when I was a freshman at HUST.*  📫 *Reach me at **haodong.lu.me@gmail.com***
 -->
 
+<!--
 - 🎓 *𝒫𝒽𝒟 𝓈𝓉𝓊𝒹𝓎. @𝒞𝒰𝐻𝒦 𝐻𝒦𝒮𝒜𝑅*
 - 🔭 *𝑅𝑒𝓈𝑒𝒶𝓇𝒸𝒽 𝒾𝓃𝒸𝓁𝓊𝒹𝑒𝓈 𝐿𝐿𝑀𝒮𝓎𝓈, 𝑀𝐿𝒮𝓎𝓈, 𝐷𝐵𝑀𝒮, 𝒦-𝒱 𝒮𝓉𝑜𝓇𝒶𝑔𝑒, 𝑒𝓉𝒸.*
+-->
+
+- 🎓 *𝓟𝓱𝓓 𝓼𝓽𝓾𝓭𝔂. @𝓒𝓤𝓗𝓚 𝓗𝓚𝓢𝓐𝓡*
+- 🔭 *𝓡𝓮𝓼𝓮𝓪𝓻𝓬𝓱 𝓲𝓷𝓬𝓵𝓾𝓭𝓮𝓼 𝓛𝓛𝓜𝓢𝔂𝓼, 𝓜𝓛𝓢𝔂𝓼, 𝓓𝓑𝓜𝓢, 𝓚-𝓥 𝓢𝓽𝓸𝓻𝓪𝓰𝓮, 𝓮𝓽𝓬.*
 - 🏆 *𝒰𝓈𝑒𝒹 𝓉𝑜 𝓅𝒶𝓇𝓉𝒾𝒸𝒾𝓅𝒶𝓉𝑒 𝒾𝓃 𝓈𝑜𝓂𝑒 𝒸𝑜𝓃𝓉𝑒𝓈𝓉𝓈. [**𝒲𝑜𝓃 𝓉𝒽𝑒 𝒻𝒾𝓇𝓈𝓉 𝓅𝓇𝒾𝓏𝑒🥇**](http://mse.hust.edu.cn/info/1180/11133.htm) 𝑜𝒻 𝓉𝒽𝑒 17𝓉𝒽 **"𝒞𝒽𝒶𝓁𝓁𝑒𝓃𝑔𝑒 𝒞𝓊𝓅"** 𝒩𝒶𝓉𝒾𝑜𝓃𝒶𝓁 𝒞𝑜𝓁𝓁𝑒𝑔𝑒 𝒮𝓉𝓊𝒹𝑒𝓃𝓉 𝒞𝓊𝓇𝓇𝒾𝒸𝓊𝓁𝒶𝓇 𝒜𝒸𝒶𝒹𝑒𝓂𝒾𝒸 𝒮𝒸𝒾𝑒𝓃𝒸𝑒 𝒶𝓃𝒹 𝒯𝑒𝒸𝒽𝓃𝑜𝓁𝑜𝑔𝓎 𝒲𝑜𝓇𝓀𝓈 𝒞𝑜𝓂𝓅𝑒𝓉𝒾𝓉𝒾𝑜𝓃.*
 - 👑 *𝐹𝑜𝓊𝓃𝒹𝑒𝓇 𝑜𝒻 [**𝒥𝓊𝓂𝒷𝑜𝒜𝓇𝒷𝒾𝓉𝓇𝒶𝑔𝑒**](https://github.com/JumboArbitrage) 𝒶𝓃𝒹 [**𝐻𝒰𝒮𝒯-𝐹𝒪𝒞𝒰𝒮**](https://github.com/HUST-FOCUS).*
 
 <!-- 
-- 🎓 *𝓟𝓱𝓓 𝓼𝓽𝓾𝓭𝔂. @𝓒𝓤𝓗𝓚 𝓗𝓚𝓢𝓐𝓡*
-- 🔭 *𝓡𝓮𝓼𝓮𝓪𝓻𝓬𝓱 𝓲𝓷𝓬𝓵𝓾𝓭𝓮𝓼 𝓛𝓛𝓜𝓢𝔂𝓼, 𝓜𝓛𝓢𝔂𝓼, 𝓓𝓑𝓜𝓢, 𝓚-𝓥 𝓢𝓽𝓸𝓻𝓪𝓰𝓮, 𝓮𝓽𝓬.*
 - 🏆 *𝓤𝓼𝓮𝓭 𝓽𝓸 𝓹𝓪𝓻𝓽𝓲𝓬𝓲𝓹𝓪𝓽𝓮 𝓲𝓷 𝓼𝓸𝓶𝓮 𝓬𝓸𝓷𝓽𝓮𝓼𝓽𝓼. [**𝓦𝓸𝓷 𝓽𝓱𝓮 𝓯𝓲𝓻𝓼𝓽 𝓹𝓻𝓲𝔃𝓮🥇**](http://mse.hust.edu.cn/info/1180/11133.htm) 𝓸𝓯 𝓽𝓱𝓮 17𝓽𝓱 **"𝓒𝓱𝓪𝓵𝓵𝓮𝓷𝓰𝓮 𝓒𝓾𝓹"** 𝓝𝓪𝓽𝓲𝓸𝓷𝓪𝓵 𝓒𝓸𝓵𝓵𝓮𝓰𝓮 𝓢𝓽𝓾𝓭𝓮𝓷𝓽 𝓒𝓾𝓻𝓻𝓲𝓬𝓾𝓵𝓪𝓻 𝓐𝓬𝓪𝓭𝓮𝓶𝓲𝓬 𝓢𝓬𝓲𝓮𝓷𝓬𝓮 𝓪𝓷𝓭 𝓣𝓮𝓬𝓱𝓷𝓸𝓵𝓸𝓰𝔂 𝓦𝓸𝓻𝓴𝓼 𝓒𝓸𝓶𝓹𝓮𝓽𝓲𝓽𝓲𝓸𝓷.*
 - 👑 *𝓕𝓸𝓾𝓷𝓭𝓮𝓻 𝓸𝓯 [**𝓙𝓾𝓶𝓫𝓸𝓐𝓻𝓫𝓲𝓽𝓻𝓪𝓰𝓮**](https://github.com/JumboArbitrage) 𝓪𝓷𝓭 [**𝓗𝓤𝓢𝓣-𝓕𝓞𝓒𝓤𝓢**](https://github.com/HUST-FOCUS).*
 -->
@@ -71,15 +74,15 @@
 
 <!-- color: 00D5A9-->
 <p align="left"> 
-    <a href="https://www.linux.org/" target="_blank"> 
-        <img src="https://readme-components.vercel.app/api?component=logo&logo=linux&text=false&animation=spin&fill=black&textfill=9847B9&" alt="linux" /> 
-    </a> 
     <a href="https://www.w3schools.com/cpp/" target="_blank"> 
         <img src="https://readme-components.vercel.app/api?component=logo&logo=cplusplus&text=false&animation=spin&fill=black&textfill=9847B9&" alt="cplusplus" /> 
     </a> 
-<!--     <a href="https://www.cprogramming.com/" target="_blank">
+    <a href="https://www.cprogramming.com/" target="_blank">
         <img src="https://readme-components.vercel.app/api?component=logo&logo=c&text=false&animation=spin&fill=black&textfill=9847B9&" alt="c"/>
-    </a> -->
+    </a>
+    <a href="https://developer.nvidia.com/cuda/toolkit" target="_blank">
+        <img src="https://readme-components.vercel.app/api?component=logo&logo=Nvidia&text=false&animation=spin&fill=black&textfill=9847B9&" alt="cuda" /> 
+    </a> 
     <a href="https://www.python.org" target="_blank"> 
         <img src="https://readme-components.vercel.app/api?component=logo&logo=python&text=false&animation=spin&fill=black&textfill=9847B9&" alt="python" /> 
     </a> 
@@ -98,32 +101,32 @@
 <!--     <a href="https://www.w3.org/html/" target="_blank"> 
         <img src="https://readme-components.vercel.app/api?component=logo&logo=html5&text=false&animation=spin&fill=black&textfill=9847B9&" alt="html5" />
     </a>  -->
-    <a href="[https://developer.mozilla.org/en-US/docs/Web/JavaScript](https://www.typescriptlang.org/)" target="_blank"> 
+    <a href="https://www.typescriptlang.org/" target="_blank"> 
         <img src="https://readme-components.vercel.app/api?component=logo&logo=typescript&text=false&animation=spin&fill=black&textfill=9847B9&" alt="typescript" /> 
     </a> 
     <a href="http://nodejs.cn/" target="_blank"> 
         <img src="https://readme-components.vercel.app/api?component=logo&logo=node.js&text=false&animation=spin&fill=black&textfill=9847B9&" alt="nodejs"/>
     </a>
-<!--     <a href="https://www.mysql.com/" target="_blank"> 
-        <img src="https://readme-components.vercel.app/api?component=logo&logo=mysql&text=false&animation=spin&fill=black&textfill=9847B9&" alt="mysql" /> 
-    </a> -->
-<!--     <a href="https://redis.io/" target="_blank"> 
-        <img src="https://readme-components.vercel.app/api?component=logo&logo=redis&text=false&animation=spin&fill=black&textfill=9847B9&" alt="redis" /> 
-    </a> -->
-<!--     <a href="https://nginx.org/en/docs/" target="_blank"> 
-        <img src="https://readme-components.vercel.app/api?component=logo&logo=nginx&text=false&animation=spin&fill=black&textfill=9847B9&" alt="nginx" /> 
-    </a>  -->
-<!--     <a href="https://git-scm.com/" target="_blank"> 
+    <a href="https://www.linux.org/" target="_blank"> 
+        <img src="https://readme-components.vercel.app/api?component=logo&logo=linux&text=false&animation=spin&fill=black&textfill=9847B9&" alt="linux" /> 
+    </a> 
+    <a href="https://git-scm.com/" target="_blank"> 
         <img src="https://readme-components.vercel.app/api?component=logo&logo=git&text=false&animation=spin&fill=black&textfill=9847B9&" alt="git" /> 
-    </a>  -->
+    </a> 
+    <a href="https://neovim.io/" target="_blank"> 
+        <img src="https://readme-components.vercel.app/api?component=logo&logo=neovim&text=false&animation=spin&fill=black&textfill=9847B9&" alt="nvim" /> 
+    </a> 
+    <a href="https://www.postgresql.org/" target="_blank"> 
+        <img src="https://readme-components.vercel.app/api?component=logo&logo=postgresql&text=false&animation=spin&fill=black&textfill=9847B9&" alt="postgresql" /> 
+    </a>
+    <a href="https://redis.io/" target="_blank"> 
+        <img src="https://readme-components.vercel.app/api?component=logo&logo=redis&text=false&animation=spin&fill=black&textfill=9847B9&" alt="redis" /> 
+    </a>
     <a href="https://pytorch.org/" target="_blank">
         <img src="https://readme-components.vercel.app/api?component=logo&logo=pytorch&text=false&animation=spin&fill=black&textfill=9847B9&" alt="pytorch" /> 
     </a> 
     <a href="https://github.com/tensorflow/tensorflow" target="_blank">
         <img src="https://readme-components.vercel.app/api?component=logo&logo=tensorflow&text=false&animation=spin&fill=black&textfill=9847B9&" alt="tensorflow" /> 
-    </a> 
-    <a href="https://www.nvidia.com/en-us/" target="_blank">
-        <img src="https://readme-components.vercel.app/api?component=logo&logo=Nvidia&text=false&animation=spin&fill=black&textfill=9847B9&" alt="Nvidia" /> 
     </a> 
     <a href="https://docs.docker.com/" target="_blank">
         <img src="https://readme-components.vercel.app/api?component=logo&logo=docker&text=false&animation=spin&fill=black&textfill=9847B9&" alt="docker" /> 
@@ -137,11 +140,14 @@
     <a href="https://openai.com/" target="_blank">
     <img src="https://readme-components.vercel.app/api?component=logo&logo=openai&text=false&animation=spin&fill=black&textfill=9847B9&" alt="openai" /> 
     </a> 
-    <!-- <a href="https://gemini.google.com/" target="_blank">
-    <img src="https://readme-components-eta.vercel.app/api?component=logo&logo=gemini&text=false&animation=spin&fill=black&textfill=9847B9&" alt="gemini" /> 
-    </a> -->
+    <a href="https://gemini.google.com/" target="_blank">
+    <img src="https://readme-components-eta.vercel.app/api?component=logo&logo=googlegemini&text=false&animation=spin&fill=black&textfill=9847B9&" alt="gemini" /> 
+    </a>
     <a href="https://claude.ai/" target="_blank">
     <img src="https://readme-components-eta.vercel.app/api?component=logo&logo=claude&text=false&animation=spin&fill=black&textfill=9847B9&" alt="claude" /> 
+    </a>
+    <a href="https://www.langchain.com/langgraph" target="_blank">
+    <img src="https://readme-components-eta.vercel.app/api?component=logo&logo=langchain&text=false&animation=spin&fill=black&textfill=9847B9&" alt="langgraph" /> 
     </a> 
 </p>
 
@@ -149,17 +155,28 @@
 
 <div align="center">
   <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img height="165" src="https://github-readme-stats.vercel.app/api?username=SleepyLGod&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" alt="GitHub stats"/>
+    <img height="165" src="https://github-readme-stats.vercel.app/api?username=SleepyLGod&show_icons=true&theme=dracula&hide_border=true&rank_icon=github" alt="GitHub stats"/>
   </a>
   <a href="https://github.com/denvercoder1/github-readme-streak-stats">
-    <img height="165" src="https://streak-stats.demolab.com?user=SleepyLGod&theme=tokyonight&hide_border=true" alt="GitHub streak"/>
+    <img height="165" src="https://streak-stats.demolab.com?user=SleepyLGod&theme=monokai&hide_border=true" alt="GitHub streak"/>
   </a>
 </div>
 
 <div align="center">
   <a href="https://github.com/vn7n24fzkq/github-profile-summary-cards">
-    <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=SleepyLGod&theme=tokyonight" alt="profile details"/>
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=SleepyLGod&theme=graywhite" alt="profile details"/>
   </a>
+</div>
+
+<!--
+buefy
+aura
+graywhite
+swift
+-->
+
+<div align="center">
+    <a href="#"><img src="./icons/assests//borderseperator.gif"></a>
 </div>
 
 <div align="center">
