@@ -176,7 +176,7 @@ swift
 -->
 
 <div align="center">
-    <a href="#"><img src="./icons/assests//borderseperator.gif"></a>
+    <img src="./icons/assests/borderseperator.gif">
 </div>
 
 <div align="center">
