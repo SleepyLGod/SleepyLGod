@@ -3,7 +3,7 @@
 <h3 align="center">
   <a href="#">
     <img
-      src="https://readme-typing-svg.demolab.com/?font=Dancing+Script&size=38&width=340&height=70&color=C264EF&duration=2600&lines=%F0%9F%91%8B+Hi+there+%F0%9F%91%8B"
+      src="https://readme-typing-svg.demolab.com/?font=Dancing+Script&size=40&width=360&height=80&color=C264EF&duration=2600&lines=%F0%9F%91%8B+Hi+there+%F0%9F%91%8B"
       alt="Typing SVG"
     />
   </a>
@@ -108,46 +108,46 @@
         <img src="https://readme-components.vercel.app/api?component=logo&logo=node.js&text=false&animation=spin&fill=black&textfill=9847B9&" alt="nodejs"/>
     </a>
     <a href="https://www.linux.org/" target="_blank"> 
-        <img src="https://readme-components.vercel.app/api?component=logo&logo=linux&text=false&animation=spin&fill=black&textfill=9847B9&" alt="linux" /> 
+        <img src="https://readme-components.vercel.app/api?component=logo&logo=linux&text=false&animation=spin&fill=black&textfill=A139CC&" alt="linux" /> 
     </a> 
     <a href="https://git-scm.com/" target="_blank"> 
-        <img src="https://readme-components.vercel.app/api?component=logo&logo=git&text=false&animation=spin&fill=black&textfill=9847B9&" alt="git" /> 
+        <img src="https://readme-components.vercel.app/api?component=logo&logo=git&text=false&animation=spin&fill=black&textfill=B64EE0&" alt="git" /> 
     </a> 
     <a href="https://neovim.io/" target="_blank"> 
-        <img src="https://readme-components.vercel.app/api?component=logo&logo=neovim&text=false&animation=spin&fill=black&textfill=9847B9&" alt="nvim" /> 
+        <img src="https://readme-components.vercel.app/api?component=logo&logo=neovim&text=false&animation=spin&fill=black&textfill=B64EE0&" alt="nvim" /> 
     </a> 
     <a href="https://www.postgresql.org/" target="_blank"> 
-        <img src="https://readme-components.vercel.app/api?component=logo&logo=postgresql&text=false&animation=spin&fill=black&textfill=9847B9&" alt="postgresql" /> 
+        <img src="https://readme-components.vercel.app/api?component=logo&logo=postgresql&text=false&animation=spin&fill=black&textfill=B64EE0&" alt="postgresql" /> 
     </a>
     <a href="https://redis.io/" target="_blank"> 
-        <img src="https://readme-components.vercel.app/api?component=logo&logo=redis&text=false&animation=spin&fill=black&textfill=9847B9&" alt="redis" /> 
+        <img src="https://readme-components.vercel.app/api?component=logo&logo=redis&text=false&animation=spin&fill=black&textfill=B64EE0&" alt="redis" /> 
     </a>
-    <a href="https://pytorch.org/" target="_blank">
-        <img src="https://readme-components.vercel.app/api?component=logo&logo=pytorch&text=false&animation=spin&fill=black&textfill=9847B9&" alt="pytorch" /> 
-    </a> 
-    <a href="https://github.com/tensorflow/tensorflow" target="_blank">
-        <img src="https://readme-components.vercel.app/api?component=logo&logo=tensorflow&text=false&animation=spin&fill=black&textfill=9847B9&" alt="tensorflow" /> 
-    </a> 
     <a href="https://docs.docker.com/" target="_blank">
-        <img src="https://readme-components.vercel.app/api?component=logo&logo=docker&text=false&animation=spin&fill=black&textfill=9847B9&" alt="docker" /> 
+        <img src="https://readme-components.vercel.app/api?component=logo&logo=docker&text=false&animation=spin&fill=black&textfill=B64EE0&" alt="docker" /> 
     </a> 
     <a href="https://kubernetes.io/docs/home/" target="_blank"> 
-        <img src="https://readme-components.vercel.app/api?component=logo&logo=kubernetes&text=false&animation=spin&fill=black&textfill=9847B9&" alt="k8s" /> 
+        <img src="https://readme-components.vercel.app/api?component=logo&logo=kubernetes&text=false&animation=spin&fill=black&textfill=B64EE0&" alt="k8s" /> 
     </a> 
-    <a href="https://doc.qt.io/" target="_blank"> 
+    <a href="https://pytorch.org/" target="_blank">
+        <img src="https://readme-components.vercel.app/api?component=logo&logo=pytorch&text=false&animation=spin&fill=black&textfill=C76AED&" alt="pytorch" /> 
+    </a> 
+    <a href="https://github.com/tensorflow/tensorflow" target="_blank">
+        <img src="https://readme-components.vercel.app/api?component=logo&logo=tensorflow&text=false&animation=spin&fill=black&textfill=C76AED&" alt="tensorflow" /> 
+    </a> 
+    <!-- <a href="https://doc.qt.io/" target="_blank"> 
         <img src="https://readme-components.vercel.app/api?component=logo&logo=qt&text=false&animation=spin&fill=black&textfill=9847B9&" alt="Qt" /> 
-    </a>
+    </a> -->
     <a href="https://openai.com/" target="_blank">
-    <img src="https://readme-components.vercel.app/api?component=logo&logo=openai&text=false&animation=spin&fill=black&textfill=9847B9&" alt="openai" /> 
+    <img src="https://readme-components.vercel.app/api?component=logo&logo=openai&text=false&animation=spin&fill=black&textfill=D78DF4&" alt="openai" /> 
     </a> 
     <a href="https://gemini.google.com/" target="_blank">
-    <img src="https://readme-components-eta.vercel.app/api?component=logo&logo=googlegemini&text=false&animation=spin&fill=black&textfill=9847B9&" alt="gemini" /> 
+    <img src="https://readme-components-eta.vercel.app/api?component=logo&logo=googlegemini&text=false&animation=spin&fill=black&textfill=D78DF4&" alt="gemini" /> 
     </a>
     <a href="https://claude.ai/" target="_blank">
-    <img src="https://readme-components-eta.vercel.app/api?component=logo&logo=claude&text=false&animation=spin&fill=black&textfill=9847B9&" alt="claude" /> 
+    <img src="https://readme-components-eta.vercel.app/api?component=logo&logo=claude&text=false&animation=spin&fill=black&textfill=D78DF4&" alt="claude" /> 
     </a>
     <a href="https://www.langchain.com/langgraph" target="_blank">
-    <img src="https://readme-components-eta.vercel.app/api?component=logo&logo=langchain&text=false&animation=spin&fill=black&textfill=9847B9&" alt="langgraph" /> 
+    <img src="https://readme-components-eta.vercel.app/api?component=logo&logo=langchain&text=false&animation=spin&fill=black&textfill=D78DF4&" alt="langgraph" /> 
     </a> 
 </p>
 
