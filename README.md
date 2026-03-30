@@ -154,11 +154,11 @@
 ## <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="35px">&nbsp;  *𝓖𝓲𝓽𝓱𝓾𝓫 𝓢𝓽𝓪𝓽𝓼* 
 
 <div align="center">
-  <a href="https://github.com/anuraghazra/github-readme-stats">
+  <!-- <a href="https://github.com/anuraghazra/github-readme-stats">
     <img height="165" src="https://github-readme-stats.vercel.app/api?username=SleepyLGod&show_icons=true&theme=dracula&hide_border=true&rank_icon=github" alt="GitHub stats"/>
-  </a>
+  </a> -->
   <a href="https://github.com/denvercoder1/github-readme-streak-stats">
-    <img height="165" src="https://streak-stats.demolab.com?user=SleepyLGod&theme=monokai&hide_border=true" alt="GitHub streak"/>
+    <img height="165" src="https://streak-stats.demolab.com?user=SleepyLGod&theme=graywhite&hide_border=true" alt="GitHub streak"/>
   </a>
 </div>
 
@@ -173,12 +173,13 @@ buefy
 aura
 graywhite
 swift
+monokai
 -->
 
 <div align="center">
-    <img src="./icons/assests/borderseperator.gif">
+    <a href="#"><img src="./icons/header_sketch.png"></a>
 </div>
 
 <div align="center">
-    <a href="#"><img src="./icons/header_1.png"></a>
+    <img src="./icons/assests/borderseperator.gif">
 </div>
