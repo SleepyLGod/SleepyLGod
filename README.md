@@ -177,7 +177,7 @@ monokai
 -->
 
 <div align="center">
-    <a href="#"><img src="./icons/header_sketch.png"></a>
+    <img src="./icons/header_sketch.png">
 </div>
 
 <div align="center">
