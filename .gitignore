@@ -1,2 +1,4 @@
 header-icons/*
 timeline-drop/node_modules/*
+__pycache__/
+*.py[cod]

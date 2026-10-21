@@ -1,22 +1,50 @@
-name: Full-year calendar
+name: Refresh profile assets
+
 on:
-  # Schedule daily updates
-  schedule: [{cron: "0 0 * * *"}]
-  # (optional) Run workflow manually
+  schedule:
+    - cron: "17 22 * * *" # 06:17 Hong Kong time; GitHub may delay scheduled jobs.
   workflow_dispatch:
-  # (optional) Run workflow when pushing on master/main
-  push: {branches: ["master", "main"]}
+  push:
+    branches: [main]
+    paths:
+      - scripts/update_profile.py
+      - .github/workflows/calendar.yml
+
+permissions:
+  contents: read
+
+concurrency:
+  group: profile-assets-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
-  github-metrics:
+  update:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     permissions:
       contents: write
     steps:
-      - name: Metrics embed
-      - uses: lowlighter/metrics@latest
+      - name: Check out repository
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - name: Set up Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
         with:
-          filename: metrics.plugin.isocalendar.fullyear.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
+          python-version: "3.12"
+      - name: Test contribution calculations and failure handling
+        run: python -m unittest discover -s tests -v
+      - name: Generate repository-hosted contribution cards
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PROFILE_USER: ${{ github.repository_owner }}
+        run: python scripts/update_profile.py --username "$PROFILE_USER"
+      - name: Commit updated cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/profile/activity-*.svg assets/profile/calendar-*.svg
+          if git diff --cached --quiet; then
+            echo "Profile cards are already current."
+            exit 0
+          fi
+          git commit -m "chore: refresh profile activity [skip ci]"
+          git push

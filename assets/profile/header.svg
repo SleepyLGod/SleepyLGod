@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="116" viewBox="0 0 760 116" role="img" aria-labelledby="title description">
+  <title id="title">Hi there, I'm Haodong Lu · SleepyLGod</title>
+  <desc id="description">An animated purple header. Research interests: LLM systems, ML systems, databases, and key–value storage.</desc>
+  <style>
+    .typewriter { animation: typing 9s steps(54, end) infinite; }
+    @keyframes typing { 0% { width: 0px; } 40%, 85% { width: 540px; } 100% { width: 0px; } }
+    @media (prefers-reduced-motion: reduce) { .typewriter { animation: none; } }
+  </style>
+  <defs>
+    <linearGradient id="accent" x2="1" y2="0"><stop stop-color="#c4a0ff"/><stop offset="1" stop-color="#89dceb"/></linearGradient>
+    <clipPath id="reveal"><rect class="typewriter" x="114" y="74" width="540" height="22"/></clipPath>
+  </defs>
+  <rect x="0.5" y="0.5" width="759" height="115" rx="16" fill="#141021" stroke="#35274b"/>
+  <g fill="#c4a0ff"><circle cx="26" cy="23" r="3"/><circle cx="38" cy="23" r="3" opacity=".65"/><circle cx="50" cy="23" r="3" opacity=".35"/></g>
+  <g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" text-anchor="middle">
+    <text x="380" y="58" fill="url(#accent)" font-size="30" font-weight="600">Hi there, I'm Haodong Lu</text>
+    <text x="380" y="91" fill="#c7bada" font-size="14" clip-path="url(#reveal)">LLM systems · ML systems · Databases · Key–value storage</text>
+  </g>
+  <path d="M30 100h46m608 0h46" stroke="url(#accent)" stroke-width="2" stroke-linecap="round" opacity=".6"/>
+</svg>
