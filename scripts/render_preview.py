@@ -63,6 +63,8 @@ def main():
     args = parser.parse_args()
     body = subprocess.check_output([
         "pandoc", "--from=gfm", "--to=html5", str(ROOT / "README.md")], text=True)
+    # Archived blocks remain in README.md but must not load images in the preview.
+    body = re.sub(r"<!--.*?-->", "", body, flags=re.S)
     body = re.sub(r'\b(src|srcset)="(\./[^\"]+)"', embed, body)
     if re.search(r'\b(?:src|srcset)="https?://', body):
         raise ValueError("README still embeds an external image")

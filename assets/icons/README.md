@@ -4,7 +4,7 @@ These SVGs are checked into the repository so the profile does not depend on an
 icon CDN at viewing time.
 
 - Devicon **v2.17.0**: C, C++, Python, Java, Go, TypeScript, Node.js, Linux, Git,
-  Neovim, PostgreSQL, Redis, Docker, Kubernetes, PyTorch, TensorFlow.
+  Neovim, PostgreSQL, Redis, Docker, Kubernetes, PyTorch, TensorFlow, Pandas, Neo4j.
   Source: <https://github.com/devicons/devicon/tree/v2.17.0/icons>.
   License: `LICENSE-devicon.txt`.
 - Simple Icons **15.16.0**: NVIDIA, OpenAI, Google Gemini, Claude, LangGraph.
@@ -14,3 +14,10 @@ icon CDN at viewing time.
 - The Rust PNG is an existing repository file at `icons/rust.png`.
 
 Brand names and logos belong to their respective owners. SVG paths are unmodified.
+
+`pytorch-spin.svg` wraps the original PyTorch paths in a slow, 24-second CSS
+rotation. Reduced-motion preferences disable the rotation. Other visible icons
+remain static. Unused icons are retained so the commented tool list can be restored.
+
+`pandas-dark.svg` and `neo4j-dark.svg` lighten dark fills for contrast on dark
+backgrounds. Only colors change; their SVG paths remain the same.

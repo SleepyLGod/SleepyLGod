@@ -1,14 +1,7 @@
-name: Refresh profile assets
+name: Generate optional activity cards
 
 on:
-  schedule:
-    - cron: "17 22 * * *" # 06:17 Hong Kong time; GitHub may delay scheduled jobs.
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - scripts/update_profile.py
-      - .github/workflows/calendar.yml
 
 permissions:
   contents: read

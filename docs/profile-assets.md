@@ -1,77 +1,98 @@
-# Repository-hosted profile assets
+# Profile visuals and optional services
 
-The README loads all images from this repository. Viewing the profile does not
-call a typing-animation service, badge server, statistics-card deployment, or icon CDN.
-Ordinary links to a homepage, documentation, LinkedIn, and Spotify still open those sites.
+Every visible README image is a checked-in repository file. Viewing the profile
+requires no third-party card endpoint, icon CDN, web font, or running Codex session.
+The identity and research interests appear first; awards, founder details, older
+tools, and activity cards are preserved in HTML comments.
 
-## What updates automatically
+## Header, icons, and previews
 
-`.github/workflows/calendar.yml` runs daily at approximately **06:17 Hong Kong
-time**, on manual dispatch, and when the generator changes on `main`.
-GitHub may delay schedules and may disable scheduled workflows in inactive public repositories.
+The greeting says **Hi there!** and contains no personal name. Dancing Script
+letter outlines are stored in the SVG, so visitors need no font installation.
+The original cursive PhD line is retained as text. The font and its SIL Open Font
+License are under `assets/fonts/`.
 
-The workflow uses the built-in `GITHUB_TOKEN` to read publicly visible contribution
-data from GitHub's GraphQL API and commit four SVG files under `assets/profile/`.
-No personal access token, `METRICS_TOKEN`, separate server, or third-party card
-deployment is required. The workflow needs repository permission to write contents.
+To rebuild the greeting with an installed `fonttools` package:
 
-The cards cover the last **365 UTC dates**. A contribution follows GitHub's calendar
-definition; it is not a commit count. Streaks are calculated within that window.
-A zero-count day still in progress does not break yesterday's current streak.
-Private contribution visibility is limited by the token and GitHub's public calendar settings.
-Each snapshot displays its date. Failed fetches or invalid/partial calendars leave
-the previous checked-in cards available.
+```sh
+python scripts/build_header.py
+```
 
-## Generate or check locally
+Only the PyTorch icon rotates, slowly, once every 24 seconds. Its SVG respects
+reduced-motion preferences. Other icons are static, and the existing local lo-fi
+GIF remains unchanged. See `assets/icons/README.md` for icon sources and licenses.
 
-Python 3.12 and its standard library are sufficient:
+To build a standalone, animated preview with an installed Pandoc:
+
+```sh
+python scripts/render_preview.py --output /tmp/sleepylgod-profile.html
+```
+
+The HTML embeds its images and styles. Comments in the README are excluded from
+the preview, including their images. Screenshots under `docs/previews/` show the
+reviewed desktop light/dark and mobile layouts.
+
+## GitHub statistics
+
+The contribution calendar and streak cards are commented out because they repeat
+GitHub's native contribution section. No scheduled update is enabled.
+`Generate optional activity cards` is available on manual dispatch; the Python
+generator, its tests, and the last snapshot are retained for future use.
 
 ```sh
 python -m unittest discover -s tests -v
 python scripts/update_profile.py --username SleepyLGod
 ```
 
-To build an animated, standalone preview using an installed Pandoc:
+The generator uses an existing `GH_TOKEN` or `GITHUB_TOKEN` to read GitHub's API.
+The managed cloud environment currently blocks `api.github.com`; this restriction
+does not establish whether a GitHub-hosted Actions run can access it. Existing
+snapshots are preserved if a fetch or validation fails.
 
-```sh
-python scripts/render_preview.py --output /tmp/sleepylgod-profile.html
-```
+### Reusing an upstream renderer
 
-Open the resulting HTML file in a browser. Its images and styles are embedded;
-it needs no server, cloud session, or external widget service to display.
+Running another project's renderer under your own control is possible. Prefer
+**a pinned renderer in GitHub Actions → SVG files committed to this repository**.
+Readers then see the last successful file even when the next refresh fails.
+An always-on server adds deployment and availability work and is unnecessary for
+periodically refreshed profile statistics.
 
-The second command uses an existing `GH_TOKEN` or `GITHUB_TOKEN` binding. Never put
-a token in the README or command arguments. The cloud environment currently blocks
-`api.github.com`; that cloud-specific restriction is separate from GitHub Actions.
+The original [github-readme-stats README](https://github.com/anuraghazra/github-readme-stats#readme)
+currently says the repository is no longer maintained, recommends successor
+projects, and explicitly calls the shared public endpoint best-effort. It also
+documents an [Actions-based generation workflow](https://github.com/anuraghazra/github-readme-stats#github-actions).
+Choose a maintained successor, review and pin its version, and check which token
+scopes and card types it actually needs before enabling it. No replacement card
+has been added to the visible profile merely to fill space.
 
-The initial checked-in snapshot was generated from the exact daily counts in
-GitHub's official public calendar HTML. To reproduce that import without API credentials:
+Self-hosting reduces dependence on somebody else's deployment. GitHub API policy,
+rate limits, token expiration, and upstream maintenance can still affect refreshes.
+A dated cached image remains available, but its data can become stale.
 
-```sh
-curl --fail --location --output /tmp/calendar-previous.html \
-  'https://github.com/users/SleepyLGod/contributions?from=2025-01-01&to=2025-12-31'
-curl --fail --location --output /tmp/calendar-current.html \
-  'https://github.com/users/SleepyLGod/contributions?from=2026-01-01&to=2026-12-31'
-python scripts/update_profile.py --username SleepyLGod \
-  --calendar-html /tmp/calendar-previous.html /tmp/calendar-current.html
-```
+## Spotify
 
-Use the current and previous calendar years when refreshing in a later year.
-The importer rejects missing dates and unrecognized counts rather than fabricating data.
-Automatic Actions updates use the supported API rather than the HTML importer.
+The visible profile currently links to the official Spotify profile. It does not
+load a shared Spotify widget or display fabricated listening data.
 
-## Static assets and optional services
+The upstream [spotify-github-profile README](https://github.com/kittinan/spotify-github-profile#readme)
+documents a move from the old Vercel endpoint to a separately hosted endpoint.
+Its full service includes OAuth and token storage, so copying its public image URL
+does not create an independently hosted integration.
 
-- The animated SVG header and existing lo-fi GIF are local files. SVG animation
-  does not execute JavaScript. Reduced-motion preferences are respected by the header.
-- Tool icons are vendored at pinned versions; see `assets/icons/README.md` for sources.
-- Live Spotify listening activity requires Spotify OAuth credentials. The README
-  uses an official Spotify profile link until such an integration is explicitly configured.
-- A true visitor counter requires a request-counting service. A static repository
-  snapshot cannot count page visits, so the unreliable external counter was removed.
-- Codex cloud sessions are used for editing and previewing. The public profile is
-  served by GitHub and continues displaying checked-in assets when the cloud session ends.
+For this single-user profile, the recommended future integration is an authorized
+**recently played snapshot**, generated by Actions and committed as a local SVG.
+It should display the snapshot date, cache cover art if used, and retain the last
+successful image on a failed refresh. It should not claim to be live playback.
+Actions scheduling is periodic and may be delayed.
 
-To publish this design on the profile, merge the README, assets, generator, tests,
-and workflow into the default branch of `SleepyLGod/SleepyLGod`. Open **Actions →
-Refresh profile assets → Run workflow** to check the first live update.
+That integration still needs a Spotify application and OAuth authorization. No
+Spotify client or refresh-token binding is present in the current cloud environment.
+If enabled later, store the following in the GitHub repository's Actions secrets,
+never in chat, README text, or version-controlled files:
+
+- `SPOTIFY_CLIENT_ID`
+- `SPOTIFY_CLIENT_SECRET`
+- `SPOTIFY_REFRESH_TOKEN`
+
+A Spotify updater has not been installed or authenticated. The current profile
+needs none of those secrets to render correctly.
