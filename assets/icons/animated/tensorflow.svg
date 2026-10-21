@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="70" height="60" viewBox="0 0 70 60" role="img">
+  <title>TensorFlow</title>
+  <style>
+    foreignObject svg {
+        width: 30px;
+        height: 30px;
+        line-height: 40px;
+        margin-top:2px;
+        text-align: center;
+        fill: #C76AED;
+        animation : spin 4s linear infinite;
+      }
+
+      .gradient-btn {
+        display: flex;
+        height: 57px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 50px;
+        float: left;
+        color: #fff;
+        box-shadow: 5px 5px 2px -2px #a5a5a5;
+        text-transform: capitalize;
+        font-size: 20px;
+      }
+      .text {
+        margin-top: 16px;
+        margin-left: 10px;
+        font-size: 1.1rem;
+        white-space:nowrap;
+      }
+      .svg {
+        margin-top: 10px;
+      }
+      .btn-color {
+        background: black;
+        color : #C76AED ;
+      }
+      @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+      @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+      @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+@media (prefers-reduced-motion: reduce) { foreignObject svg { animation: none; } }
+</style>
+  <foreignObject height="60" width="70">
+    <div class="gradient-btn btn-color" xmlns="http://www.w3.org/1999/xhtml">
+      <div class="svg"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>TensorFlow icon</title><path d="M19.6 12l.1 4.7-3.1-1.8v6.7L12.5 24V0l10.2 5.9v5.3l-6.1-3.6v2.7zM1.3 5.9L11.5 0v24l-4.1-2.4v-14l-6.1 3.6z"/></svg></div>
+    </div>
+  </foreignObject>
+</svg>

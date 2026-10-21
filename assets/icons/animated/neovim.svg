@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="70" height="60" viewBox="0 0 70 60" role="img">
+  <title>Neovim</title>
+  <style>
+    foreignObject svg {
+        width: 30px;
+        height: 30px;
+        line-height: 40px;
+        margin-top:2px;
+        text-align: center;
+        fill: #B64EE0;
+        animation : spin 4s linear infinite;
+      }
+
+      .gradient-btn {
+        display: flex;
+        height: 57px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 50px;
+        float: left;
+        color: #fff;
+        box-shadow: 5px 5px 2px -2px #a5a5a5;
+        text-transform: capitalize;
+        font-size: 20px;
+      }
+      .text {
+        margin-top: 16px;
+        margin-left: 10px;
+        font-size: 1.1rem;
+        white-space:nowrap;
+      }
+      .svg {
+        margin-top: 10px;
+      }
+      .btn-color {
+        background: black;
+        color : #B64EE0 ;
+      }
+      @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+      @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+      @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+@media (prefers-reduced-motion: reduce) { foreignObject svg { animation: none; } }
+</style>
+  <foreignObject height="60" width="70">
+    <div class="gradient-btn btn-color" xmlns="http://www.w3.org/1999/xhtml">
+      <div class="svg"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Neovim icon</title><path d="M2.902,4.998l3.864,5.754v12.151l-4.207-4.198V5.344L2.902,4.998 M2.97,4.287L2.107,5.158v13.734l5.112,5.101 v-13.38L2.97,4.287L2.97,4.287z M21.858,5.207L16.676,0v13.331l4.335,6.519c0,0,0.882-0.957,0.882-0.957L21.858,5.207z M7.215,0.001 l13.29,20.28L16.786,24L3.489,3.765L7.215,0.001z"/></svg></div>
+    </div>
+  </foreignObject>
+</svg>

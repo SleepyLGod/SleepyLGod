@@ -15,9 +15,25 @@ icon CDN at viewing time.
 
 Brand names and logos belong to their respective owners. SVG paths are unmodified.
 
-`pytorch-spin.svg` wraps the original PyTorch paths in a slow, 24-second CSS
-rotation. Reduced-motion preferences disable the rotation. Other visible icons
-remain static. Unused icons are retained so the commented tool list can be restored.
-
 `pandas-dark.svg` and `neo4j-dark.svg` lighten dark fills for contrast on dark
 backgrounds. Only colors change; their SVG paths remain the same.
+
+## Active animated toolbox
+
+The visible README uses `animated/*.svg`. `scripts/build_tool_icons.py` combines
+the cached monochrome logos with the original **readme-components** layout and
+CSS, including its **4s linear infinite** spin and black rounded badge.
+
+- Renderer source: <https://github.com/harish-sethuraman/readme-components/tree/923a60dead6c960276d3cf78d7100c82f9d9dfbe/src/logo-component>.
+- Its MIT license is retained in `LICENSE-readme-components.txt`.
+- `animated/style.css` is the upstream CSS rendered with the original black fill
+  and purple logo color. The generator substitutes the per-icon purple colors
+  and adds a reduced-motion override.
+- `animated/icons.json` records each logo's source and color. Most original logos
+  come from **simple-icons@3.5.0**, the upstream component's declared dependency;
+  its CC0 license is in `LICENSE-simple-icons-3.5.md`.
+- Newer Gemini, Claude, and LangGraph logos use the already vendored
+  **simple-icons@15.16.0** data. Sources are cached in `monochrome/`.
+
+The renderer outputs are committed files. Viewing the profile makes no requests
+to the original Vercel service and needs no package installation.

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="70" height="60" viewBox="0 0 70 60" role="img">
+  <title>PyTorch</title>
+  <style>
+    foreignObject svg {
+        width: 30px;
+        height: 30px;
+        line-height: 40px;
+        margin-top:2px;
+        text-align: center;
+        fill: #C76AED;
+        animation : spin 4s linear infinite;
+      }
+
+      .gradient-btn {
+        display: flex;
+        height: 57px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 50px;
+        float: left;
+        color: #fff;
+        box-shadow: 5px 5px 2px -2px #a5a5a5;
+        text-transform: capitalize;
+        font-size: 20px;
+      }
+      .text {
+        margin-top: 16px;
+        margin-left: 10px;
+        font-size: 1.1rem;
+        white-space:nowrap;
+      }
+      .svg {
+        margin-top: 10px;
+      }
+      .btn-color {
+        background: black;
+        color : #C76AED ;
+      }
+      @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+      @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+      @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+@media (prefers-reduced-motion: reduce) { foreignObject svg { animation: none; } }
+</style>
+  <foreignObject height="60" width="70">
+    <div class="gradient-btn btn-color" xmlns="http://www.w3.org/1999/xhtml">
+      <div class="svg"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>PyTorch icon</title><path d="M12.005.04l-7.03 7.03a9.832 9.832 0 0 0 0 13.975 9.833 9.833 0 0 0 13.976 0c3.97-3.887 3.972-10.171.084-13.976l-1.738 1.737c2.895 2.895 2.895 7.608 0 10.503-2.894 2.894-7.608 2.894-10.503 0C3.9 16.414 3.9 11.7 6.794 8.806l4.632-4.631.58-.663zm3.556 3.886a1.323 1.323 0 0 0-1.323 1.323 1.323 1.323 0 0 0 1.323 1.323 1.323 1.323 0 0 0 1.323-1.323 1.323 1.323 0 0 0-1.323-1.323z"/></svg></div>
+    </div>
+  </foreignObject>
+</svg>

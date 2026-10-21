@@ -1,6 +1,7 @@
-# Profile project selection
+# Optional profile projects
 
-The selected project descriptions were checked against their public READMEs:
+Selected Projects is currently inside one HTML comment in `README.md`, including
+its heading and complete table. The descriptions were checked against their public READMEs:
 
 | Project | Source | Profile summary |
 | --- | --- | --- |
@@ -9,19 +10,15 @@ The selected project descriptions were checked against their public READMEs:
 | oh-my-score | <https://github.com/SleepyLGod/oh-my-score#readme> | Audio-to-MIDI, piano playback, and code-to-MIDI sketches. |
 | Tonepath | <https://github.com/SleepyLGod/Tonepath#readme> | A local terminal music-agent prototype with explainable listening paths. |
 
-The first two reflect semantic data processing and agentic data systems. The
-music projects show a different interest without repeating research headings.
-The older Qt project, Challenge Cup award, and founder information are preserved
-in a README comment.
+The first two reflect semantic data processing and agentic systems. The music
+projects show another interest. The older Qt project, Challenge Cup award, and
+founder information are also preserved in a separate README comment.
 
 ## Tool selection
 
-One compact group replaces the previous three categories. Python, C++, PyTorch,
-CUDA, PostgreSQL, Docker, Kubernetes, LangGraph, and Git remain visible.
-Pandas and Neo4j are declared dependencies of `agent-memory`; Arrow appears in
-its benchmark dependencies. LOTUS and DSPy are also direct dependencies, so they
-are included as text links instead of adding more provider logos.
+The toolbox is one wrapping group. All original tools and provider logos are
+visible, together with Pandas and Neo4j. It has no category labels or extra text
+links. The complete list is in `assets/icons/animated/icons.json`.
 
-C, Java, Go, Rust, TypeScript, Linux, Neovim, Redis, Node.js, TensorFlow, and
-the OpenAI/Gemini/Claude logos are kept in a commented list. This is a choice of
-profile emphasis, not a claim that these technologies are obsolete.
+All badges use the original readme-components four-second spin and are checked
+into the repository. Neither the animation nor the logos need a live service.

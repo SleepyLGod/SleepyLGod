@@ -1,0 +1,170 @@
+[
+  {
+    "title": "C++",
+    "slug": "cplusplus",
+    "href": "https://isocpp.org/",
+    "color": "9847B9",
+    "source": "simple-icons@3.5.0/icons/cplusplus.svg"
+  },
+  {
+    "title": "C",
+    "slug": "c",
+    "href": "https://www.cprogramming.com/",
+    "color": "9847B9",
+    "source": "simple-icons@3.5.0/icons/c.svg"
+  },
+  {
+    "title": "CUDA / NVIDIA",
+    "slug": "nvidia",
+    "href": "https://developer.nvidia.com/cuda-toolkit",
+    "color": "9847B9",
+    "source": "simple-icons@3.5.0/icons/nvidia.svg"
+  },
+  {
+    "title": "Python",
+    "slug": "python",
+    "href": "https://www.python.org/",
+    "color": "9847B9",
+    "source": "simple-icons@3.5.0/icons/python.svg"
+  },
+  {
+    "title": "Java",
+    "slug": "java",
+    "href": "https://www.java.com/",
+    "color": "9847B9",
+    "source": "simple-icons@3.5.0/icons/java.svg"
+  },
+  {
+    "title": "Go",
+    "slug": "go",
+    "href": "https://go.dev/",
+    "color": "9847B9",
+    "source": "simple-icons@3.5.0/icons/go.svg"
+  },
+  {
+    "title": "Rust",
+    "slug": "rust",
+    "href": "https://www.rust-lang.org/",
+    "color": "9847B9",
+    "source": "simple-icons@3.5.0/icons/rust.svg"
+  },
+  {
+    "title": "TypeScript",
+    "slug": "typescript",
+    "href": "https://www.typescriptlang.org/",
+    "color": "9847B9",
+    "source": "simple-icons@3.5.0/icons/typescript.svg"
+  },
+  {
+    "title": "Node.js",
+    "slug": "nodejs",
+    "href": "https://nodejs.org/",
+    "color": "9847B9",
+    "source": "simple-icons@3.5.0/icons/node-dot-js.svg"
+  },
+  {
+    "title": "Linux",
+    "slug": "linux",
+    "href": "https://www.linux.org/",
+    "color": "A139CC",
+    "source": "simple-icons@3.5.0/icons/linux.svg"
+  },
+  {
+    "title": "Git",
+    "slug": "git",
+    "href": "https://git-scm.com/",
+    "color": "B64EE0",
+    "source": "simple-icons@3.5.0/icons/git.svg"
+  },
+  {
+    "title": "Neovim",
+    "slug": "neovim",
+    "href": "https://neovim.io/",
+    "color": "B64EE0",
+    "source": "simple-icons@3.5.0/icons/neovim.svg"
+  },
+  {
+    "title": "PostgreSQL",
+    "slug": "postgresql",
+    "href": "https://www.postgresql.org/",
+    "color": "B64EE0",
+    "source": "simple-icons@3.5.0/icons/postgresql.svg"
+  },
+  {
+    "title": "Redis",
+    "slug": "redis",
+    "href": "https://redis.io/",
+    "color": "B64EE0",
+    "source": "simple-icons@3.5.0/icons/redis.svg"
+  },
+  {
+    "title": "Docker",
+    "slug": "docker",
+    "href": "https://www.docker.com/",
+    "color": "B64EE0",
+    "source": "simple-icons@3.5.0/icons/docker.svg"
+  },
+  {
+    "title": "Kubernetes",
+    "slug": "kubernetes",
+    "href": "https://kubernetes.io/",
+    "color": "B64EE0",
+    "source": "simple-icons@3.5.0/icons/kubernetes.svg"
+  },
+  {
+    "title": "Pandas",
+    "slug": "pandas",
+    "href": "https://pandas.pydata.org/",
+    "color": "B64EE0",
+    "source": "simple-icons@3.5.0/icons/pandas.svg"
+  },
+  {
+    "title": "Neo4j",
+    "slug": "neo4j",
+    "href": "https://neo4j.com/",
+    "color": "B64EE0",
+    "source": "simple-icons@3.5.0/icons/neo4j.svg"
+  },
+  {
+    "title": "PyTorch",
+    "slug": "pytorch",
+    "href": "https://pytorch.org/",
+    "color": "C76AED",
+    "source": "simple-icons@3.5.0/icons/pytorch.svg"
+  },
+  {
+    "title": "TensorFlow",
+    "slug": "tensorflow",
+    "href": "https://www.tensorflow.org/",
+    "color": "C76AED",
+    "source": "simple-icons@3.5.0/icons/tensorflow.svg"
+  },
+  {
+    "title": "OpenAI",
+    "slug": "openai",
+    "href": "https://openai.com/",
+    "color": "D78DF4",
+    "source": "simple-icons@3.5.0/icons/openai.svg"
+  },
+  {
+    "title": "Google Gemini",
+    "slug": "googlegemini",
+    "href": "https://gemini.google.com/",
+    "color": "D78DF4",
+    "source": "simple-icons@15.16.0/icons/googlegemini.svg"
+  },
+  {
+    "title": "Claude",
+    "slug": "claude",
+    "href": "https://claude.ai/",
+    "color": "D78DF4",
+    "source": "simple-icons@15.16.0/icons/claude.svg"
+  },
+  {
+    "title": "LangGraph",
+    "slug": "langgraph",
+    "href": "https://www.langchain.com/langgraph",
+    "color": "D78DF4",
+    "source": "simple-icons@15.16.0/icons/langgraph.svg"
+  }
+]

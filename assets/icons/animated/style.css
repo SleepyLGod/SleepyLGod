@@ -1,0 +1,41 @@
+
+    foreignObject svg {
+        width: 30px;
+        height: 30px;
+        line-height: 40px;
+        margin-top:2px;
+        text-align: center;
+        fill: #9847B9;
+        animation : spin 4s linear infinite;
+      }
+
+      .gradient-btn {
+        display: flex;
+        height: 57px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 50px;
+        float: left;
+        color: #fff;
+        box-shadow: 5px 5px 2px -2px #a5a5a5;
+        text-transform: capitalize;
+        font-size: 20px;
+      }
+      .text {
+        margin-top: 16px;
+        margin-left: 10px;
+        font-size: 1.1rem;
+        white-space:nowrap;
+      }
+      .svg {
+        margin-top: 10px;
+      }
+      .btn-color {
+        background: black;
+        color : #9847B9 ;
+      }
+      @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+      @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+      @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+@media (prefers-reduced-motion: reduce) { foreignObject svg { animation: none; } }

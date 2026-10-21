@@ -2,12 +2,12 @@
 
 Every visible README image is a checked-in repository file. Viewing the profile
 requires no third-party card endpoint, icon CDN, web font, or running Codex session.
-The identity and research interests appear first; awards, founder details, older
-tools, and activity cards are preserved in HTML comments.
+The identity and research interests appear first; awards, founder details,
+Selected Projects, and activity cards are preserved in HTML comments.
 
 ## Header, icons, and previews
 
-The greeting says **Hi there!** and contains no personal name. Dancing Script
+The greeting says **Hi There!** and contains no personal name. Dancing Script
 letter outlines are stored in the SVG, so visitors need no font installation.
 The original cursive PhD line is retained as text. The font and its SIL Open Font
 License are under `assets/fonts/`.
@@ -18,9 +18,18 @@ To rebuild the greeting with an installed `fonttools` package:
 python scripts/build_header.py
 ```
 
-Only the PyTorch icon rotates, slowly, once every 24 seconds. Its SVG respects
-reduced-motion preferences. Other icons are static, and the existing local lo-fi
-GIF remains unchanged. See `assets/icons/README.md` for icon sources and licenses.
+The complete toolbox uses the original readme-components presentation: black
+rounded badges, purple logos, and a four-second linear spin. Its original layout
+and CSS are cached locally with their MIT license. No Vercel endpoint is used.
+Reduced-motion preferences disable the animation. The local lo-fi GIF is unchanged.
+
+To rebuild all cached badges using only Python's standard library:
+
+```sh
+python scripts/build_tool_icons.py
+```
+
+See `assets/icons/README.md` for sources, the pinned upstream commit, and licenses.
 
 To build a standalone, animated preview with an installed Pandoc:
 

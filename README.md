@@ -1,12 +1,12 @@
 <p align="center">
-  <img src="./assets/profile/header.svg" width="760" alt="Hi there!" />
+  <img src="./assets/profile/header.svg" width="760" alt="Hi There!" />
 </p>
 
-<p align="center"><em>𝓟𝓱𝓓 𝓼𝓽𝓾𝓭𝔂. @𝓒𝓤𝓗𝓚 𝓗𝓚𝓢𝓐𝓡</em></p>
+<p align="center"><em>𝓟𝓱𝓓 𝓢𝓽𝓾𝓭𝔂. @𝓒𝓤𝓗𝓚 𝓗𝓚𝓢𝓐𝓡</em></p>
 
 <p align="center">
-  Research interests<br />
-  <strong>Semantic data processing · AI systems<br />LLM infrastructure · Agentic data systems</strong>
+  <em>𝓡𝓮𝓼𝓮𝓪𝓻𝓬𝓱 𝓘𝓷𝓽𝓮𝓻𝓮𝓼𝓽𝓼</em><br />
+  <strong>Semantic Data Processing, Agentic AI Systems, LLM Infrastructure, DBMS</strong>
 </p>
 
 <p align="center">
@@ -27,7 +27,9 @@ Previous profile details, preserved for future reuse:
 - **[qwidget-demos](https://github.com/SleepyLGod/qwidget-demos)** — Qt components I built as a freshman at HUST.
 -->
 
-### Selected projects
+<!--
+Selected Projects: temporarily hidden; content preserved.
+### *𝓢𝓮𝓵𝓮𝓬𝓽𝓮𝓭 𝓟𝓻𝓸𝓳𝓮𝓬𝓽𝓼*
 
 <table>
   <tr>
@@ -51,49 +53,38 @@ Previous profile details, preserved for future reuse:
     </td>
   </tr>
 </table>
-
-### Toolbox
-
-<p align="center">
-  <a href="https://www.python.org/"><img src="./assets/icons/python.svg" width="40" height="40" alt="Python" title="Python" /></a> &nbsp;
-  <a href="https://isocpp.org/"><img src="./assets/icons/cplusplus.svg" width="40" height="40" alt="C++" title="C++" /></a> &nbsp;
-  <a href="https://pytorch.org/"><img src="./assets/icons/pytorch-spin.svg" width="40" height="40" alt="PyTorch" title="PyTorch" /></a> &nbsp;
-  <a href="https://developer.nvidia.com/cuda-toolkit"><img src="./assets/icons/nvidia.svg" width="40" height="40" alt="CUDA / NVIDIA" title="CUDA / NVIDIA" /></a> &nbsp;
-  <a href="https://pandas.pydata.org/"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/pandas-dark.svg" /><img src="./assets/icons/pandas.svg" width="40" height="40" alt="Pandas" title="Pandas" /></picture></a> &nbsp;
-  <a href="https://neo4j.com/"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/icons/neo4j-dark.svg" /><img src="./assets/icons/neo4j.svg" width="40" height="40" alt="Neo4j" title="Neo4j" /></picture></a> &nbsp;
-  <a href="https://www.postgresql.org/"><img src="./assets/icons/postgresql.svg" width="40" height="40" alt="PostgreSQL" title="PostgreSQL" /></a> &nbsp;
-  <a href="https://www.docker.com/"><img src="./assets/icons/docker.svg" width="40" height="40" alt="Docker" title="Docker" /></a> &nbsp;
-  <a href="https://kubernetes.io/"><img src="./assets/icons/kubernetes.svg" width="40" height="40" alt="Kubernetes" title="Kubernetes" /></a> &nbsp;
-  <a href="https://www.langchain.com/langgraph"><img src="./assets/icons/langgraph.svg" width="40" height="40" alt="LangGraph" title="LangGraph" /></a> &nbsp;
-  <a href="https://git-scm.com/"><img src="./assets/icons/git.svg" width="40" height="40" alt="Git" title="Git" /></a> &nbsp;
-</p>
-
-<p align="center"><sub>
-  <a href="https://arrow.apache.org/">Arrow</a> &nbsp;·&nbsp;
-  <a href="https://github.com/lotus-data/lotus">LOTUS</a> &nbsp;·&nbsp;
-  <a href="https://dspy.ai/">DSPy</a>
-</sub></p>
-
-<!--
-Additional tools from the earlier profile. Hidden for focus, not obsolete.
-<p align="center">
-  <a href="https://www.cprogramming.com/"><img src="./assets/icons/c.svg" width="40" height="40" alt="C" title="C" /></a> &nbsp;
-  <a href="https://www.java.com/"><img src="./assets/icons/java.svg" width="40" height="40" alt="Java" title="Java" /></a> &nbsp;
-  <a href="https://go.dev/"><img src="./assets/icons/go.svg" width="40" height="40" alt="Go" title="Go" /></a> &nbsp;
-  <a href="https://www.rust-lang.org/"><img src="./icons/rust.png" width="40" height="40" alt="Rust" title="Rust" /></a> &nbsp;
-  <a href="https://www.typescriptlang.org/"><img src="./assets/icons/typescript.svg" width="40" height="40" alt="TypeScript" title="TypeScript" /></a> &nbsp;
-  <a href="https://www.linux.org/"><img src="./assets/icons/linux.svg" width="40" height="40" alt="Linux" title="Linux" /></a> &nbsp;
-  <a href="https://neovim.io/"><img src="./assets/icons/neovim.svg" width="40" height="40" alt="Neovim" title="Neovim" /></a> &nbsp;
-  <a href="https://redis.io/"><img src="./assets/icons/redis.svg" width="40" height="40" alt="Redis" title="Redis" /></a> &nbsp;
-  <a href="https://nodejs.org/"><img src="./assets/icons/nodejs.svg" width="40" height="40" alt="Node.js" title="Node.js" /></a> &nbsp;
-  <a href="https://www.tensorflow.org/"><img src="./assets/icons/tensorflow.svg" width="40" height="40" alt="TensorFlow" title="TensorFlow" /></a> &nbsp;
-  <a href="https://openai.com/"><img src="./assets/icons/openai.svg" width="40" height="40" alt="OpenAI" title="OpenAI" /></a> &nbsp;
-  <a href="https://gemini.google.com/"><img src="./assets/icons/googlegemini.svg" width="40" height="40" alt="Google Gemini" title="Google Gemini" /></a> &nbsp;
-  <a href="https://claude.ai/"><img src="./assets/icons/claude.svg" width="40" height="40" alt="Claude" title="Claude" /></a> &nbsp;
-</p>
 -->
 
-<p align="center"><sub>🎧 <a href="https://open.spotify.com/user/31gepfdtbzi2ycsdpdthguc5z3cy">A little music beyond code</a></sub></p>
+### *𝓣𝓸𝓸𝓵𝓫𝓸𝔁*
+
+<p align="center">
+  <a href="https://isocpp.org/"><img src="./assets/icons/animated/cplusplus.svg" width="60" height="52" alt="C++" title="C++" /></a>
+  <a href="https://www.cprogramming.com/"><img src="./assets/icons/animated/c.svg" width="60" height="52" alt="C" title="C" /></a>
+  <a href="https://developer.nvidia.com/cuda-toolkit"><img src="./assets/icons/animated/nvidia.svg" width="60" height="52" alt="CUDA / NVIDIA" title="CUDA / NVIDIA" /></a>
+  <a href="https://www.python.org/"><img src="./assets/icons/animated/python.svg" width="60" height="52" alt="Python" title="Python" /></a>
+  <a href="https://www.java.com/"><img src="./assets/icons/animated/java.svg" width="60" height="52" alt="Java" title="Java" /></a>
+  <a href="https://go.dev/"><img src="./assets/icons/animated/go.svg" width="60" height="52" alt="Go" title="Go" /></a>
+  <a href="https://www.rust-lang.org/"><img src="./assets/icons/animated/rust.svg" width="60" height="52" alt="Rust" title="Rust" /></a>
+  <a href="https://www.typescriptlang.org/"><img src="./assets/icons/animated/typescript.svg" width="60" height="52" alt="TypeScript" title="TypeScript" /></a>
+  <a href="https://nodejs.org/"><img src="./assets/icons/animated/nodejs.svg" width="60" height="52" alt="Node.js" title="Node.js" /></a>
+  <a href="https://www.linux.org/"><img src="./assets/icons/animated/linux.svg" width="60" height="52" alt="Linux" title="Linux" /></a>
+  <a href="https://git-scm.com/"><img src="./assets/icons/animated/git.svg" width="60" height="52" alt="Git" title="Git" /></a>
+  <a href="https://neovim.io/"><img src="./assets/icons/animated/neovim.svg" width="60" height="52" alt="Neovim" title="Neovim" /></a>
+  <a href="https://www.postgresql.org/"><img src="./assets/icons/animated/postgresql.svg" width="60" height="52" alt="PostgreSQL" title="PostgreSQL" /></a>
+  <a href="https://redis.io/"><img src="./assets/icons/animated/redis.svg" width="60" height="52" alt="Redis" title="Redis" /></a>
+  <a href="https://www.docker.com/"><img src="./assets/icons/animated/docker.svg" width="60" height="52" alt="Docker" title="Docker" /></a>
+  <a href="https://kubernetes.io/"><img src="./assets/icons/animated/kubernetes.svg" width="60" height="52" alt="Kubernetes" title="Kubernetes" /></a>
+  <a href="https://pandas.pydata.org/"><img src="./assets/icons/animated/pandas.svg" width="60" height="52" alt="Pandas" title="Pandas" /></a>
+  <a href="https://neo4j.com/"><img src="./assets/icons/animated/neo4j.svg" width="60" height="52" alt="Neo4j" title="Neo4j" /></a>
+  <a href="https://pytorch.org/"><img src="./assets/icons/animated/pytorch.svg" width="60" height="52" alt="PyTorch" title="PyTorch" /></a>
+  <a href="https://www.tensorflow.org/"><img src="./assets/icons/animated/tensorflow.svg" width="60" height="52" alt="TensorFlow" title="TensorFlow" /></a>
+  <a href="https://openai.com/"><img src="./assets/icons/animated/openai.svg" width="60" height="52" alt="OpenAI" title="OpenAI" /></a>
+  <a href="https://gemini.google.com/"><img src="./assets/icons/animated/googlegemini.svg" width="60" height="52" alt="Google Gemini" title="Google Gemini" /></a>
+  <a href="https://claude.ai/"><img src="./assets/icons/animated/claude.svg" width="60" height="52" alt="Claude" title="Claude" /></a>
+  <a href="https://www.langchain.com/langgraph"><img src="./assets/icons/animated/langgraph.svg" width="60" height="52" alt="LangGraph" title="LangGraph" /></a>
+</p>
+
+<p align="center"><sub>🎧 <a href="https://open.spotify.com/user/31gepfdtbzi2ycsdpdthguc5z3cy">A Little Music Beyond Code</a></sub></p>
 
 <!--
 Optional activity cards: archived because GitHub already displays a contribution
