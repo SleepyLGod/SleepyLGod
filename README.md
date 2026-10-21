@@ -6,7 +6,7 @@
 
 <p align="center">
   <em>𝓡𝓮𝓼𝓮𝓪𝓻𝓬𝓱 𝓘𝓷𝓽𝓮𝓻𝓮𝓼𝓽𝓼</em><br />
-  <strong>Semantic Data Processing, Agentic AI Systems, LLM Infrastructure, DBMS</strong>
+  <strong>Semantic Data Processing · Agentic AI Systems · LLM Infrastructure · DBMS</strong>
 </p>
 
 <p align="center">
@@ -55,7 +55,7 @@ Selected Projects: temporarily hidden; content preserved.
 </table>
 -->
 
-### *𝓣𝓸𝓸𝓵𝓫𝓸𝔁*
+<h3 align="center"><em>𝓣𝓸𝓸𝓵𝓫𝓸𝔁</em></h3>
 
 <p align="center">
   <a href="https://isocpp.org/"><img src="./assets/icons/animated/cplusplus.svg" width="60" height="52" alt="C++" title="C++" /></a>
@@ -85,6 +85,19 @@ Selected Projects: temporarily hidden; content preserved.
 </p>
 
 <p align="center"><sub>🎧 <a href="https://open.spotify.com/user/31gepfdtbzi2ycsdpdthguc5z3cy">A Little Music Beyond Code</a></sub></p>
+
+<h3 align="center"><em>𝓒𝓸𝓭𝓮 𝓐𝓽𝓵𝓪𝓼</em></h3>
+
+<p align="center">
+  <a href="https://github.com/SleepyLGod?tab=repositories&amp;type=source">
+    <picture>
+      <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/profile/code-atlas-mobile-dark.svg" />
+      <source media="(max-width: 600px)" srcset="./assets/profile/code-atlas-mobile-light.svg" />
+      <source media="(prefers-color-scheme: dark)" srcset="./assets/profile/code-atlas-dark.svg" />
+      <img src="./assets/profile/code-atlas-light.svg" width="760" alt="Code Atlas: one dot per public original repository, colored by its primary language, with Stars earned and a dated language breakdown." />
+    </picture>
+  </a>
+</p>
 
 <!--
 Optional activity cards: archived because GitHub already displays a contribution

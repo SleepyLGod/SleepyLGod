@@ -1,0 +1,51 @@
+name: Refresh Code Atlas
+
+on:
+  schedule:
+    - cron: "37 22 * * *" # 06:37 Hong Kong time; GitHub schedules may be delayed.
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/code-atlas.yml
+      - scripts/update_code_atlas.py
+      - tests/test_code_atlas.py
+
+permissions:
+  contents: read
+
+concurrency:
+  group: profile-assets-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - name: Set up Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: "3.12"
+      - name: Test public statistics and snapshot preservation
+        run: python -m unittest discover -s tests -v
+      - name: Refresh public repository snapshot
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PROFILE_USER: ${{ github.repository_owner }}
+        run: python scripts/update_code_atlas.py --username "$PROFILE_USER"
+      - name: Commit updated atlas
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/profile/code-atlas*.svg assets/profile/code-atlas.json
+          if git diff --cached --quiet; then
+            echo "Code Atlas is already current."
+            exit 0
+          fi
+          git commit -m "chore: refresh Code Atlas [skip ci]"
+          git push

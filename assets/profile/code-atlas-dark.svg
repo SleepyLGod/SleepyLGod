@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="292" viewBox="0 0 760 292" role="img" aria-labelledby="title desc">
+<title id="title">Code Atlas · A Constellation of Code</title>
+<desc id="desc">SleepyLGod: 24 public, non-fork repositories, 111 stars earned, 12 primary languages. One dot is one repository. Language groups count repositories, not code bytes or proficiency. Includes archived repositories. Python: 7, HTML: 2, TeX: 2, C: 1, C++: 1, CMake: 1, Go: 1, Java: 1, JavaScript: 1, Jupyter Notebook: 1, Shell: 1, TypeScript: 1. Snapshot 2026-10-21 Hong Kong time. Source: https://github.com/SleepyLGod?tab=repositories&amp;type=source</desc>
+<rect x="0.5" y="0.5" width="759" height="291" rx="18" fill="#0d1117" stroke="#30363d"/>
+<g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" fill="#e6edf3">
+<text x="28" y="30" font-size="11" fill="#a7b0bc" text-anchor="start" font-weight="400" letter-spacing="1.5">A CONSTELLATION OF CODE</text>
+<text x="732" y="30" font-size="10" fill="#a7b0bc" text-anchor="end" font-weight="400">Snapshot 2026-10-21 · HKT</text>
+<circle cx="142" cy="151" r="72" fill="none" stroke="#252334" stroke-dasharray="2 7"/>
+<circle cx="142" cy="151" r="98" fill="none" stroke="#252334" stroke-dasharray="2 7"/>
+<circle cx="142" cy="151" r="85" fill="none" stroke="#252334"/>
+<circle class="repo-dot" cx="142.00" cy="66.00" r="4.80" fill="#c5a0f5"><title>agent-memory · Python</title></circle>
+<circle class="repo-dot" cx="164.00" cy="68.90" r="4.80" fill="#c5a0f5"><title>AgentMemAnalysis · Python</title></circle>
+<circle class="repo-dot" cx="184.50" cy="77.39" r="4.80" fill="#c5a0f5"><title>eos-predictor · Python</title></circle>
+<circle class="repo-dot" cx="202.10" cy="90.90" r="4.80" fill="#c5a0f5"><title>research-radar · Python</title></circle>
+<circle class="repo-dot" cx="215.61" cy="108.50" r="4.80" fill="#c5a0f5"><title>stagewise-coding-agent-fragility · Python</title></circle>
+<circle class="repo-dot" cx="224.10" cy="129.00" r="4.80" fill="#c5a0f5"><title>Tonepath · Python</title></circle>
+<circle class="repo-dot" cx="227.00" cy="151.00" r="4.80" fill="#c5a0f5"><title>XETH · Python</title></circle>
+<circle cx="288" cy="162" r="4" fill="#c5a0f5"/>
+<text x="301" y="166" font-size="12" fill="#a7b0bc" text-anchor="start" font-weight="400">Python</text>
+<text x="470" y="166" font-size="13" fill="#e6edf3" text-anchor="end" font-weight="600">7</text>
+<circle class="repo-dot" cx="224.10" cy="173.00" r="4.80" fill="#eea5cc"><title>accumulation · HTML</title></circle>
+<circle class="repo-dot" cx="215.61" cy="193.50" r="4.80" fill="#eea5cc"><title>hust-projects · HTML</title></circle>
+<circle cx="518" cy="162" r="4" fill="#eea5cc"/>
+<text x="531" y="166" font-size="12" fill="#a7b0bc" text-anchor="start" font-weight="400">HTML</text>
+<text x="700" y="166" font-size="13" fill="#e6edf3" text-anchor="end" font-weight="600">2</text>
+<circle class="repo-dot" cx="202.10" cy="211.10" r="4.80" fill="#98c5ec"><title>mini-oft-llm · TeX</title></circle>
+<circle class="repo-dot" cx="184.50" cy="224.61" r="4.80" fill="#98c5ec"><title>QCPresentation · TeX</title></circle>
+<circle cx="288" cy="187" r="4" fill="#98c5ec"/>
+<text x="301" y="191" font-size="12" fill="#a7b0bc" text-anchor="start" font-weight="400">TeX</text>
+<text x="470" y="191" font-size="13" fill="#e6edf3" text-anchor="end" font-weight="600">2</text>
+<circle class="repo-dot" cx="164.00" cy="233.10" r="4.80" fill="#b7bcf0"><title>AIST4020-Lab-Tutorials · Jupyter Notebook</title></circle>
+<circle class="repo-dot" cx="142.00" cy="236.00" r="4.80" fill="#b7bcf0"><title>dong-blog · Java</title></circle>
+<circle class="repo-dot" cx="120.00" cy="233.10" r="4.80" fill="#b7bcf0"><title>miscellaneous · C++</title></circle>
+<circle class="repo-dot" cx="99.50" cy="224.61" r="4.80" fill="#b7bcf0"><title>oh-my-claude-code · TypeScript</title></circle>
+<circle class="repo-dot" cx="81.90" cy="211.10" r="4.80" fill="#b7bcf0"><title>oh-my-score · JavaScript</title></circle>
+<circle class="repo-dot" cx="68.39" cy="193.50" r="4.80" fill="#b7bcf0"><title>openclaw-gateway-bundles · Shell</title></circle>
+<circle class="repo-dot" cx="59.90" cy="173.00" r="4.80" fill="#b7bcf0"><title>qwidget-demos · C</title></circle>
+<circle class="repo-dot" cx="57.00" cy="151.00" r="4.80" fill="#b7bcf0"><title>rdma-pro · CMake</title></circle>
+<circle class="repo-dot" cx="59.90" cy="129.00" r="4.80" fill="#b7bcf0"><title>SleepyLGod · Go</title></circle>
+<circle cx="518" cy="187" r="4" fill="#b7bcf0"/>
+<text x="531" y="191" font-size="12" fill="#a7b0bc" text-anchor="start" font-weight="400">Other Languages</text>
+<text x="700" y="191" font-size="13" fill="#e6edf3" text-anchor="end" font-weight="600">9</text>
+<circle class="repo-dot" cx="68.39" cy="108.50" r="4.80" fill="#98a5b5"><title>free-dock · Unclassified</title></circle>
+<circle class="repo-dot" cx="81.90" cy="90.90" r="4.80" fill="#98a5b5"><title>images · Unclassified</title></circle>
+<circle class="repo-dot" cx="99.50" cy="77.39" r="4.80" fill="#98a5b5"><title>iridescent-sentences · Unclassified</title></circle>
+<circle class="repo-dot" cx="120.00" cy="68.90" r="4.80" fill="#98a5b5"><title>rookie-notes · Unclassified</title></circle>
+<circle cx="288" cy="212" r="4" fill="#98a5b5"/>
+<text x="301" y="216" font-size="12" fill="#a7b0bc" text-anchor="start" font-weight="400">Unclassified</text>
+<text x="470" y="216" font-size="13" fill="#e6edf3" text-anchor="end" font-weight="600">4</text>
+<text x="142" y="158" font-size="42" fill="#c5a0f5" text-anchor="middle" font-weight="600">24</text>
+<text x="142" y="181" font-size="12" fill="#a7b0bc" text-anchor="middle" font-weight="400">Original Repos</text>
+<text x="288" y="98" font-size="32" fill="#c5a0f5" text-anchor="start" font-weight="600">111</text>
+<text x="288" y="121" font-size="12" fill="#a7b0bc" text-anchor="start" font-weight="400">Stars Earned</text>
+<text x="518" y="98" font-size="32" fill="#c5a0f5" text-anchor="start" font-weight="600">12</text>
+<text x="518" y="121" font-size="12" fill="#a7b0bc" text-anchor="start" font-weight="400">Primary Languages</text>
+<text x="28" y="266" font-size="11" fill="#a7b0bc" text-anchor="start" font-weight="400">One Dot = One Public Original Repo</text>
+<text x="732" y="266" font-size="11" fill="#a7b0bc" text-anchor="end" font-weight="400">Color = Primary Language</text>
+</g></svg>

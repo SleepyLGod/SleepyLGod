@@ -43,20 +43,44 @@ reviewed desktop light/dark and mobile layouts.
 
 ## GitHub statistics
 
-The contribution calendar and streak cards are commented out because they repeat
-GitHub's native contribution section. No scheduled update is enabled.
-`Generate optional activity cards` is available on manual dispatch; the Python
-generator, its tests, and the last snapshot are retained for future use.
+The visible **Code Atlas** is a language constellation, not a contribution
+calendar. Each colored dot is one public, non-fork repository owned by this
+account, including archived repositories. Colors group repositories by their
+primary language; this measures repository counts, not code bytes or proficiency.
+The three most common languages are named, the others share one group, and
+repositories with no detected primary language have an Unclassified group.
+Stars Earned sums those same repositories' stars; Primary Languages counts
+distinct detected primary languages. Organization repositories are not included.
+
+The four committed SVGs cover desktop/mobile and dark/light themes. A committed
+`assets/profile/code-atlas.json` records the complete public source data, source
+URL, and observation time. The card displays its snapshot date in Hong Kong time.
+The initial snapshot was imported from the official public repository list,
+including all 24 results of its `type=source` filter. No estimated stats are used.
+
+`Refresh Code Atlas` fetches the official GitHub REST API using the workflow's
+built-in `GITHUB_TOKEN`. No personal access token or external deployment is needed.
+After merging to `main`, it runs on relevant code changes, on manual dispatch, and
+daily at 06:37 Hong Kong time (GitHub may delay scheduled runs). It commits only
+the atlas snapshot and SVGs. A failed fetch, validation, or render leaves the
+previous images and observation date intact. The profile always reads committed
+files, never a live card endpoint. The workflow has been linted locally; an actual
+Actions run still needs to execute on GitHub.
 
 ```sh
 python -m unittest discover -s tests -v
-python scripts/update_profile.py --username SleepyLGod
+python scripts/update_code_atlas.py --username SleepyLGod
+python scripts/update_code_atlas.py --snapshot assets/profile/code-atlas.json
 ```
 
-The generator uses an existing `GH_TOKEN` or `GITHUB_TOKEN` to read GitHub's API.
-The managed cloud environment currently blocks `api.github.com`; this restriction
-does not establish whether a GitHub-hosted Actions run can access it. Existing
-snapshots are preserved if a fetch or validation fails.
+The second command fetches fresh data using an existing `GH_TOKEN` or
+`GITHUB_TOKEN` if present. The last command rebuilds offline and preserves the
+original snapshot date. The managed cloud environment blocks `api.github.com`,
+so it was used only for the initial public-page import and offline rendering.
+
+The older contribution calendar and streak cards remain commented out because
+they repeat GitHub's native contribution section. Their generator, tests,
+manual-only workflow, and previous snapshot are retained for future use.
 
 ### Reusing an upstream renderer
 
@@ -71,8 +95,8 @@ currently says the repository is no longer maintained, recommends successor
 projects, and explicitly calls the shared public endpoint best-effort. It also
 documents an [Actions-based generation workflow](https://github.com/anuraghazra/github-readme-stats#github-actions).
 Choose a maintained successor, review and pin its version, and check which token
-scopes and card types it actually needs before enabling it. No replacement card
-has been added to the visible profile merely to fill space.
+scopes and card types it actually needs before enabling it. The current Code Atlas
+uses a small standard-library renderer in this repository.
 
 Self-hosting reduces dependence on somebody else's deployment. GitHub API policy,
 rate limits, token expiration, and upstream maintenance can still affect refreshes.

@@ -1,0 +1,128 @@
+{
+  "version": 1,
+  "username": "SleepyLGod",
+  "captured_at": "2026-10-21T11:58:02Z",
+  "source": "https://github.com/SleepyLGod?tab=repositories&type=source",
+  "repositories": [
+    {
+      "name": "accumulation",
+      "language": "HTML",
+      "stars": 6
+    },
+    {
+      "name": "agent-memory",
+      "language": "Python",
+      "stars": 3
+    },
+    {
+      "name": "AgentMemAnalysis",
+      "language": "Python",
+      "stars": 4
+    },
+    {
+      "name": "AIST4020-Lab-Tutorials",
+      "language": "Jupyter Notebook",
+      "stars": 0
+    },
+    {
+      "name": "dong-blog",
+      "language": "Java",
+      "stars": 2
+    },
+    {
+      "name": "eos-predictor",
+      "language": "Python",
+      "stars": 2
+    },
+    {
+      "name": "free-dock",
+      "language": null,
+      "stars": 2
+    },
+    {
+      "name": "hust-projects",
+      "language": "HTML",
+      "stars": 14
+    },
+    {
+      "name": "images",
+      "language": null,
+      "stars": 1
+    },
+    {
+      "name": "iridescent-sentences",
+      "language": null,
+      "stars": 1
+    },
+    {
+      "name": "mini-oft-llm",
+      "language": "TeX",
+      "stars": 0
+    },
+    {
+      "name": "miscellaneous",
+      "language": "C++",
+      "stars": 4
+    },
+    {
+      "name": "oh-my-claude-code",
+      "language": "TypeScript",
+      "stars": 2
+    },
+    {
+      "name": "oh-my-score",
+      "language": "JavaScript",
+      "stars": 20
+    },
+    {
+      "name": "openclaw-gateway-bundles",
+      "language": "Shell",
+      "stars": 1
+    },
+    {
+      "name": "QCPresentation",
+      "language": "TeX",
+      "stars": 0
+    },
+    {
+      "name": "qwidget-demos",
+      "language": "C",
+      "stars": 32
+    },
+    {
+      "name": "rdma-pro",
+      "language": "CMake",
+      "stars": 2
+    },
+    {
+      "name": "research-radar",
+      "language": "Python",
+      "stars": 4
+    },
+    {
+      "name": "rookie-notes",
+      "language": null,
+      "stars": 3
+    },
+    {
+      "name": "SleepyLGod",
+      "language": "Go",
+      "stars": 0
+    },
+    {
+      "name": "stagewise-coding-agent-fragility",
+      "language": "Python",
+      "stars": 1
+    },
+    {
+      "name": "Tonepath",
+      "language": "Python",
+      "stars": 4
+    },
+    {
+      "name": "XETH",
+      "language": "Python",
+      "stars": 3
+    }
+  ]
+}
