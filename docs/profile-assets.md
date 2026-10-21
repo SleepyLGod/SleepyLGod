@@ -52,7 +52,9 @@ repositories with no detected primary language have an Unclassified group.
 Stars Earned sums those same repositories' stars; Primary Languages counts
 distinct detected primary languages. Organization repositories are not included.
 
-The four committed SVGs cover desktop/mobile and dark/light themes. A committed
+The four committed SVGs cover desktop/mobile and dark/light themes. The compact
+desktop card is 760 × 224; the 360 × 324 mobile card places the orbit beside the
+two metrics, with the language legend below. A committed
 `assets/profile/code-atlas.json` records the complete public source data, source
 URL, and observation time. The card displays its snapshot date in Hong Kong time.
 The initial snapshot was imported from the official public repository list,

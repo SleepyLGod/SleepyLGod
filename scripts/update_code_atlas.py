@@ -124,7 +124,7 @@ def summarize(snapshot):
 def render_card(snapshot, theme, mobile=False):
     data = summarize(snapshot)
     palette = PALETTES[theme]
-    width, height = (360, 432) if mobile else (760, 292)
+    width, height = (360, 324) if mobile else (760, 224)
     observed = datetime.fromisoformat(snapshot["captured_at"].replace("Z", "+00:00"))
     day = observed.astimezone(HONG_KONG).date()
     language_summary = ", ".join(f"{name}: {count}" for name, count in data["distribution"])
@@ -136,17 +136,17 @@ def render_card(snapshot, theme, mobile=False):
     parts = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">',
              '<title id="title">Code Atlas · A Constellation of Code</title>',
              f'<desc id="desc">{escape(description)}</desc>',
-             f'<rect x="0.5" y="0.5" width="{width - 1}" height="{height - 1}" rx="18" fill="{palette["background"]}" stroke="{palette["border"]}"/>',
+             f'<rect x="0.5" y="0.5" width="{width - 1}" height="{height - 1}" rx="14" fill="{palette["background"]}" stroke="{palette["border"]}"/>',
              f'<g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" fill="{palette["text"]}">']
 
     def text(x, y, value, size=13, color=None, anchor="start", weight="400", spacing=None):
         tracking = f' letter-spacing="{spacing}"' if spacing else ""
         parts.append(f'<text x="{x}" y="{y}" font-size="{size}" fill="{color or palette["text"]}" text-anchor="{anchor}" font-weight="{weight}"{tracking}>{escape(str(value))}</text>')
 
-    text(22 if mobile else 28, 30, "A CONSTELLATION OF CODE", 11, palette["muted"], spacing="1.5")
-    text(22 if mobile else 732, 50 if mobile else 30, f"Snapshot {day} · HKT", 10,
-         palette["muted"], "start" if mobile else "end")
-    cx, cy, radius = (180, 153, 79) if mobile else (142, 151, 85)
+    text(22 if mobile else 24, 25, "A CONSTELLATION OF CODE", 11, palette["muted"], spacing="1.5")
+    text(180 if mobile else 736, 309 if mobile else 25, f"Snapshot {day} · HKT", 10,
+         palette["muted"], "middle" if mobile else "end")
+    cx, cy, radius = (94, 114, 58) if mobile else (126, 112, 64)
     for ring in (radius - 13, radius + 13):
         parts.append(f'<circle cx="{cx}" cy="{cy}" r="{ring}" fill="none" stroke="{palette["orbit"]}" stroke-dasharray="2 7"/>')
     parts.append(f'<circle cx="{cx}" cy="{cy}" r="{radius}" fill="none" stroke="{palette["orbit"]}"/>')
@@ -166,23 +166,22 @@ def render_card(snapshot, theme, mobile=False):
             parts.append(f'<circle class="repo-dot" cx="{x:.2f}" cy="{y:.2f}" r="{dot_radius:.2f}" fill="{color}"><title>{escape(repo["name"])} · {escape(repo["language"] or "Unclassified")}</title></circle>')
             dot_index += 1
         column, row = group_index % 2, group_index // 2
-        lx, ly = (28 + column * 166, 326 + row * 24) if mobile else (288 + column * 230, 166 + row * 25)
+        lx, ly = (24 + column * 166, 216 + row * 23) if mobile else (268 + column * 230, 129 + row * 22)
         parts.append(f'<circle cx="{lx}" cy="{ly - 4}" r="4" fill="{color}"/>')
         text(lx + 13, ly, label, 12, palette["muted"])
         text(lx + (136 if mobile else 182), ly, count, 13, anchor="end", weight="600")
-    text(cx, cy + 7, data["repos"], 42, palette["dots"][0], "middle", "600")
+    text(cx, cy + 7, data["repos"], 40, palette["dots"][0], "middle", "600")
     text(cx, cy + 30, "Original Repos", 12, palette["muted"], "middle")
     metrics = ((data["stars"], "Stars Earned"), (data["languages"], "Primary Languages"))
     for index, (value, label) in enumerate(metrics):
-        x, y = (90 + index * 180, 274) if mobile else (288 + index * 230, 98)
-        text(x, y, f"{value:,}", 32, palette["dots"][0], "middle" if mobile else "start", "600")
-        text(x, y + 23, label, 12, palette["muted"], "middle" if mobile else "start")
+        x, y = (252, 88 + index * 60) if mobile else (268 + index * 230, 74)
+        text(x, y, f"{value:,}", 30, palette["dots"][0], "middle" if mobile else "start", "600")
+        text(x, y + 21, label, 12, palette["muted"], "middle" if mobile else "start")
     if mobile:
-        text(180, 404, "One Dot = One Public Original Repo", 10, palette["muted"], "middle")
-        text(180, 420, "Color = Primary Language", 10, palette["muted"], "middle")
+        text(180, 289, "One Dot = One Repo · Color = Primary Language", 10, palette["muted"], "middle")
     else:
-        text(28, 266, "One Dot = One Public Original Repo", 11, palette["muted"])
-        text(732, 266, "Color = Primary Language", 11, palette["muted"], "end")
+        text(24, 206, "One Dot = One Public Original Repo", 11, palette["muted"])
+        text(736, 206, "Color = Primary Language", 11, palette["muted"], "end")
     parts.append("</g></svg>\n")
     return "\n".join(parts)
 
