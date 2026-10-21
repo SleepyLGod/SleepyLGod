@@ -1,128 +1,133 @@
 {
   "version": 1,
   "username": "SleepyLGod",
-  "captured_at": "2026-10-21T11:58:02Z",
-  "source": "https://github.com/SleepyLGod?tab=repositories&type=source",
+  "captured_at": "2026-10-21T12:25:17Z",
+  "source": "https://api.github.com/users/SleepyLGod/repos",
   "repositories": [
     {
       "name": "accumulation",
-      "language": "HTML",
-      "stars": 6
+      "stars": 6,
+      "language": "HTML"
     },
     {
       "name": "agent-memory",
-      "language": "Python",
-      "stars": 3
+      "stars": 3,
+      "language": "Python"
     },
     {
       "name": "AgentMemAnalysis",
-      "language": "Python",
-      "stars": 4
+      "stars": 4,
+      "language": "Python"
     },
     {
       "name": "AIST4020-Lab-Tutorials",
-      "language": "Jupyter Notebook",
-      "stars": 0
+      "stars": 0,
+      "language": "Jupyter Notebook"
     },
     {
       "name": "dong-blog",
-      "language": "Java",
-      "stars": 2
+      "stars": 2,
+      "language": "Java"
     },
     {
       "name": "eos-predictor",
-      "language": "Python",
-      "stars": 2
+      "stars": 2,
+      "language": "Python"
     },
     {
       "name": "free-dock",
-      "language": null,
-      "stars": 2
+      "stars": 2,
+      "language": null
     },
     {
       "name": "hust-projects",
-      "language": "HTML",
-      "stars": 14
+      "stars": 14,
+      "language": "HTML"
     },
     {
       "name": "images",
-      "language": null,
-      "stars": 1
+      "stars": 1,
+      "language": null
     },
     {
       "name": "iridescent-sentences",
-      "language": null,
-      "stars": 1
+      "stars": 1,
+      "language": null
     },
     {
       "name": "mini-oft-llm",
-      "language": "TeX",
-      "stars": 0
+      "stars": 0,
+      "language": "TeX"
     },
     {
       "name": "miscellaneous",
-      "language": "C++",
-      "stars": 4
+      "stars": 4,
+      "language": "C++"
+    },
+    {
+      "name": "network-labs",
+      "stars": 1,
+      "language": "JavaScript"
     },
     {
       "name": "oh-my-claude-code",
-      "language": "TypeScript",
-      "stars": 2
+      "stars": 2,
+      "language": "TypeScript"
     },
     {
       "name": "oh-my-score",
-      "language": "JavaScript",
-      "stars": 20
+      "stars": 20,
+      "language": "JavaScript"
     },
     {
       "name": "openclaw-gateway-bundles",
-      "language": "Shell",
-      "stars": 1
+      "stars": 1,
+      "language": "Shell"
     },
     {
       "name": "QCPresentation",
-      "language": "TeX",
-      "stars": 0
+      "stars": 0,
+      "language": "TeX"
     },
     {
       "name": "qwidget-demos",
-      "language": "C",
-      "stars": 32
+      "stars": 32,
+      "language": "C"
     },
     {
       "name": "rdma-pro",
-      "language": "CMake",
-      "stars": 2
+      "stars": 2,
+      "language": "CMake"
     },
     {
       "name": "research-radar",
-      "language": "Python",
-      "stars": 4
+      "stars": 4,
+      "language": "Python"
     },
     {
       "name": "rookie-notes",
-      "language": null,
-      "stars": 3
+      "stars": 3,
+      "language": null
     },
     {
       "name": "SleepyLGod",
-      "language": "Go",
-      "stars": 0
+      "stars": 0,
+      "language": "Go"
     },
     {
       "name": "stagewise-coding-agent-fragility",
-      "language": "Python",
-      "stars": 1
+      "stars": 1,
+      "language": "Python"
     },
     {
       "name": "Tonepath",
-      "language": "Python",
-      "stars": 4
+      "stars": 4,
+      "language": "Python"
     },
     {
       "name": "XETH",
-      "language": "Python",
-      "stars": 3
+      "stars": 3,
+      "language": "Python"
     }
   ]
 }
