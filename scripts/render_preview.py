@@ -10,6 +10,7 @@ import subprocess
 
 
 ROOT = Path(__file__).resolve().parents[1]
+PROFILE_CACHE_URL = "https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-assets/assets/profile/"
 BASE_CSS = """
 .markdown-body { font: 16px/1.6 -apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif;
   color: #1f2328; background: #fff; overflow-wrap: break-word; }
@@ -48,6 +49,9 @@ body { margin: 0; background: #f6f8fa; padding: 28px 16px; }
 
 def embed(match):
     attribute, relative = match.groups()
+    if relative.startswith(PROFILE_CACHE_URL):
+        # Use the reviewed local snapshot when building an offline preview.
+        relative = "./assets/profile/" + relative.removeprefix(PROFILE_CACHE_URL)
     path = (ROOT / relative).resolve()
     if not path.is_relative_to(ROOT):
         raise ValueError("Preview images must stay inside the repository")
@@ -65,7 +69,8 @@ def main():
         "pandoc", "--from=gfm", "--to=html5", str(ROOT / "README.md")], text=True)
     # Archived blocks remain in README.md but must not load images in the preview.
     body = re.sub(r"<!--.*?-->", "", body, flags=re.S)
-    body = re.sub(r'\b(src|srcset)="(\./[^\"]+)"', embed, body)
+    image_paths = r'\./[^\"]+|' + re.escape(PROFILE_CACHE_URL) + r'code-atlas(?:-mobile)?-(?:dark|light)\.svg'
+    body = re.sub(r'\b(src|srcset)="(' + image_paths + r')"', embed, body)
     if re.search(r'\b(?:src|srcset)="https?://', body):
         raise ValueError("README still embeds an external image")
     css = args.css.read_text() if args.css else BASE_CSS

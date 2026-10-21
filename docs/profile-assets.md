@@ -1,7 +1,9 @@
 # Profile visuals and optional services
 
-Every visible README image is a checked-in repository file. Viewing the profile
-requires no third-party card endpoint, icon CDN, web font, or running Codex session.
+Every visible README image is checked into this repository. The automatically
+refreshed Code Atlas files live on the `profile-assets` branch; other images use
+`main`. Viewing the profile requires no third-party card endpoint, icon CDN, web
+font, or running Codex session.
 The identity and research interests appear first; awards, founder details,
 Selected Projects, and activity cards are preserved in HTML comments.
 
@@ -37,7 +39,9 @@ To build a standalone, animated preview with an installed Pandoc:
 python scripts/render_preview.py --output /tmp/sleepylgod-profile.html
 ```
 
-The HTML embeds its images and styles. Comments in the README are excluded from
+The HTML embeds its images and styles. Code Atlas's same-repository URLs are
+mapped to the reviewed local snapshot for offline previews. Other external image
+URLs are rejected. Comments in the README are excluded from
 the preview, including their images. Screenshots under `docs/previews/` show the
 reviewed desktop light/dark and mobile layouts.
 
@@ -54,20 +58,24 @@ distinct detected primary languages. Organization repositories are not included.
 
 The four committed SVGs cover desktop/mobile and dark/light themes. The compact
 desktop card is 760 × 224; the 360 × 324 mobile card places the orbit beside the
-two metrics, with the language legend below. A committed
-`assets/profile/code-atlas.json` records the complete public source data, source
-URL, and observation time. The card displays its snapshot date in Hong Kong time.
+two metrics, with the language legend below. On `profile-assets`, the committed
+`assets/profile/code-atlas.json` records the complete current public source data,
+source URL, and observation time. The reviewed snapshot is also kept on `main`
+for reproducible offline previews. The card displays its snapshot date in Hong Kong time.
 The initial snapshot was imported from the official public repository list,
 including all 24 results of its `type=source` filter. No estimated stats are used.
 
 `Refresh Code Atlas` fetches the official GitHub REST API using the workflow's
 built-in `GITHUB_TOKEN`. No personal access token or external deployment is needed.
-After merging to `main`, it runs on relevant code changes, on manual dispatch, and
-daily at 06:37 Hong Kong time (GitHub may delay scheduled runs). It commits only
-the atlas snapshot and SVGs. A failed fetch, validation, or render leaves the
+It runs on relevant `main` code changes, on manual dispatch from `main`, and daily
+at 06:37 Hong Kong time (GitHub may delay scheduled runs). Generation uses the
+current scripts from `main`, then commits only the atlas snapshot and SVGs to
+`profile-assets`. This keeps automated data publication separate from changes to
+the protected source branch. A failed fetch, validation, or render leaves the
 previous images and observation date intact. The profile always reads committed
-files, never a live card endpoint. The workflow has been linted locally; an actual
-Actions run still needs to execute on GitHub.
+files through GitHub's raw-file URLs, never a live card endpoint. GitHub Actions
+shows each refresh's result and logs. The resource branch is initialized before
+the README starts referencing it; refreshes use ordinary, non-force pushes.
 
 ```sh
 python -m unittest discover -s tests -v

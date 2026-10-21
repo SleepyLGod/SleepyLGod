@@ -15,11 +15,12 @@ permissions:
   contents: read
 
 concurrency:
-  group: profile-assets-${{ github.ref }}
+  group: code-atlas-publication
   cancel-in-progress: false
 
 jobs:
   update:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 5
     permissions:
@@ -37,9 +38,13 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           PROFILE_USER: ${{ github.repository_owner }}
-        run: python scripts/update_code_atlas.py --username "$PROFILE_USER"
-      - name: Commit updated atlas
+        run: python scripts/update_code_atlas.py --username "$PROFILE_USER" --output "$RUNNER_TEMP/code-atlas"
+      - name: Publish atlas to resource branch
         run: |
+          git fetch --depth=1 origin refs/heads/profile-assets:refs/remotes/origin/profile-assets
+          git switch --create profile-assets --track origin/profile-assets
+          cp "$RUNNER_TEMP"/code-atlas/code-atlas*.svg assets/profile/
+          cp "$RUNNER_TEMP"/code-atlas/code-atlas.json assets/profile/
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add assets/profile/code-atlas*.svg assets/profile/code-atlas.json
@@ -48,4 +53,4 @@ jobs:
             exit 0
           fi
           git commit -m "chore: refresh Code Atlas [skip ci]"
-          git push
+          git push origin HEAD:refs/heads/profile-assets

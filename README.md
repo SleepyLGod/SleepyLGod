@@ -91,10 +91,10 @@ Selected Projects: temporarily hidden; content preserved.
 <p align="center">
   <a href="https://github.com/SleepyLGod?tab=repositories&amp;type=source">
     <picture>
-      <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/profile/code-atlas-mobile-dark.svg" />
-      <source media="(max-width: 600px)" srcset="./assets/profile/code-atlas-mobile-light.svg" />
-      <source media="(prefers-color-scheme: dark)" srcset="./assets/profile/code-atlas-dark.svg" />
-      <img src="./assets/profile/code-atlas-light.svg" width="760" alt="Code Atlas: one dot per public original repository, colored by its primary language, with Stars earned and a dated language breakdown." />
+      <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-assets/assets/profile/code-atlas-mobile-dark.svg" />
+      <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-assets/assets/profile/code-atlas-mobile-light.svg" />
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-assets/assets/profile/code-atlas-dark.svg" />
+      <img src="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-assets/assets/profile/code-atlas-light.svg" width="760" alt="Code Atlas: one dot per public original repository, colored by its primary language, with Stars earned and a dated language breakdown." />
     </picture>
   </a>
 </p>
