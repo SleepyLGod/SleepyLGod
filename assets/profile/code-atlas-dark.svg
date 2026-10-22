@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="760" height="224" viewBox="0 0 760 224" role="img" aria-labelledby="title desc">
 <title id="title">Code Atlas · A Constellation of Code</title>
-<desc id="desc">SleepyLGod: 25 public, non-fork repositories, 112 stars earned, 12 primary languages. One dot is one repository. Language groups count repositories, not code bytes or proficiency. Includes archived repositories. Python: 7, HTML: 2, JavaScript: 2, TeX: 2, C: 1, C++: 1, CMake: 1, Go: 1, Java: 1, Jupyter Notebook: 1, Shell: 1, TypeScript: 1. Snapshot 2026-10-21 Hong Kong time. Source: https://api.github.com/users/SleepyLGod/repos</desc>
+<desc id="desc">SleepyLGod: 25 public, non-fork repositories, 112 stars earned, 12 primary languages. One dot is one repository. Language groups count repositories, not code bytes or proficiency. Includes archived repositories. Python: 7, HTML: 2, JavaScript: 2, TeX: 2, C: 1, C++: 1, CMake: 1, Go: 1, Java: 1, Jupyter Notebook: 1, Shell: 1, TypeScript: 1. Snapshot 2026-10-22 Hong Kong time. Source: https://api.github.com/users/SleepyLGod/repos</desc>
 <rect x="0.5" y="0.5" width="759" height="223" rx="14" fill="#0d1117" stroke="#30363d"/>
 <g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" fill="#e6edf3">
 <text x="24" y="25" font-size="11" fill="#a7b0bc" text-anchor="start" font-weight="400" letter-spacing="1.5">A CONSTELLATION OF CODE</text>
-<text x="736" y="25" font-size="10" fill="#a7b0bc" text-anchor="end" font-weight="400">Snapshot 2026-10-21 · HKT</text>
+<text x="736" y="25" font-size="10" fill="#a7b0bc" text-anchor="end" font-weight="400">Snapshot 2026-10-22 · HKT</text>
 <circle cx="126" cy="112" r="51" fill="none" stroke="#252334" stroke-dasharray="2 7"/>
 <circle cx="126" cy="112" r="77" fill="none" stroke="#252334" stroke-dasharray="2 7"/>
 <circle cx="126" cy="112" r="64" fill="none" stroke="#252334"/>
