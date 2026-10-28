@@ -1,7 +1,7 @@
 {
   "version": 1,
   "username": "SleepyLGod",
-  "captured_at": "2026-10-27T01:36:08Z",
+  "captured_at": "2026-10-28T01:37:00Z",
   "source": "https://api.github.com/users/SleepyLGod/repos",
   "repositories": [
     {
@@ -53,6 +53,11 @@
       "name": "iridescent-sentences",
       "stars": 1,
       "language": null
+    },
+    {
+      "name": "jiangnan-fiction-craft-skill",
+      "stars": 1,
+      "language": "Python"
     },
     {
       "name": "mini-oft-llm",
