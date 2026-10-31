@@ -1,55 +1,56 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="760" height="224" viewBox="0 0 760 224" role="img" aria-labelledby="title desc">
 <title id="title">Code Atlas · A Constellation of Code</title>
-<desc id="desc">SleepyLGod: 26 public, non-fork repositories, 113 stars earned, 12 primary languages. One dot is one repository. Language groups count repositories, not code bytes or proficiency. Includes archived repositories. Python: 8, HTML: 2, JavaScript: 2, TeX: 2, C: 1, C++: 1, CMake: 1, Go: 1, Java: 1, Jupyter Notebook: 1, Shell: 1, TypeScript: 1. Snapshot 2026-10-30 Hong Kong time. Source: https://api.github.com/users/SleepyLGod/repos</desc>
+<desc id="desc">SleepyLGod: 27 public, non-fork repositories, 113 stars earned, 12 primary languages. One dot is one repository. Language groups count repositories, not code bytes or proficiency. Includes archived repositories. Python: 8, JavaScript: 3, HTML: 2, TeX: 2, C: 1, C++: 1, CMake: 1, Go: 1, Java: 1, Jupyter Notebook: 1, Shell: 1, TypeScript: 1. Snapshot 2026-10-31 Hong Kong time. Source: https://api.github.com/users/SleepyLGod/repos</desc>
 <rect x="0.5" y="0.5" width="759" height="223" rx="14" fill="#ffffff" stroke="#d1d9e0"/>
 <g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" fill="#1f2328">
 <text x="24" y="25" font-size="11" fill="#59636e" text-anchor="start" font-weight="400" letter-spacing="1.5">A CONSTELLATION OF CODE</text>
-<text x="736" y="25" font-size="10" fill="#59636e" text-anchor="end" font-weight="400">Snapshot 2026-10-30 · HKT</text>
+<text x="736" y="25" font-size="10" fill="#59636e" text-anchor="end" font-weight="400">Snapshot 2026-10-31 · HKT</text>
 <circle cx="126" cy="112" r="51" fill="none" stroke="#eee8f5" stroke-dasharray="2 7"/>
 <circle cx="126" cy="112" r="77" fill="none" stroke="#eee8f5" stroke-dasharray="2 7"/>
 <circle cx="126" cy="112" r="64" fill="none" stroke="#eee8f5"/>
 <circle class="repo-dot" cx="126.00" cy="48.00" r="4.80" fill="#8050b5"><title>agent-memory · Python</title></circle>
-<circle class="repo-dot" cx="141.32" cy="49.86" r="4.80" fill="#8050b5"><title>AgentMemAnalysis · Python</title></circle>
-<circle class="repo-dot" cx="155.74" cy="55.33" r="4.80" fill="#8050b5"><title>eos-predictor · Python</title></circle>
-<circle class="repo-dot" cx="168.44" cy="64.10" r="4.80" fill="#8050b5"><title>jiangnan-fiction-craft-skill · Python</title></circle>
-<circle class="repo-dot" cx="178.67" cy="75.64" r="4.80" fill="#8050b5"><title>research-radar · Python</title></circle>
-<circle class="repo-dot" cx="185.84" cy="89.31" r="4.80" fill="#8050b5"><title>stagewise-coding-agent-fragility · Python</title></circle>
-<circle class="repo-dot" cx="189.53" cy="104.29" r="4.80" fill="#8050b5"><title>Tonepath · Python</title></circle>
-<circle class="repo-dot" cx="189.53" cy="119.71" r="4.80" fill="#8050b5"><title>XETH · Python</title></circle>
+<circle class="repo-dot" cx="140.76" cy="49.73" r="4.80" fill="#8050b5"><title>AgentMemAnalysis · Python</title></circle>
+<circle class="repo-dot" cx="154.72" cy="54.81" r="4.80" fill="#8050b5"><title>eos-predictor · Python</title></circle>
+<circle class="repo-dot" cx="167.14" cy="62.97" r="4.80" fill="#8050b5"><title>jiangnan-fiction-craft-skill · Python</title></circle>
+<circle class="repo-dot" cx="177.34" cy="73.78" r="4.80" fill="#8050b5"><title>research-radar · Python</title></circle>
+<circle class="repo-dot" cx="184.77" cy="86.65" r="4.80" fill="#8050b5"><title>stagewise-coding-agent-fragility · Python</title></circle>
+<circle class="repo-dot" cx="189.03" cy="100.89" r="4.80" fill="#8050b5"><title>Tonepath · Python</title></circle>
+<circle class="repo-dot" cx="189.89" cy="115.72" r="4.80" fill="#8050b5"><title>XETH · Python</title></circle>
 <circle cx="268" cy="125" r="4" fill="#8050b5"/>
 <text x="281" y="129" font-size="12" fill="#59636e" text-anchor="start" font-weight="400">Python</text>
 <text x="450" y="129" font-size="13" fill="#1f2328" text-anchor="end" font-weight="600">8</text>
-<circle class="repo-dot" cx="185.84" cy="134.69" r="4.80" fill="#ae447c"><title>accumulation · HTML</title></circle>
-<circle class="repo-dot" cx="178.67" cy="148.36" r="4.80" fill="#ae447c"><title>hust-projects · HTML</title></circle>
+<circle class="repo-dot" cx="187.31" cy="130.36" r="4.80" fill="#ae447c"><title>AIST4020-OpenCode-Labs · JavaScript</title></circle>
+<circle class="repo-dot" cx="181.43" cy="144.00" r="4.80" fill="#ae447c"><title>network-labs · JavaScript</title></circle>
+<circle class="repo-dot" cx="172.55" cy="155.92" r="4.80" fill="#ae447c"><title>oh-my-score · JavaScript</title></circle>
 <circle cx="498" cy="125" r="4" fill="#ae447c"/>
-<text x="511" y="129" font-size="12" fill="#59636e" text-anchor="start" font-weight="400">HTML</text>
-<text x="680" y="129" font-size="13" fill="#1f2328" text-anchor="end" font-weight="600">2</text>
-<circle class="repo-dot" cx="168.44" cy="159.90" r="4.80" fill="#2e75a9"><title>network-labs · JavaScript</title></circle>
-<circle class="repo-dot" cx="155.74" cy="168.67" r="4.80" fill="#2e75a9"><title>oh-my-score · JavaScript</title></circle>
+<text x="511" y="129" font-size="12" fill="#59636e" text-anchor="start" font-weight="400">JavaScript</text>
+<text x="680" y="129" font-size="13" fill="#1f2328" text-anchor="end" font-weight="600">3</text>
+<circle class="repo-dot" cx="161.17" cy="165.47" r="4.80" fill="#2e75a9"><title>accumulation · HTML</title></circle>
+<circle class="repo-dot" cx="147.89" cy="172.14" r="4.80" fill="#2e75a9"><title>hust-projects · HTML</title></circle>
 <circle cx="268" cy="147" r="4" fill="#2e75a9"/>
-<text x="281" y="151" font-size="12" fill="#59636e" text-anchor="start" font-weight="400">JavaScript</text>
+<text x="281" y="151" font-size="12" fill="#59636e" text-anchor="start" font-weight="400">HTML</text>
 <text x="450" y="151" font-size="13" fill="#1f2328" text-anchor="end" font-weight="600">2</text>
-<circle class="repo-dot" cx="141.32" cy="174.14" r="4.80" fill="#6668a7"><title>AIST4020-Lab-Tutorials · Jupyter Notebook</title></circle>
-<circle class="repo-dot" cx="126.00" cy="176.00" r="4.80" fill="#6668a7"><title>dong-blog · Java</title></circle>
-<circle class="repo-dot" cx="110.68" cy="174.14" r="4.80" fill="#6668a7"><title>mini-oft-llm · TeX</title></circle>
-<circle class="repo-dot" cx="96.26" cy="168.67" r="4.80" fill="#6668a7"><title>miscellaneous · C++</title></circle>
-<circle class="repo-dot" cx="83.56" cy="159.90" r="4.80" fill="#6668a7"><title>oh-my-claude-code · TypeScript</title></circle>
-<circle class="repo-dot" cx="73.33" cy="148.36" r="4.80" fill="#6668a7"><title>openclaw-gateway-bundles · Shell</title></circle>
-<circle class="repo-dot" cx="66.16" cy="134.69" r="4.80" fill="#6668a7"><title>QCPresentation · TeX</title></circle>
-<circle class="repo-dot" cx="62.47" cy="119.71" r="4.80" fill="#6668a7"><title>qwidget-demos · C</title></circle>
-<circle class="repo-dot" cx="62.47" cy="104.29" r="4.80" fill="#6668a7"><title>rdma-pro · CMake</title></circle>
-<circle class="repo-dot" cx="66.16" cy="89.31" r="4.80" fill="#6668a7"><title>SleepyLGod · Go</title></circle>
+<circle class="repo-dot" cx="133.43" cy="175.57" r="4.80" fill="#6668a7"><title>AIST4020-Lab-Tutorials · Jupyter Notebook</title></circle>
+<circle class="repo-dot" cx="118.57" cy="175.57" r="4.80" fill="#6668a7"><title>dong-blog · Java</title></circle>
+<circle class="repo-dot" cx="104.11" cy="172.14" r="4.80" fill="#6668a7"><title>mini-oft-llm · TeX</title></circle>
+<circle class="repo-dot" cx="90.83" cy="165.47" r="4.80" fill="#6668a7"><title>miscellaneous · C++</title></circle>
+<circle class="repo-dot" cx="79.45" cy="155.92" r="4.80" fill="#6668a7"><title>oh-my-claude-code · TypeScript</title></circle>
+<circle class="repo-dot" cx="70.57" cy="144.00" r="4.80" fill="#6668a7"><title>openclaw-gateway-bundles · Shell</title></circle>
+<circle class="repo-dot" cx="64.69" cy="130.36" r="4.80" fill="#6668a7"><title>QCPresentation · TeX</title></circle>
+<circle class="repo-dot" cx="62.11" cy="115.72" r="4.80" fill="#6668a7"><title>qwidget-demos · C</title></circle>
+<circle class="repo-dot" cx="62.97" cy="100.89" r="4.80" fill="#6668a7"><title>rdma-pro · CMake</title></circle>
+<circle class="repo-dot" cx="67.23" cy="86.65" r="4.80" fill="#6668a7"><title>SleepyLGod · Go</title></circle>
 <circle cx="498" cy="147" r="4" fill="#6668a7"/>
 <text x="511" y="151" font-size="12" fill="#59636e" text-anchor="start" font-weight="400">Other Languages</text>
 <text x="680" y="151" font-size="13" fill="#1f2328" text-anchor="end" font-weight="600">10</text>
-<circle class="repo-dot" cx="73.33" cy="75.64" r="4.80" fill="#69778b"><title>free-dock · Unclassified</title></circle>
-<circle class="repo-dot" cx="83.56" cy="64.10" r="4.80" fill="#69778b"><title>images · Unclassified</title></circle>
-<circle class="repo-dot" cx="96.26" cy="55.33" r="4.80" fill="#69778b"><title>iridescent-sentences · Unclassified</title></circle>
-<circle class="repo-dot" cx="110.68" cy="49.86" r="4.80" fill="#69778b"><title>rookie-notes · Unclassified</title></circle>
+<circle class="repo-dot" cx="74.66" cy="73.78" r="4.80" fill="#69778b"><title>free-dock · Unclassified</title></circle>
+<circle class="repo-dot" cx="84.86" cy="62.97" r="4.80" fill="#69778b"><title>images · Unclassified</title></circle>
+<circle class="repo-dot" cx="97.28" cy="54.81" r="4.80" fill="#69778b"><title>iridescent-sentences · Unclassified</title></circle>
+<circle class="repo-dot" cx="111.24" cy="49.73" r="4.80" fill="#69778b"><title>rookie-notes · Unclassified</title></circle>
 <circle cx="268" cy="169" r="4" fill="#69778b"/>
 <text x="281" y="173" font-size="12" fill="#59636e" text-anchor="start" font-weight="400">Unclassified</text>
 <text x="450" y="173" font-size="13" fill="#1f2328" text-anchor="end" font-weight="600">4</text>
-<text x="126" y="119" font-size="40" fill="#8050b5" text-anchor="middle" font-weight="600">26</text>
+<text x="126" y="119" font-size="40" fill="#8050b5" text-anchor="middle" font-weight="600">27</text>
 <text x="126" y="142" font-size="12" fill="#59636e" text-anchor="middle" font-weight="400">Original Repos</text>
 <text x="268" y="74" font-size="30" fill="#8050b5" text-anchor="start" font-weight="600">113</text>
 <text x="268" y="95" font-size="12" fill="#59636e" text-anchor="start" font-weight="400">Stars Earned</text>
