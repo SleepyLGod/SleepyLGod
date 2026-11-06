@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="368" height="94" viewBox="0 0 368 94" role="img" aria-labelledby="title desc">
 <title id="title">deepseek-ai/DeepGEMM</title>
-<desc id="desc">AI Infrastructure. Efficient GPU kernels for LLM workloads. 9163 Stars; 1512 Forks. Observed 2026-11-06T15:02:00Z. Source: https://github.com/deepseek-ai/DeepGEMM</desc>
+<desc id="desc">AI Infrastructure. Efficient GPU kernels for LLM workloads. 9163 Stars; 1512 Forks. Observed 2026-11-06T15:26:29Z. Source: https://api.github.com/repos/deepseek-ai/DeepGEMM</desc>
 <rect x="0.5" y="0.5" width="367" height="93" rx="10" fill="#0d1117" stroke="#30363d"/>
 <g transform="translate(14 15)" fill="none" stroke="#c5a0f5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4m6-4v4M9 18v4m6-4v4M2 9h4m-4 6h4m12-6h4m-4 6h4M10 10h4v4h-4z"/></g>
 <g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif">
