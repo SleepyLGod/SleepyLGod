@@ -1,11 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="360" height="64" viewBox="0 0 360 64" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="30" viewBox="0 0 360 30" role="img" aria-labelledby="title desc">
 <title id="title">Recent Contributions and Stars</title>
 <desc id="desc">SleepyLGod: 171 contributions from 2026-10-08 through 2026-11-06 UTC; 114 stars earned by 30 public, non-fork repositories, including archived repositories. Snapshot 2026-11-06 Hong Kong time. Sources: https://api.github.com/users/SleepyLGod/repos; https://api.github.com/graphql</desc>
-<rect x="0.5" y="0.5" width="359" height="63" rx="10" fill="#ffffff" stroke="#d1d9e0"/>
-<path d="M180 16v32" stroke="#d1d9e0"/>
+<path d="M180 7v16" stroke="#d1d9e0"/>
 <g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif">
-<text x="90" y="29" font-size="24" text-anchor="middle" font-weight="600" fill="#8050b5">171</text>
-<text x="90" y="50" font-size="10.5" text-anchor="middle" fill="#59636e">Contributions · 30 Days</text>
-<text x="270" y="29" font-size="24" text-anchor="middle" font-weight="600" fill="#8050b5">114</text>
-<text x="270" y="50" font-size="10.5" text-anchor="middle" fill="#59636e">Stars</text>
+<text x="38" y="21" font-size="15" text-anchor="end" font-weight="600" fill="#8050b5">171</text>
+<text x="44" y="20" font-size="10.5" fill="#59636e">Contributions · 30 Days</text>
+<text x="267" y="21" font-size="15" text-anchor="end" font-weight="600" fill="#8050b5">114</text>
+<text x="273" y="20" font-size="10.5" fill="#59636e">Stars</text>
 </g></svg>

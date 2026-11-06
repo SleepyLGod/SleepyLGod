@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="368" height="80" viewBox="0 0 368 80" role="img" aria-labelledby="title desc">
+<title id="title">SleepyLGod/aibrix</title>
+<desc id="desc">Research. Infrastructure for serving LLMs at scale. 1 Stars; 0 Forks. Observed 2026-11-06T15:47:16Z. Source: https://github.com/SleepyLGod/aibrix</desc>
+<rect x="0.5" y="0.5" width="367" height="79" rx="8" fill="#ffffff" stroke="#d1d9e0"/>
+<g transform="translate(12 10) scale(.9)" fill="none" stroke="#8050b5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4m6-4v4M9 18v4m6-4v4M2 9h4m-4 6h4m12-6h4m-4 6h4M10 10h4v4h-4z"/></g>
+<g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif">
+<text x="44" y="24" font-size="13"><tspan fill="#59636e">SleepyLGod/</tspan><tspan fill="#8050b5" font-weight="600">aibrix</tspan></text>
+<text x="44" y="45" font-size="11.5" fill="#59636e">Infrastructure for serving LLMs at scale.</text>
+<g transform="translate(44 57)" fill="none" stroke="#c99a3c" stroke-width="1.2" stroke-linejoin="round"><title>Stars</title><path d="m6 0 1.8 3.7 4.2.6-3 2.9.7 4.1L6 9.4l-3.7 1.9.7-4.1-3-2.9 4.2-.6z"/></g>
+<text class="repo-stars" x="63" y="67" font-size="10.5" fill="#59636e">1</text>
+<g transform="translate(130 57)" fill="none" stroke="#8050b5" stroke-width="1.2"><title>Forks</title><circle cx="2" cy="2" r="1.8"/><circle cx="10" cy="2" r="1.8"/><circle cx="6" cy="11" r="1.8"/><path d="M2 4v2h8V4M6 6v3"/></g>
+<text class="repo-forks" x="149" y="67" font-size="10.5" fill="#59636e">0</text>
+<path d="M342 18h8v8m0-8-10 10" fill="none" stroke="#59636e" stroke-width="1.3"/>
+</g></svg>
