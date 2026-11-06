@@ -23,7 +23,7 @@ class RepoShelfTests(unittest.TestCase):
                 {"repo": "example/compute", "description": "GPU kernels.", "category": "research", "icon": "chip"}]
 
     def closed_repo(self):
-        return {"repo": "private/project", "description": "Agentic scheduling on top of vLLM.",
+        return {"repo": "private/project", "description": "Scheduling under agentic workload",
                 "category": "research", "icon": "chip", "public": False}
 
     def snapshot(self):
@@ -76,6 +76,7 @@ class RepoShelfTests(unittest.TestCase):
 
     def test_categories_preserve_native_links_to_each_repository(self):
         html = shelf.render_readme(self.repos(), "./assets/recommendations/")
+        self.assertNotIn("<h4", html)
         self.assertLess(html.index("Skills"), html.index("Research"))
         for repo in self.repos():
             self.assertIn(f'<a href="https://github.com/{repo["repo"]}"><picture>', html)
@@ -105,7 +106,7 @@ class RepoShelfTests(unittest.TestCase):
             content = shelf.render_card(repo, None, self.snapshot()["captured_at"], theme)
             root = ET.fromstring(content)
             self.assertIn("Not Yet Public", content)
-            self.assertIn("Agentic scheduling on top of vLLM.", content)
+            self.assertIn("Scheduling under agentic workload", content)
             self.assertFalse(any(e.get("class") in ("repo-stars", "repo-forks") for e in root.iter()))
         html = shelf.render_readme([repo], "./assets/recommendations/")
         self.assertNotIn("<a ", html)

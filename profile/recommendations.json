@@ -69,7 +69,7 @@
     "repo": "cuhk-systems/vllm-sd",
     "category": "research",
     "icon": "chip",
-    "description": "Agentic scheduling on top of vLLM.",
+    "description": "Scheduling under agentic workload",
     "public": false
   },
   {

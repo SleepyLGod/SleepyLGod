@@ -129,6 +129,7 @@ def render_card(repo, stats, observed, theme):
 <text x="44" y="24" font-size="13"><tspan fill="{muted}">{escape(owner)}/</tspan><tspan fill="{accent}" font-weight="600">{escape(project)}</tspan></text>
 <text x="44" y="45" font-size="11.5" fill="{muted}">{escape(repo["description"])}</text>
 {metadata}
+<text class="repo-category" x="350" y="67" font-size="10" text-anchor="end" fill="{accent}">{escape(category)}</text>
 </g></svg>
 '''
 
@@ -149,8 +150,8 @@ def render_readme(repos, asset_base):
             dark, light = (escape(asset_base.rstrip("/") + f"/{slug}-{theme}.svg", quote=True) for theme in ("dark", "light"))
             picture = f'<picture><source media="(prefers-color-scheme: dark)" srcset="{dark}" /><img src="{light}" width="368" alt="{alt}" /></picture>'
             links.append(f'  <a href="https://github.com/{name}">{picture}</a>' if public else '  ' + picture)
-        groups.append(f'<h4 align="center">{label}</h4>\n<p align="center">\n' + '\n'.join(links) + '\n</p>')
-    return '\n\n'.join(groups)
+        groups.extend(links)
+    return '<p align="center">\n' + '\n'.join(groups) + '\n</p>'
 
 
 def write_cards(output, repos, snapshot):

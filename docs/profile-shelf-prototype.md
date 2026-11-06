@@ -12,15 +12,20 @@ the identity and research interests and before the contact links. Counts and
 labels share the same baseline; there is no large number panel or footnote.
 Desktop output is 520 pixels wide; the mobile variant is 360 pixels wide.
 
-The project section has four visible group headings and 80-pixel cards. Public
+The project section uses one grid of 80-pixel cards, with category labels in
+the lower-right corner instead of separate category headings. Public
 cards retain a topic icon, repository name, one-line introduction, exact Stars
 and Forks, and a native HTML link. Narrow screens wrap the cards to one column.
 Descriptions were checked against the 12 public GitHub pages. The ETH arbitrage
 project is described as experimental, matching its public repository description.
 
+Primary language is intentionally omitted. The introduction and category explain
+the purpose of these skills, tools, and research projects more directly than a
+single language label, and keep the compact cards readable.
+
 ## Not-yet-public research
 
-The user supplied the `vllm-sd` description: **Agentic scheduling on top of vLLM.**
+The user supplied the `vllm-sd` description: **Scheduling under agentic workload**
 Its config explicitly has `public: false`. It is shown as Not Yet Public with a
 lock icon, without an anchor, external-link arrow, Star count, or Fork count.
 The metadata updater skips it before constructing or requesting any API URL.

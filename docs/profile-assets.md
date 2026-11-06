@@ -74,7 +74,8 @@ while local tests verify partial-data and publication-failure handling.
 
 The project section uses light/dark cards generated from `profile/recommendations.json`
 and `assets/recommendations/stats.json`. Each card shows a topic icon, name,
-one-line description and exact Star/Fork counts, under one of four group headings.
+one-line description and exact Star/Fork counts, with the category in the lower-right corner. There are no separate category headings
+or primary-language badges.
 The explicitly not-yet-public project has no link or counters and is skipped
 by metadata requests. Each public repository
 has its own native HTML link. See

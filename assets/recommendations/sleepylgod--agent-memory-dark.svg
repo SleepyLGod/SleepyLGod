@@ -11,4 +11,5 @@
 <g transform="translate(130 57)" fill="none" stroke="#c5a0f5" stroke-width="1.2"><title>Forks</title><circle cx="2" cy="2" r="1.8"/><circle cx="10" cy="2" r="1.8"/><circle cx="6" cy="11" r="1.8"/><path d="M2 4v2h8V4M6 6v3"/></g>
 <text class="repo-forks" x="149" y="67" font-size="10.5" fill="#a7b0bc">1</text>
 <path d="M342 18h8v8m0-8-10 10" fill="none" stroke="#a7b0bc" stroke-width="1.3"/>
+<text class="repo-category" x="350" y="67" font-size="10" text-anchor="end" fill="#c5a0f5">Research</text>
 </g></svg>
