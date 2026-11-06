@@ -70,3 +70,14 @@ Those totals are separate from per-card counters, which cover the exact public
 repository URLs the user selected, including their selected fork and organization
 repository. Precise observation dates and source URLs are kept in JSON and SVG
 accessible descriptions, with no visible date/footer clutter.
+
+## Verified hosted refresh
+
+[Run 42247297103](https://github.com/SleepyLGod/SleepyLGod/actions/runs/42247297103)
+completed successfully for source commit `90a2fad`, running all 29 tests and
+publishing the 13-project presentation. Its REST snapshot contains exactly the
+12 public repositories; the closed entry is rendered from user-supplied config
+without a metadata request or counts. The private-entry exclusion is also tested
+with a network spy. The public GitHub preview has no closed-repository URL.
+All image variants and the 30-pixel strip were checked in desktop light/dark
+and narrow/mobile layouts. The live `main` profile was not changed.
