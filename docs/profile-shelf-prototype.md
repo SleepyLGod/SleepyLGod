@@ -85,3 +85,12 @@ must succeed before any previous image is replaced. The preview was populated
 from complete official public repository and contribution-calendar pages;
 its counts are observed, not placeholders. GitHub Actions verifies the REST and GraphQL fetches together; failure of either
 source preserves the prior publication.
+
+## Verified hosted refresh
+
+[Run 42243033770](https://github.com/SleepyLGod/SleepyLGod/actions/runs/42243033770)
+completed successfully for source commit `8ef77a9`. It fetched recent activity
+through GitHub GraphQL, public repository data through REST, and each of the
+four recommendations' exact Stars/Forks. It published the complete image set
+and both snapshots to `profile-shelf-preview-assets` as a bot commit. The live
+profile's `main` and production `profile-assets` were not changed.
