@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="368" height="80" viewBox="0 0 368 80" role="img" aria-labelledby="title desc">
 <title id="title">SleepyLGod/eos-predictor</title>
-<desc id="desc">Research. EOS token prediction for autoregressive LMs. 2 Stars; 0 Forks. Observed 2026-11-06T15:54:07Z. Source: https://api.github.com/repos/SleepyLGod/eos-predictor</desc>
+<desc id="desc">Research. EOS token prediction for autoregressive LMs. 2 Stars; 0 Forks. Observed 2026-11-06T16:04:47Z. Source: https://api.github.com/repos/SleepyLGod/eos-predictor</desc>
 <rect x="0.5" y="0.5" width="367" height="79" rx="8" fill="#ffffff" stroke="#d1d9e0"/>
 <g transform="translate(12 10) scale(.9)" fill="none" stroke="#8050b5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4m6-4v4M9 18v4m6-4v4M2 9h4m-4 6h4m12-6h4m-4 6h4M10 10h4v4h-4z"/></g>
 <g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif">
@@ -11,4 +11,5 @@
 <g transform="translate(130 57)" fill="none" stroke="#8050b5" stroke-width="1.2"><title>Forks</title><circle cx="2" cy="2" r="1.8"/><circle cx="10" cy="2" r="1.8"/><circle cx="6" cy="11" r="1.8"/><path d="M2 4v2h8V4M6 6v3"/></g>
 <text class="repo-forks" x="149" y="67" font-size="10.5" fill="#59636e">0</text>
 <path d="M342 18h8v8m0-8-10 10" fill="none" stroke="#59636e" stroke-width="1.3"/>
+<text class="repo-category" x="350" y="67" font-size="10" text-anchor="end" fill="#8050b5">Research</text>
 </g></svg>
