@@ -10,6 +10,17 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/SleepyLGod?tab=overview">
+    <picture>
+      <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-assets/assets/profile/profile-summary-mobile-dark.svg" />
+      <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-assets/assets/profile/profile-summary-mobile-light.svg" />
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-assets/assets/profile/profile-summary-dark.svg" />
+      <img src="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-assets/assets/profile/profile-summary-light.svg" width="520" alt="GitHub snapshot: contributions in the last 30 days and Stars earned by public original repositories." />
+    </picture>
+  </a>
+</p>
+
+<p align="center">
   <a href="https://sleepylgod.github.io/">🌐 Homepage</a> &nbsp;·&nbsp;
   <a href="https://rookiedong.gitbook.io/notes">📓 Notes</a> &nbsp;·&nbsp;
   <a href="https://www.linkedin.com/in/von-lu/">💼 LinkedIn</a> &nbsp;·&nbsp;
@@ -55,6 +66,26 @@ Selected Projects: temporarily hidden; content preserved.
 </table>
 -->
 
+<h3 align="center"><em>𝓟𝓻𝓸𝓳𝓮𝓬𝓽𝓼</em></h3>
+
+<!-- REPO-SHELF:START -->
+<p align="center">
+  <a href="https://github.com/SleepyLGod/agent-memory"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-assets/assets/recommendations/sleepylgod--agent-memory-dark.svg" /><img src="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-assets/assets/recommendations/sleepylgod--agent-memory-light.svg" width="368" alt="SleepyLGod/agent-memory: Declarative memory with semantic views. 🔬 Research. Stars and Forks." /></picture></a>
+  <a href="https://github.com/SleepyLGod/aibrix"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-assets/assets/recommendations/sleepylgod--aibrix-dark.svg" /><img src="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-assets/assets/recommendations/sleepylgod--aibrix-light.svg" width="368" alt="SleepyLGod/aibrix: Infrastructure for serving LLMs at scale. 🔬 Research. Stars and Forks." /></picture></a>
+  <a href="https://github.com/SleepyLGod/eos-predictor"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-assets/assets/recommendations/sleepylgod--eos-predictor-dark.svg" /><img src="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-assets/assets/recommendations/sleepylgod--eos-predictor-light.svg" width="368" alt="SleepyLGod/eos-predictor: EOS token prediction for autoregressive LMs. 🔬 Research. Stars and Forks." /></picture></a>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-assets/assets/recommendations/cuhk-systems--vllm-sd-dark.svg" /><img src="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-assets/assets/recommendations/cuhk-systems--vllm-sd-light.svg" width="368" alt="cuhk-systems/vllm-sd: Scheduling under agentic workload 🔬 Research. Not Yet Public." /></picture>
+  <a href="https://github.com/SleepyLGod/qwidget-demos"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-assets/assets/recommendations/sleepylgod--qwidget-demos-dark.svg" /><img src="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-assets/assets/recommendations/sleepylgod--qwidget-demos-light.svg" width="368" alt="SleepyLGod/qwidget-demos: 43 Qt components with CSS-like styling. 🧰 Toys / Tools. Stars and Forks." /></picture></a>
+  <a href="https://github.com/SleepyLGod/oh-my-score"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-assets/assets/recommendations/sleepylgod--oh-my-score-dark.svg" /><img src="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-assets/assets/recommendations/sleepylgod--oh-my-score-light.svg" width="368" alt="SleepyLGod/oh-my-score: Audio-to-MIDI and piano playback. 🧰 Toys / Tools. Stars and Forks." /></picture></a>
+  <a href="https://github.com/SleepyLGod/research-radar"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-assets/assets/recommendations/sleepylgod--research-radar-dark.svg" /><img src="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-assets/assets/recommendations/sleepylgod--research-radar-light.svg" width="368" alt="SleepyLGod/research-radar: Evidence-grounded research briefings. 🧰 Toys / Tools. Stars and Forks." /></picture></a>
+  <a href="https://github.com/SleepyLGod/Tonepath"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-assets/assets/recommendations/sleepylgod--tonepath-dark.svg" /><img src="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-assets/assets/recommendations/sleepylgod--tonepath-light.svg" width="368" alt="SleepyLGod/Tonepath: A local music agent for listening paths. 🧰 Toys / Tools. Stars and Forks." /></picture></a>
+  <a href="https://github.com/JumboArbitrage/arbitrage-public"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-assets/assets/recommendations/jumboarbitrage--arbitrage-public-dark.svg" /><img src="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-assets/assets/recommendations/jumboarbitrage--arbitrage-public-light.svg" width="368" alt="JumboArbitrage/arbitrage-public: An experimental Ethereum arbitrage toolkit. 🧰 Toys / Tools. Stars and Forks." /></picture></a>
+  <a href="https://github.com/SleepyLGod/moment-studio"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-assets/assets/recommendations/sleepylgod--moment-studio-dark.svg" /><img src="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-assets/assets/recommendations/sleepylgod--moment-studio-light.svg" width="368" alt="SleepyLGod/moment-studio: AI photo editing, styles and collages. 🧰 Toys / Tools. Stars and Forks." /></picture></a>
+  <a href="https://github.com/SleepyLGod/hust-projects"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-assets/assets/recommendations/sleepylgod--hust-projects-dark.svg" /><img src="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-assets/assets/recommendations/sleepylgod--hust-projects-light.svg" width="368" alt="SleepyLGod/hust-projects: HUST coursework and lab projects. 🎓 Teaching. Stars and Forks." /></picture></a>
+  <a href="https://github.com/SleepyLGod/jinyong-fiction-craft-skill"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-assets/assets/recommendations/sleepylgod--jinyong-fiction-craft-skill-dark.svg" /><img src="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-assets/assets/recommendations/sleepylgod--jinyong-fiction-craft-skill-light.svg" width="368" alt="SleepyLGod/jinyong-fiction-craft-skill: Fiction craft grounded in Jin Yong&#x27;s novels. 🪶 Skills. Stars and Forks." /></picture></a>
+  <a href="https://github.com/SleepyLGod/jiangnan-fiction-craft-skill"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-assets/assets/recommendations/sleepylgod--jiangnan-fiction-craft-skill-dark.svg" /><img src="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-assets/assets/recommendations/sleepylgod--jiangnan-fiction-craft-skill-light.svg" width="368" alt="SleepyLGod/jiangnan-fiction-craft-skill: Scene analysis and fiction revision guidance. 🪶 Skills. Stars and Forks." /></picture></a>
+</p>
+<!-- REPO-SHELF:END -->
+
 <h3 align="center"><em>𝓣𝓸𝓸𝓵𝓫𝓸𝔁</em></h3>
 
 <p align="center">
@@ -86,18 +117,7 @@ Selected Projects: temporarily hidden; content preserved.
 
 <p align="center"><sub>🎧 <a href="https://open.spotify.com/user/31gepfdtbzi2ycsdpdthguc5z3cy">A Little Music Beyond Code</a></sub></p>
 
-<h3 align="center"><em>𝓒𝓸𝓭𝓮 𝓐𝓽𝓵𝓪𝓼</em></h3>
 
-<p align="center">
-  <a href="https://github.com/SleepyLGod?tab=repositories&amp;type=source">
-    <picture>
-      <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-assets/assets/profile/code-atlas-mobile-dark.svg" />
-      <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-assets/assets/profile/code-atlas-mobile-light.svg" />
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-assets/assets/profile/code-atlas-dark.svg" />
-      <img src="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-assets/assets/profile/code-atlas-light.svg" width="760" alt="Code Atlas: one dot per public original repository, colored by its primary language, with Stars earned and a dated language breakdown." />
-    </picture>
-  </a>
-</p>
 
 <!--
 Optional activity cards: archived because GitHub already displays a contribution

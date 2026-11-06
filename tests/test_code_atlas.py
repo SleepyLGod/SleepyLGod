@@ -1,6 +1,7 @@
 """Public scope, pagination, truthful encodings, and last-good snapshot checks."""
 
 from copy import deepcopy
+from datetime import datetime, timedelta, timezone
 import importlib.util
 import io
 import json
@@ -20,9 +21,12 @@ SPEC.loader.exec_module(atlas)
 
 class CodeAtlasTests(unittest.TestCase):
     def snapshot(self):
-        return {"version": 1, "username": "SleepyLGod",
+        return {"version": 2, "username": "SleepyLGod",
                 "captured_at": "2026-10-20T23:30:00Z",
                 "source": "https://github.com/SleepyLGod?tab=repositories&type=source",
+                "recent_source": "https://github.com/users/SleepyLGod/contributions",
+                "recent_days": [{"date": (datetime(2026, 9, 21) + timedelta(days=i)).date().isoformat(),
+                                 "contributionCount": i % 3} for i in range(30)],
                 "repositories": [
                     {"name": name, "language": language, "stars": stars}
                     for name, language, stars in [
@@ -31,12 +35,9 @@ class CodeAtlasTests(unittest.TestCase):
                         ("notes", "TeX", 0), ("gateway", "Go", 0),
                         ("docs", None, 4)]]}
 
-    def test_counts_primary_languages_and_every_repository_once(self):
+    def test_stars_include_repositories_without_a_detected_language(self):
         result = atlas.summarize(self.snapshot())
-        self.assertEqual((result["repos"], result["stars"], result["languages"]), (7, 10, 5))
-        self.assertEqual(sum(count for _, count in result["groups"]), 7)
-        self.assertEqual(dict(result["groups"])["Unclassified"], 1)
-        self.assertEqual(dict(result["groups"])["Other Languages"], 2)
+        self.assertEqual(result, {"repos": 7, "stars": 10})
 
     def test_api_reads_all_pages_and_excludes_private_and_forked_repos(self):
         def repo(index, **extra):
@@ -72,18 +73,22 @@ class CodeAtlasTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "timezone"):
             atlas.validate_snapshot(snapshot)
 
-    def test_all_layouts_use_one_dot_per_repo_and_have_accessible_scope(self):
+    def test_all_layouts_show_recent_contributions_and_stars_with_accessible_scope(self):
         snapshot = self.snapshot()
         for theme in atlas.PALETTES:
             for mobile in (False, True):
                 with self.subTest(theme=theme, mobile=mobile):
                     content = atlas.render_card(snapshot, theme, mobile)
                     root = ET.fromstring(content)
-                    dots = [element for element in root.iter() if element.get("class") == "repo-dot"]
-                    self.assertEqual(len(dots), 7)
+                    texts = [element.text for element in root.iter() if element.tag.endswith("}text")]
+                    self.assertIn("30", texts)
+                    self.assertIn("10", texts)
+                    self.assertIn("Contributions · 30 Days", texts)
+                    self.assertIn("Stars", texts)
+                    self.assertNotIn("Unclassified", texts)
+                    self.assertNotIn("Other Languages", texts)
                     self.assertIn("7 public, non-fork repositories", content)
-                    self.assertIn("10 stars earned, 5 primary languages", content)
-                    self.assertIn("not code bytes or proficiency", content)
+                    self.assertIn("10 stars earned", content)
                     self.assertIn("Snapshot 2026-10-21", content)  # Hong Kong date.
                     self.assertNotIn("<script", content)
                     self.assertNotIn("<image", content)
@@ -93,8 +98,7 @@ class CodeAtlasTests(unittest.TestCase):
         snapshot["repositories"] = []
         atlas.validate_snapshot(snapshot)
         content = atlas.render_card(snapshot, "dark")
-        self.assertIn("0 public, non-fork repositories, 0 stars earned, 0 primary languages", content)
-        self.assertNotIn('class="repo-dot"', content)
+        self.assertIn("0 stars earned by 0 public, non-fork repositories", content)
         ET.fromstring(content)
 
     def test_render_failure_preserves_all_previous_files(self):
@@ -131,6 +135,33 @@ class CodeAtlasTests(unittest.TestCase):
             fetch.assert_not_called()
             self.assertEqual(json.loads((output / "code-atlas.json").read_text()), snapshot)
             self.assertEqual(len(list(output.glob("*.svg"))), 4)
+
+    def test_incomplete_or_duplicated_activity_is_not_silently_counted(self):
+        snapshot = self.snapshot()
+        for days in (snapshot["recent_days"][:-1], snapshot["recent_days"] + snapshot["recent_days"][:1]):
+            with self.subTest(days=len(days)), self.assertRaises(ValueError):
+                atlas.normalize_recent_days(days, datetime(2026, 10, 20, tzinfo=timezone.utc))
+
+    def test_graphql_api_errors_preserve_last_good_images(self):
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory)
+            atlas.write_atlas(output, self.snapshot())
+            previous = {path.name: path.read_bytes() for path in output.iterdir()}
+            with patch("sys.argv", ["update_code_atlas.py", "--output", directory]), \
+                    patch.object(atlas, "fetch_repositories", return_value=[]), \
+                    patch.object(atlas, "urlopen", return_value=io.BytesIO(b'{"errors":[{"message":"unavailable"}]}')), \
+                    patch.dict(atlas.os.environ, {"GH_TOKEN": "test-token"}):
+                with self.assertRaisesRegex(ValueError, "recent activity"):
+                    atlas.main()
+            self.assertEqual(previous, {path.name: path.read_bytes() for path in output.iterdir()})
+
+    def test_activity_fetch_trims_calendar_week_padding(self):
+        days = self.snapshot()["recent_days"] + [{"date": "2026-10-21", "contributionCount": 999}]
+        result = {"data": {"user": {"contributionsCollection": {"contributionCalendar": {
+            "weeks": [{"contributionDays": days}]}}}}}
+        with patch.object(atlas, "urlopen", return_value=io.BytesIO(json.dumps(result).encode())):
+            actual = atlas.fetch_recent_days("SleepyLGod", datetime(2026, 10, 20, tzinfo=timezone.utc), "test-token")
+        self.assertEqual(actual, self.snapshot()["recent_days"])
 
 
 if __name__ == "__main__":
