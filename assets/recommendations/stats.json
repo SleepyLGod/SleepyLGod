@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "captured_at": "2026-11-06T15:02:00Z",
+  "repositories": [
+    {
+      "repo": "feldera/feldera",
+      "stars": 2155,
+      "forks": 177,
+      "source": "https://github.com/feldera/feldera"
+    },
+    {
+      "repo": "pola-rs/polars",
+      "stars": 40274,
+      "forks": 3220,
+      "source": "https://github.com/pola-rs/polars"
+    },
+    {
+      "repo": "deepseek-ai/DeepGEMM",
+      "stars": 9163,
+      "forks": 1512,
+      "source": "https://github.com/deepseek-ai/DeepGEMM"
+    },
+    {
+      "repo": "Case3y/sleet-mono",
+      "stars": 19,
+      "forks": 0,
+      "source": "https://github.com/Case3y/sleet-mono"
+    }
+  ]
+}

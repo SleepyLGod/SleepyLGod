@@ -5,26 +5,31 @@ on:
     - cron: "37 22 * * *" # 06:37 Hong Kong time; GitHub schedules may be delayed.
   workflow_dispatch:
   push:
-    branches: [main]
+    branches: [main, codex/profile-repo-shelf-20261106]
     paths:
       - .github/workflows/code-atlas.yml
       - scripts/update_code_atlas.py
       - tests/test_code_atlas.py
+      - scripts/build_repo_shelf.py
+      - profile/recommendations.json
+      - tests/test_repo_shelf.py
 
 permissions:
   contents: read
 
 concurrency:
-  group: code-atlas-publication
+  group: profile-publication-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
   update:
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/codex/profile-repo-shelf-20261106'
     runs-on: ubuntu-latest
     timeout-minutes: 5
     permissions:
       contents: write
+    env:
+      PROFILE_ASSET_BRANCH: ${{ github.ref == 'refs/heads/main' && 'profile-assets' || 'profile-shelf-preview-assets' }}
     steps:
       - name: Check out repository
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
@@ -39,18 +44,24 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           PROFILE_USER: ${{ github.repository_owner }}
         run: python scripts/update_code_atlas.py --username "$PROFILE_USER" --output "$RUNNER_TEMP/code-atlas"
-      - name: Publish atlas to resource branch
+      - name: Refresh recommended repository Stars and Forks
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/build_repo_shelf.py --refresh --no-readme --output "$RUNNER_TEMP/recommendations"
+      - name: Publish profile images to resource branch
         run: |
-          git fetch --depth=1 origin refs/heads/profile-assets:refs/remotes/origin/profile-assets
-          git switch --create profile-assets --track origin/profile-assets
+          git fetch --depth=1 origin "refs/heads/$PROFILE_ASSET_BRANCH:refs/remotes/origin/$PROFILE_ASSET_BRANCH"
+          git switch --create "$PROFILE_ASSET_BRANCH" --track "origin/$PROFILE_ASSET_BRANCH"
           cp "$RUNNER_TEMP"/code-atlas/code-atlas*.svg assets/profile/
           cp "$RUNNER_TEMP"/code-atlas/code-atlas.json assets/profile/
+          cp "$RUNNER_TEMP"/recommendations/*.svg assets/recommendations/
+          cp "$RUNNER_TEMP"/recommendations/stats.json assets/recommendations/
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/profile/code-atlas*.svg assets/profile/code-atlas.json
+          git add assets/profile/code-atlas*.svg assets/profile/code-atlas.json assets/recommendations/*.svg assets/recommendations/stats.json
           if git diff --cached --quiet; then
-            echo "Code Atlas is already current."
+            echo "Profile images are already current."
             exit 0
           fi
-          git commit -m "chore: refresh Code Atlas [skip ci]"
-          git push origin HEAD:refs/heads/profile-assets
+          git commit -m "chore: refresh profile snapshots [skip ci]"
+          git push origin "HEAD:refs/heads/$PROFILE_ASSET_BRANCH"

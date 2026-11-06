@@ -1,9 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="368" height="76" viewBox="0 0 368 76" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="368" height="94" viewBox="0 0 368 94" role="img" aria-labelledby="title desc">
 <title id="title">deepseek-ai/DeepGEMM</title>
-<desc id="desc">Efficient GPU kernels for LLM workloads.</desc>
-<rect x="0.5" y="0.5" width="367" height="75" rx="10" fill="#0d1117" stroke="#30363d"/>
+<desc id="desc">AI Infrastructure. Efficient GPU kernels for LLM workloads. 9163 Stars; 1512 Forks. Observed 2026-11-06T15:02:00Z. Source: https://github.com/deepseek-ai/DeepGEMM</desc>
+<rect x="0.5" y="0.5" width="367" height="93" rx="10" fill="#0d1117" stroke="#30363d"/>
+<g transform="translate(14 15)" fill="none" stroke="#c5a0f5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4m6-4v4M9 18v4m6-4v4M2 9h4m-4 6h4m12-6h4m-4 6h4M10 10h4v4h-4z"/></g>
 <g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif">
-<text x="17" y="29" font-size="15"><tspan fill="#a7b0bc">deepseek-ai/</tspan><tspan fill="#c5a0f5" font-weight="600">DeepGEMM</tspan></text>
-<text x="17" y="54" font-size="12" fill="#a7b0bc">Efficient GPU kernels for LLM workloads.</text>
-<path d="M342 27h8v8m0-8-10 10" fill="none" stroke="#a7b0bc" stroke-width="1.3"/>
+<text x="48" y="30" font-size="14"><tspan fill="#a7b0bc">deepseek-ai/</tspan><tspan fill="#c5a0f5" font-weight="600">DeepGEMM</tspan></text>
+<text x="48" y="51" font-size="12" fill="#a7b0bc">Efficient GPU kernels for LLM workloads.</text>
+<g transform="translate(48 65)" fill="none" stroke="#c99a3c" stroke-width="1.2" stroke-linejoin="round"><title>Stars</title><path d="m6 0 1.8 3.7 4.2.6-3 2.9.7 4.1L6 9.4l-3.7 1.9.7-4.1-3-2.9 4.2-.6z"/></g>
+<text class="repo-stars" x="67" y="75" font-size="11" fill="#a7b0bc">9,163</text>
+<g transform="translate(142 65)" fill="none" stroke="#c5a0f5" stroke-width="1.2"><title>Forks</title><circle cx="2" cy="2" r="1.8"/><circle cx="10" cy="2" r="1.8"/><circle cx="6" cy="11" r="1.8"/><path d="M2 4v2h8V4M6 6v3"/></g>
+<text class="repo-forks" x="161" y="75" font-size="11" fill="#a7b0bc">1,512</text>
+<text class="repo-category" x="350" y="75" font-size="10" text-anchor="end" fill="#c5a0f5">AI Infrastructure</text>
+<path d="M342 24h8v8m0-8-10 10" fill="none" stroke="#a7b0bc" stroke-width="1.3"/>
 </g></svg>

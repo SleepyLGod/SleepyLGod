@@ -2,7 +2,7 @@
 
 Every visible README image is checked into this repository. The live automatically
 refreshed statistics live on the `profile-assets` branch; this design preview
-uses branch-local snapshots. Other images use `main` in production. Viewing the profile requires no third-party card endpoint, icon CDN, web
+uses `profile-shelf-preview-assets`. Other images use `main` in production. Viewing the profile requires no third-party card endpoint, icon CDN, web
 font, or running Codex session.
 The identity and research interests appear first; awards, founder details,
 Selected Projects, and activity cards are preserved in HTML comments.
@@ -69,19 +69,22 @@ python scripts/build_repo_shelf.py
 The offline rebuild keeps the original observation date. Snapshot version 2
 requires a complete 30-day activity window rather than inventing a contribution
 count from a version-1 repository-only snapshot. The managed cloud environment
-blocks `api.github.com`; the hosted refresh path is covered by mocked tests and
-must be exercised on GitHub when this design is deployed.
+blocks `api.github.com`; API access is exercised in the hosted refresh workflow,
+while local tests verify partial-data and publication-failure handling.
 
-The shelf uses local light/dark linked cards generated from
-`profile/recommendations.json`. Names and one-line descriptions are the only
-visible card content. Every repository is its own native HTML link. See
+The shelf uses light/dark cards generated from `profile/recommendations.json`
+and `assets/recommendations/stats.json`. Each card shows a topic icon, name,
+one-line description, category label, and exact Star/Fork counts. Every repository
+is its own native HTML link. See
 [the prototype notes](profile-shelf-prototype.md) for researched examples, source
 checks, selection rationale, and deployment instructions.
 
-This preview references branch-local statistics to avoid changing the current
-live profile. The production publication workflow still writes to the dedicated
-`profile-assets` branch daily at 06:37 Hong Kong time. Restore the existing raw
-resource-branch URLs after publishing the new output when deploying this design.
+The preview publishes to `profile-shelf-preview-assets` on relevant preview
+source/config changes and manual dispatch. The production target remains
+`profile-assets`; merging the workflow into `main` adds recommendations to the
+existing daily refresh at 06:37 Hong Kong time. Both source datasets are fetched
+before a single atomic Git commit publishes all images. Production deployment
+uses the production resource-branch URLs described in the prototype notes.
 The old contribution calendar and streak cards remain commented out, with their
 manual-only generator and tests retained.
 

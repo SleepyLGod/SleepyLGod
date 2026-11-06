@@ -1,10 +1,16 @@
 #!/usr/bin/env python3
 """Render a manually curated repository shelf without a live card service."""
 
+import argparse
+from datetime import datetime, timezone
 from html import escape
 import json
+import os
 from pathlib import Path
 import re
+import tempfile
+from urllib.error import HTTPError
+from urllib.request import Request, urlopen
 import xml.etree.ElementTree as ET
 
 
@@ -13,13 +19,20 @@ PALETTES = {
     "dark": ("#0d1117", "#30363d", "#c5a0f5", "#a7b0bc"),
     "light": ("#ffffff", "#d1d9e0", "#8050b5", "#59636e"),
 }
+CATEGORIES = {"data": "🗄️ Data Systems", "ai": "⚡ AI Infrastructure", "dev": "🎨 Developer Experience"}
+ASSET_BASE = "https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-shelf-preview-assets/assets/recommendations/"
+ICONS = {
+    "database": '<ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 4 16 4 16 0V5M4 12c0 4 16 4 16 0"/>',
+    "table": '<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M10 3v18"/>',
+    "chip": '<rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4m6-4v4M9 18v4m6-4v4M2 9h4m-4 6h4m12-6h4m-4 6h4M10 10h4v4h-4z"/>',
+    "type": '<path d="M4 6V3h16v3M12 3v18m-4 0h8"/>',
+}
 
 
-def main():
-    repos = json.loads((ROOT / "profile/recommendations.json").read_text())
-    output = ROOT / "assets/recommendations"
-    cards = {}
-    links = []
+def load_repos(path):
+    repos = json.loads(path.read_text())
+    if not isinstance(repos, list) or not repos:
+        raise ValueError("Expected a curated repository list")
     seen = set()
     for repo in repos:
         name, description = repo["repo"], repo["description"]
@@ -27,34 +40,141 @@ def main():
             raise ValueError("Use unique owner/repo names")
         if not isinstance(description, str) or len(description) > 45:
             raise ValueError("Keep each description to one short line")
+        if repo.get("category") not in CATEGORIES or repo.get("icon") not in ICONS:
+            raise ValueError("Unknown category or topic icon")
         seen.add(name.casefold())
-        owner, project = name.split("/")
-        slug = name.lower().replace("/", "--")
-        for theme, (background, border, accent, muted) in PALETTES.items():
-            svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="368" height="76" viewBox="0 0 368 76" role="img" aria-labelledby="title desc">
-<title id="title">{escape(name)}</title>
+    return repos
+
+
+def validate_stats(snapshot, repos):
+    if snapshot.get("version") != 1:
+        raise ValueError("Unsupported recommendation snapshot")
+    observed = datetime.fromisoformat(snapshot["captured_at"].replace("Z", "+00:00"))
+    if observed.tzinfo is None:
+        raise ValueError("Recommendation observation time needs a timezone")
+    records = snapshot.get("repositories")
+    if not isinstance(records, list):
+        raise ValueError("Missing recommendation statistics")
+    by_name = {}
+    for record in records:
+        name = record["repo"].casefold()
+        if name in by_name:
+            raise ValueError("Duplicate recommendation statistics")
+        for field in ("stars", "forks"):
+            if type(record.get(field)) is not int or record[field] < 0:
+                raise ValueError("Stars and forks must be nonnegative integers")
+        if not record.get("source", "").startswith("https://"):
+            raise ValueError("Missing statistics source")
+        by_name[name] = record
+    if set(by_name) != {repo["repo"].casefold() for repo in repos}:
+        raise ValueError("Statistics must cover every selected repository exactly once")
+    return by_name
+
+
+def fetch_stats(repos, token):
+    headers = {"Accept": "application/vnd.github+json", "User-Agent": "SleepyLGod-Repo-Shelf",
+               "X-GitHub-Api-Version": "2022-11-28"}
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+    records = []
+    for repo in repos:
+        url = f'https://api.github.com/repos/{repo["repo"]}'
+        try:
+            with urlopen(Request(url, headers=headers), timeout=30) as response:
+                data = json.load(response)
+        except HTTPError as error:
+            raise RuntimeError(f"Repository API returned HTTP {error.code}; keeping previous cards") from None
+        if data.get("private") is not False or data.get("full_name", "").casefold() != repo["repo"].casefold():
+            raise ValueError("Expected the selected public repository; check for a rename")
+        records.append({"repo": repo["repo"], "stars": data["stargazers_count"],
+                        "forks": data["forks_count"], "source": url})
+    snapshot = {"version": 1, "captured_at": datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
+                "repositories": records}
+    validate_stats(snapshot, repos)
+    return snapshot
+
+
+def render_card(repo, stats, observed, theme):
+    background, border, accent, muted = PALETTES[theme]
+    owner, project = repo["repo"].split("/")
+    stars, forks = f'{stats["stars"]:,}', f'{stats["forks"]:,}'
+    category = CATEGORIES[repo["category"]].split(" ", 1)[1]
+    description = f'{category}. {repo["description"]} {stats["stars"]} Stars; {stats["forks"]} Forks. Observed {observed}. Source: {stats["source"]}'
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="368" height="94" viewBox="0 0 368 94" role="img" aria-labelledby="title desc">
+<title id="title">{escape(repo["repo"])}</title>
 <desc id="desc">{escape(description)}</desc>
-<rect x="0.5" y="0.5" width="367" height="75" rx="10" fill="{background}" stroke="{border}"/>
+<rect x="0.5" y="0.5" width="367" height="93" rx="10" fill="{background}" stroke="{border}"/>
+<g transform="translate(14 15)" fill="none" stroke="{accent}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">{ICONS[repo["icon"]]}</g>
 <g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif">
-<text x="17" y="29" font-size="15"><tspan fill="{muted}">{escape(owner)}/</tspan><tspan fill="{accent}" font-weight="600">{escape(project)}</tspan></text>
-<text x="17" y="54" font-size="12" fill="{muted}">{escape(description)}</text>
-<path d="M342 27h8v8m0-8-10 10" fill="none" stroke="{muted}" stroke-width="1.3"/>
+<text x="48" y="30" font-size="14"><tspan fill="{muted}">{escape(owner)}/</tspan><tspan fill="{accent}" font-weight="600">{escape(project)}</tspan></text>
+<text x="48" y="51" font-size="12" fill="{muted}">{escape(repo["description"])}</text>
+<g transform="translate(48 65)" fill="none" stroke="#c99a3c" stroke-width="1.2" stroke-linejoin="round"><title>Stars</title><path d="m6 0 1.8 3.7 4.2.6-3 2.9.7 4.1L6 9.4l-3.7 1.9.7-4.1-3-2.9 4.2-.6z"/></g>
+<text class="repo-stars" x="67" y="75" font-size="11" fill="{muted}">{stars}</text>
+<g transform="translate(142 65)" fill="none" stroke="{accent}" stroke-width="1.2"><title>Forks</title><circle cx="2" cy="2" r="1.8"/><circle cx="10" cy="2" r="1.8"/><circle cx="6" cy="11" r="1.8"/><path d="M2 4v2h8V4M6 6v3"/></g>
+<text class="repo-forks" x="161" y="75" font-size="11" fill="{muted}">{forks}</text>
+<text class="repo-category" x="350" y="75" font-size="10" text-anchor="end" fill="{accent}">{escape(category)}</text>
+<path d="M342 24h8v8m0-8-10 10" fill="none" stroke="{muted}" stroke-width="1.3"/>
 </g></svg>
 '''
+
+
+def render_readme(repos, asset_base):
+    groups = []
+    for category, label in CATEGORIES.items():
+        selected = [repo for repo in repos if repo["category"] == category]
+        if not selected:
+            continue
+        links = []
+        for repo in selected:
+            name = repo["repo"]
+            slug = name.lower().replace("/", "--")
+            alt = escape(f'{name}: {repo["description"]} {label}. Stars and Forks.', quote=True)
+            dark, light = (escape(asset_base.rstrip("/") + f"/{slug}-{theme}.svg", quote=True) for theme in ("dark", "light"))
+            links.append(f'  <a href="https://github.com/{name}"><picture><source media="(prefers-color-scheme: dark)" srcset="{dark}" /><img src="{light}" width="368" alt="{alt}" /></picture></a>')
+        groups.extend(links)
+    return '<p align="center">\n' + '\n'.join(groups) + '\n</p>'
+
+
+def write_cards(output, repos, snapshot):
+    stats = validate_stats(snapshot, repos)
+    cards = {}
+    for repo in repos:
+        slug = repo["repo"].lower().replace("/", "--")
+        for theme in PALETTES:
+            svg = render_card(repo, stats[repo["repo"].casefold()], snapshot["captured_at"], theme)
             ET.fromstring(svg)
             cards[f"{slug}-{theme}.svg"] = svg
-        alt = escape(f"{name}: {description}", quote=True)
-        links.append(f'''  <a href="https://github.com/{name}"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/recommendations/{slug}-dark.svg" /><img src="./assets/recommendations/{slug}-light.svg" width="368" alt="{alt}" /></picture></a>''')
-    block = '<p align="center">\n' + '\n'.join(links) + '\n</p>'
-    readme = ROOT / "README.md"
-    updated, count = re.subn(r"(?<=<!-- REPO-SHELF:START -->).*?(?=<!-- REPO-SHELF:END -->)", '\n' + block + '\n', readme.read_text(), flags=re.S)
-    if count != 1:
-        raise ValueError("Expected one repository shelf marker pair")
+    cards["stats.json"] = json.dumps(snapshot, ensure_ascii=False, indent=2) + '\n'
     output.mkdir(parents=True, exist_ok=True)
-    for name, content in cards.items():
-        (output / name).write_text(content)
-    readme.write_text(updated)
-    print(f"Built {len(repos)} repository links with local light/dark cards")
+    with tempfile.TemporaryDirectory(dir=output) as temporary:
+        for name, content in cards.items():
+            (Path(temporary) / name).write_text(content)
+        for name in cards:
+            os.replace(Path(temporary) / name, output / name)
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument("--refresh", action="store_true", help="Refresh public Star/Fork counts from GitHub REST")
+    mode.add_argument("--snapshot", type=Path, help="Import an observed metadata snapshot")
+    parser.add_argument("--output", type=Path, default=ROOT / "assets/recommendations")
+    parser.add_argument("--no-readme", action="store_true", help="Render cache files without changing the source branch")
+    parser.add_argument("--asset-base", default=ASSET_BASE)
+    args = parser.parse_args()
+    repos = load_repos(ROOT / "profile/recommendations.json")
+    snapshot = fetch_stats(repos, os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")) if args.refresh else json.loads(
+        (args.snapshot or ROOT / "assets/recommendations/stats.json").read_text())
+    updated = None
+    if not args.no_readme:
+        block = render_readme(repos, args.asset_base)
+        updated, count = re.subn(r"(?<=<!-- REPO-SHELF:START -->).*?(?=<!-- REPO-SHELF:END -->)", lambda _: '\n' + block + '\n', (ROOT / "README.md").read_text(), flags=re.S)
+        if count != 1:
+            raise ValueError("Expected one repository shelf marker pair")
+    write_cards(args.output, repos, snapshot)
+    if updated is not None:
+        (ROOT / "README.md").write_text(updated)
+    print(f"Built {len(repos)} categorized repository links with Star/Fork snapshots")
 
 
 if __name__ == "__main__":

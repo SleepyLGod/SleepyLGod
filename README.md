@@ -59,10 +59,10 @@ Selected Projects: temporarily hidden; content preserved.
 
 <!-- REPO-SHELF:START -->
 <p align="center">
-  <a href="https://github.com/feldera/feldera"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/recommendations/feldera--feldera-dark.svg" /><img src="./assets/recommendations/feldera--feldera-light.svg" width="368" alt="feldera/feldera: Incremental SQL over changing data." /></picture></a>
-  <a href="https://github.com/pola-rs/polars"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/recommendations/pola-rs--polars-dark.svg" /><img src="./assets/recommendations/pola-rs--polars-light.svg" width="368" alt="pola-rs/polars: A fast, expressive DataFrame engine." /></picture></a>
-  <a href="https://github.com/deepseek-ai/DeepGEMM"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/recommendations/deepseek-ai--deepgemm-dark.svg" /><img src="./assets/recommendations/deepseek-ai--deepgemm-light.svg" width="368" alt="deepseek-ai/DeepGEMM: Efficient GPU kernels for LLM workloads." /></picture></a>
-  <a href="https://github.com/Case3y/sleet-mono"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/recommendations/case3y--sleet-mono-dark.svg" /><img src="./assets/recommendations/case3y--sleet-mono-light.svg" width="368" alt="Case3y/sleet-mono: A playful monospace for everyday code." /></picture></a>
+  <a href="https://github.com/feldera/feldera"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-shelf-preview-assets/assets/recommendations/feldera--feldera-dark.svg" /><img src="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-shelf-preview-assets/assets/recommendations/feldera--feldera-light.svg" width="368" alt="feldera/feldera: Incremental SQL over changing data. 🗄️ Data Systems. Stars and Forks." /></picture></a>
+  <a href="https://github.com/pola-rs/polars"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-shelf-preview-assets/assets/recommendations/pola-rs--polars-dark.svg" /><img src="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-shelf-preview-assets/assets/recommendations/pola-rs--polars-light.svg" width="368" alt="pola-rs/polars: A fast, expressive DataFrame engine. 🗄️ Data Systems. Stars and Forks." /></picture></a>
+  <a href="https://github.com/deepseek-ai/DeepGEMM"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-shelf-preview-assets/assets/recommendations/deepseek-ai--deepgemm-dark.svg" /><img src="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-shelf-preview-assets/assets/recommendations/deepseek-ai--deepgemm-light.svg" width="368" alt="deepseek-ai/DeepGEMM: Efficient GPU kernels for LLM workloads. ⚡ AI Infrastructure. Stars and Forks." /></picture></a>
+  <a href="https://github.com/Case3y/sleet-mono"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-shelf-preview-assets/assets/recommendations/case3y--sleet-mono-dark.svg" /><img src="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-shelf-preview-assets/assets/recommendations/case3y--sleet-mono-light.svg" width="368" alt="Case3y/sleet-mono: A playful monospace for everyday code. 🎨 Developer Experience. Stars and Forks." /></picture></a>
 </p>
 <!-- REPO-SHELF:END -->
 
@@ -100,10 +100,10 @@ Selected Projects: temporarily hidden; content preserved.
 <p align="center">
   <a href="https://github.com/SleepyLGod?tab=overview">
     <picture>
-      <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/profile/code-atlas-mobile-dark.svg" />
-      <source media="(max-width: 600px)" srcset="./assets/profile/code-atlas-mobile-light.svg" />
-      <source media="(prefers-color-scheme: dark)" srcset="./assets/profile/code-atlas-dark.svg" />
-      <img src="./assets/profile/code-atlas-light.svg" width="760" alt="GitHub snapshot: contributions in the last 30 days and Stars earned by public original repositories." />
+      <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-shelf-preview-assets/assets/profile/code-atlas-mobile-dark.svg" />
+      <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-shelf-preview-assets/assets/profile/code-atlas-mobile-light.svg" />
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-shelf-preview-assets/assets/profile/code-atlas-dark.svg" />
+      <img src="https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-shelf-preview-assets/assets/profile/code-atlas-light.svg" width="760" alt="GitHub snapshot: contributions in the last 30 days and Stars earned by public original repositories." />
     </picture>
   </a>
 </p>

@@ -1,9 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="368" height="76" viewBox="0 0 368 76" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="368" height="94" viewBox="0 0 368 94" role="img" aria-labelledby="title desc">
 <title id="title">feldera/feldera</title>
-<desc id="desc">Incremental SQL over changing data.</desc>
-<rect x="0.5" y="0.5" width="367" height="75" rx="10" fill="#0d1117" stroke="#30363d"/>
+<desc id="desc">Data Systems. Incremental SQL over changing data. 2155 Stars; 177 Forks. Observed 2026-11-06T15:02:00Z. Source: https://github.com/feldera/feldera</desc>
+<rect x="0.5" y="0.5" width="367" height="93" rx="10" fill="#0d1117" stroke="#30363d"/>
+<g transform="translate(14 15)" fill="none" stroke="#c5a0f5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 4 16 4 16 0V5M4 12c0 4 16 4 16 0"/></g>
 <g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif">
-<text x="17" y="29" font-size="15"><tspan fill="#a7b0bc">feldera/</tspan><tspan fill="#c5a0f5" font-weight="600">feldera</tspan></text>
-<text x="17" y="54" font-size="12" fill="#a7b0bc">Incremental SQL over changing data.</text>
-<path d="M342 27h8v8m0-8-10 10" fill="none" stroke="#a7b0bc" stroke-width="1.3"/>
+<text x="48" y="30" font-size="14"><tspan fill="#a7b0bc">feldera/</tspan><tspan fill="#c5a0f5" font-weight="600">feldera</tspan></text>
+<text x="48" y="51" font-size="12" fill="#a7b0bc">Incremental SQL over changing data.</text>
+<g transform="translate(48 65)" fill="none" stroke="#c99a3c" stroke-width="1.2" stroke-linejoin="round"><title>Stars</title><path d="m6 0 1.8 3.7 4.2.6-3 2.9.7 4.1L6 9.4l-3.7 1.9.7-4.1-3-2.9 4.2-.6z"/></g>
+<text class="repo-stars" x="67" y="75" font-size="11" fill="#a7b0bc">2,155</text>
+<g transform="translate(142 65)" fill="none" stroke="#c5a0f5" stroke-width="1.2"><title>Forks</title><circle cx="2" cy="2" r="1.8"/><circle cx="10" cy="2" r="1.8"/><circle cx="6" cy="11" r="1.8"/><path d="M2 4v2h8V4M6 6v3"/></g>
+<text class="repo-forks" x="161" y="75" font-size="11" fill="#a7b0bc">177</text>
+<text class="repo-category" x="350" y="75" font-size="10" text-anchor="end" fill="#c5a0f5">Data Systems</text>
+<path d="M342 24h8v8m0-8-10 10" fill="none" stroke="#a7b0bc" stroke-width="1.3"/>
 </g></svg>
