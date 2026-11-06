@@ -1,26 +1,81 @@
 [
   {
-    "repo": "feldera/feldera",
-    "category": "data",
-    "icon": "database",
-    "description": "Incremental SQL over changing data."
-  },
-  {
-    "repo": "pola-rs/polars",
-    "category": "data",
-    "icon": "table",
-    "description": "A fast, expressive DataFrame engine."
-  },
-  {
-    "repo": "deepseek-ai/DeepGEMM",
-    "category": "ai",
-    "icon": "chip",
-    "description": "Efficient GPU kernels for LLM workloads."
-  },
-  {
-    "repo": "Case3y/sleet-mono",
-    "category": "dev",
+    "repo": "SleepyLGod/jinyong-fiction-craft-skill",
+    "category": "skills",
     "icon": "type",
-    "description": "A playful monospace for everyday code."
+    "description": "Fiction craft grounded in Jin Yong's novels."
+  },
+  {
+    "repo": "SleepyLGod/jiangnan-fiction-craft-skill",
+    "category": "skills",
+    "icon": "type",
+    "description": "Scene analysis and fiction revision guidance."
+  },
+  {
+    "repo": "SleepyLGod/research-radar",
+    "category": "tools",
+    "icon": "search",
+    "description": "Evidence-grounded research briefings."
+  },
+  {
+    "repo": "SleepyLGod/moment-studio",
+    "category": "tools",
+    "icon": "image",
+    "description": "AI photo editing, styles and collages."
+  },
+  {
+    "repo": "SleepyLGod/oh-my-score",
+    "category": "tools",
+    "icon": "music",
+    "description": "Audio-to-MIDI and piano playback."
+  },
+  {
+    "repo": "SleepyLGod/Tonepath",
+    "category": "tools",
+    "icon": "music",
+    "description": "A local music agent for listening paths."
+  },
+  {
+    "repo": "SleepyLGod/qwidget-demos",
+    "category": "tools",
+    "icon": "table",
+    "description": "43 Qt components with CSS-like styling."
+  },
+  {
+    "repo": "JumboArbitrage/arbitrage-public",
+    "category": "tools",
+    "icon": "chart",
+    "description": "An experimental Ethereum arbitrage toolkit."
+  },
+  {
+    "repo": "SleepyLGod/eos-predictor",
+    "category": "research",
+    "icon": "chip",
+    "description": "EOS token prediction for autoregressive LMs."
+  },
+  {
+    "repo": "SleepyLGod/aibrix",
+    "category": "research",
+    "icon": "chip",
+    "description": "Infrastructure for serving LLMs at scale."
+  },
+  {
+    "repo": "SleepyLGod/agent-memory",
+    "category": "research",
+    "icon": "database",
+    "description": "Declarative memory with semantic views."
+  },
+  {
+    "repo": "cuhk-systems/vllm-sd",
+    "category": "research",
+    "icon": "chip",
+    "description": "Agentic scheduling on top of vLLM.",
+    "public": false
+  },
+  {
+    "repo": "SleepyLGod/hust-projects",
+    "category": "teaching",
+    "icon": "book",
+    "description": "HUST coursework and lab projects."
   }
 ]

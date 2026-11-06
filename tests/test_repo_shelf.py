@@ -19,8 +19,12 @@ SPEC.loader.exec_module(shelf)
 
 class RepoShelfTests(unittest.TestCase):
     def repos(self):
-        return [{"repo": "example/data", "description": "Changing data.", "category": "data", "icon": "database"},
-                {"repo": "example/compute", "description": "GPU kernels.", "category": "ai", "icon": "chip"}]
+        return [{"repo": "example/data", "description": "Changing data.", "category": "skills", "icon": "database"},
+                {"repo": "example/compute", "description": "GPU kernels.", "category": "research", "icon": "chip"}]
+
+    def closed_repo(self):
+        return {"repo": "private/project", "description": "Agentic scheduling on top of vLLM.",
+                "category": "research", "icon": "chip", "public": False}
 
     def snapshot(self):
         return {"version": 1, "captured_at": "2026-11-06T03:00:00Z", "repositories": [
@@ -35,7 +39,7 @@ class RepoShelfTests(unittest.TestCase):
             stars = next(e for e in root.iter() if e.get("class") == "repo-stars")
             forks = next(e for e in root.iter() if e.get("class") == "repo-forks")
             self.assertEqual((stars.text, forks.text), ("12,345", "0"))
-            self.assertIn("Data Systems", card)
+            self.assertIn("Skills", card)
             self.assertIn("12345 Stars; 0 Forks", card)
             self.assertNotIn("<script", card)
             self.assertNotIn("<image", card)
@@ -72,7 +76,7 @@ class RepoShelfTests(unittest.TestCase):
 
     def test_categories_preserve_native_links_to_each_repository(self):
         html = shelf.render_readme(self.repos(), "./assets/recommendations/")
-        self.assertLess(html.index("Data Systems"), html.index("AI Infrastructure"))
+        self.assertLess(html.index("Skills"), html.index("Research"))
         for repo in self.repos():
             self.assertIn(f'<a href="https://github.com/{repo["repo"]}"><picture>', html)
 
@@ -85,6 +89,45 @@ class RepoShelfTests(unittest.TestCase):
                 with self.assertRaises(ValueError):
                     shelf.write_cards(output, self.repos(), self.snapshot())
             self.assertEqual(previous, {p.name: p.read_bytes() for p in output.iterdir()})
+
+    def test_closed_project_is_never_requested_from_github(self):
+        public = self.repos()[0]
+        response = {"private": False, "full_name": public["repo"], "stargazers_count": 2, "forks_count": 0}
+        with patch.object(shelf, "urlopen", return_value=io.BytesIO(json.dumps(response).encode())) as request:
+            snapshot = shelf.fetch_stats([self.closed_repo(), public], "test-token")
+        self.assertEqual(request.call_count, 1)
+        self.assertNotIn("private/project", request.call_args.args[0].full_url)
+        self.assertEqual([r["repo"] for r in snapshot["repositories"]], [public["repo"]])
+
+    def test_closed_project_has_no_link_or_invented_star_and_fork_counts(self):
+        repo = self.closed_repo()
+        for theme in shelf.PALETTES:
+            content = shelf.render_card(repo, None, self.snapshot()["captured_at"], theme)
+            root = ET.fromstring(content)
+            self.assertIn("Not Yet Public", content)
+            self.assertIn("Agentic scheduling on top of vLLM.", content)
+            self.assertFalse(any(e.get("class") in ("repo-stars", "repo-forks") for e in root.iter()))
+        html = shelf.render_readme([repo], "./assets/recommendations/")
+        self.assertNotIn("<a ", html)
+        self.assertIn("<picture>", html)
+
+    def test_closed_project_metadata_cannot_be_accidentally_published(self):
+        repos = self.repos() + [self.closed_repo()]
+        snapshot = self.snapshot()
+        shelf.validate_stats(snapshot, repos)
+        snapshot["repositories"].append({"repo": "private/project", "stars": 0, "forks": 0,
+                                         "source": "https://github.com/private/project"})
+        with self.assertRaises(ValueError):
+            shelf.validate_stats(snapshot, repos)
+
+    def test_closed_flag_must_be_an_explicit_boolean(self):
+        repo = self.closed_repo()
+        repo["public"] = "false"
+        with tempfile.TemporaryDirectory() as directory:
+            source = Path(directory) / "repos.json"
+            source.write_text(json.dumps([repo]))
+            with self.assertRaisesRegex(ValueError, "boolean"):
+                shelf.load_repos(source)
 
 
 if __name__ == "__main__":

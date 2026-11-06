@@ -19,13 +19,18 @@ PALETTES = {
     "dark": ("#0d1117", "#30363d", "#c5a0f5", "#a7b0bc"),
     "light": ("#ffffff", "#d1d9e0", "#8050b5", "#59636e"),
 }
-CATEGORIES = {"data": "🗄️ Data Systems", "ai": "⚡ AI Infrastructure", "dev": "🎨 Developer Experience"}
+CATEGORIES = {"skills": "🪶 Skills", "tools": "🧰 Toys / Tools", "research": "🔬 Research", "teaching": "🎓 Teaching"}
 ASSET_BASE = "https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-shelf-preview-assets/assets/recommendations/"
 ICONS = {
     "database": '<ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 4 16 4 16 0V5M4 12c0 4 16 4 16 0"/>',
     "table": '<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M10 3v18"/>',
     "chip": '<rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4m6-4v4M9 18v4m6-4v4M2 9h4m-4 6h4m12-6h4m-4 6h4M10 10h4v4h-4z"/>',
     "type": '<path d="M4 6V3h16v3M12 3v18m-4 0h8"/>',
+    "search": '<circle cx="10" cy="10" r="6"/><path d="m15 15 6 6"/>',
+    "image": '<rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="8" r="2"/><path d="m3 18 6-6 4 4 3-3 5 5"/>',
+    "music": '<path d="M9 17V5l11-2v12M9 8l11-2"/><ellipse cx="6" cy="18" rx="3" ry="2"/><ellipse cx="17" cy="16" rx="3" ry="2"/>',
+    "chart": '<path d="M3 3v18h18M6 15l5-5 4 3 6-8m-5 0h5v5"/>',
+    "book": '<path d="M12 5C9 2 5 2 2 4v16c3-2 7-2 10 1 3-3 7-3 10-1V4c-3-2-7-2-10 1v16"/>',
 }
 
 
@@ -42,6 +47,8 @@ def load_repos(path):
             raise ValueError("Keep each description to one short line")
         if repo.get("category") not in CATEGORIES or repo.get("icon") not in ICONS:
             raise ValueError("Unknown category or topic icon")
+        if type(repo.get("public", True)) is not bool:
+            raise ValueError("Repository public status must be a boolean")
         seen.add(name.casefold())
     return repos
 
@@ -66,8 +73,8 @@ def validate_stats(snapshot, repos):
         if not record.get("source", "").startswith("https://"):
             raise ValueError("Missing statistics source")
         by_name[name] = record
-    if set(by_name) != {repo["repo"].casefold() for repo in repos}:
-        raise ValueError("Statistics must cover every selected repository exactly once")
+    if set(by_name) != {repo["repo"].casefold() for repo in repos if repo.get("public", True)}:
+        raise ValueError("Statistics must cover every selected public repository exactly once")
     return by_name
 
 
@@ -78,6 +85,8 @@ def fetch_stats(repos, token):
         headers["Authorization"] = f"Bearer {token}"
     records = []
     for repo in repos:
+        if not repo.get("public", True):
+            continue
         url = f'https://api.github.com/repos/{repo["repo"]}'
         try:
             with urlopen(Request(url, headers=headers), timeout=30) as response:
@@ -97,23 +106,29 @@ def fetch_stats(repos, token):
 def render_card(repo, stats, observed, theme):
     background, border, accent, muted = PALETTES[theme]
     owner, project = repo["repo"].split("/")
-    stars, forks = f'{stats["stars"]:,}', f'{stats["forks"]:,}'
+    public = repo.get("public", True)
     category = CATEGORIES[repo["category"]].split(" ", 1)[1]
-    description = f'{category}. {repo["description"]} {stats["stars"]} Stars; {stats["forks"]} Forks. Observed {observed}. Source: {stats["source"]}'
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="368" height="94" viewBox="0 0 368 94" role="img" aria-labelledby="title desc">
+    if public:
+        stars, forks = f'{stats["stars"]:,}', f'{stats["forks"]:,}'
+        description = f'{category}. {repo["description"]} {stats["stars"]} Stars; {stats["forks"]} Forks. Observed {observed}. Source: {stats["source"]}'
+        metadata = f'''<g transform="translate(44 57)" fill="none" stroke="#c99a3c" stroke-width="1.2" stroke-linejoin="round"><title>Stars</title><path d="m6 0 1.8 3.7 4.2.6-3 2.9.7 4.1L6 9.4l-3.7 1.9.7-4.1-3-2.9 4.2-.6z"/></g>
+<text class="repo-stars" x="63" y="67" font-size="10.5" fill="{muted}">{stars}</text>
+<g transform="translate(130 57)" fill="none" stroke="{accent}" stroke-width="1.2"><title>Forks</title><circle cx="2" cy="2" r="1.8"/><circle cx="10" cy="2" r="1.8"/><circle cx="6" cy="11" r="1.8"/><path d="M2 4v2h8V4M6 6v3"/></g>
+<text class="repo-forks" x="149" y="67" font-size="10.5" fill="{muted}">{forks}</text>
+<path d="M342 18h8v8m0-8-10 10" fill="none" stroke="{muted}" stroke-width="1.3"/>'''
+    else:
+        description = f'{category}. {repo["description"]} Not yet public.'
+        metadata = f'''<g transform="translate(44 56)" fill="none" stroke="{muted}" stroke-width="1.2"><rect x="0" y="4" width="10" height="8" rx="1.5"/><path d="M2 4V2a3 3 0 0 1 6 0v2"/></g>
+<text class="repo-status" x="62" y="67" font-size="10.5" fill="{muted}">Not Yet Public</text>'''
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="368" height="80" viewBox="0 0 368 80" role="img" aria-labelledby="title desc">
 <title id="title">{escape(repo["repo"])}</title>
 <desc id="desc">{escape(description)}</desc>
-<rect x="0.5" y="0.5" width="367" height="93" rx="10" fill="{background}" stroke="{border}"/>
-<g transform="translate(14 15)" fill="none" stroke="{accent}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">{ICONS[repo["icon"]]}</g>
+<rect x="0.5" y="0.5" width="367" height="79" rx="8" fill="{background}" stroke="{border}"/>
+<g transform="translate(12 10) scale(.9)" fill="none" stroke="{accent}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">{ICONS[repo["icon"]]}</g>
 <g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif">
-<text x="48" y="30" font-size="14"><tspan fill="{muted}">{escape(owner)}/</tspan><tspan fill="{accent}" font-weight="600">{escape(project)}</tspan></text>
-<text x="48" y="51" font-size="12" fill="{muted}">{escape(repo["description"])}</text>
-<g transform="translate(48 65)" fill="none" stroke="#c99a3c" stroke-width="1.2" stroke-linejoin="round"><title>Stars</title><path d="m6 0 1.8 3.7 4.2.6-3 2.9.7 4.1L6 9.4l-3.7 1.9.7-4.1-3-2.9 4.2-.6z"/></g>
-<text class="repo-stars" x="67" y="75" font-size="11" fill="{muted}">{stars}</text>
-<g transform="translate(142 65)" fill="none" stroke="{accent}" stroke-width="1.2"><title>Forks</title><circle cx="2" cy="2" r="1.8"/><circle cx="10" cy="2" r="1.8"/><circle cx="6" cy="11" r="1.8"/><path d="M2 4v2h8V4M6 6v3"/></g>
-<text class="repo-forks" x="161" y="75" font-size="11" fill="{muted}">{forks}</text>
-<text class="repo-category" x="350" y="75" font-size="10" text-anchor="end" fill="{accent}">{escape(category)}</text>
-<path d="M342 24h8v8m0-8-10 10" fill="none" stroke="{muted}" stroke-width="1.3"/>
+<text x="44" y="24" font-size="13"><tspan fill="{muted}">{escape(owner)}/</tspan><tspan fill="{accent}" font-weight="600">{escape(project)}</tspan></text>
+<text x="44" y="45" font-size="11.5" fill="{muted}">{escape(repo["description"])}</text>
+{metadata}
 </g></svg>
 '''
 
@@ -128,11 +143,14 @@ def render_readme(repos, asset_base):
         for repo in selected:
             name = repo["repo"]
             slug = name.lower().replace("/", "--")
-            alt = escape(f'{name}: {repo["description"]} {label}. Stars and Forks.', quote=True)
+            public = repo.get("public", True)
+            status = "Stars and Forks." if public else "Not Yet Public."
+            alt = escape(f'{name}: {repo["description"]} {label}. {status}', quote=True)
             dark, light = (escape(asset_base.rstrip("/") + f"/{slug}-{theme}.svg", quote=True) for theme in ("dark", "light"))
-            links.append(f'  <a href="https://github.com/{name}"><picture><source media="(prefers-color-scheme: dark)" srcset="{dark}" /><img src="{light}" width="368" alt="{alt}" /></picture></a>')
-        groups.extend(links)
-    return '<p align="center">\n' + '\n'.join(groups) + '\n</p>'
+            picture = f'<picture><source media="(prefers-color-scheme: dark)" srcset="{dark}" /><img src="{light}" width="368" alt="{alt}" /></picture>'
+            links.append(f'  <a href="https://github.com/{name}">{picture}</a>' if public else '  ' + picture)
+        groups.append(f'<h4 align="center">{label}</h4>\n<p align="center">\n' + '\n'.join(links) + '\n</p>')
+    return '\n\n'.join(groups)
 
 
 def write_cards(output, repos, snapshot):
@@ -141,7 +159,7 @@ def write_cards(output, repos, snapshot):
     for repo in repos:
         slug = repo["repo"].lower().replace("/", "--")
         for theme in PALETTES:
-            svg = render_card(repo, stats[repo["repo"].casefold()], snapshot["captured_at"], theme)
+            svg = render_card(repo, stats.get(repo["repo"].casefold()), snapshot["captured_at"], theme)
             ET.fromstring(svg)
             cards[f"{slug}-{theme}.svg"] = svg
     cards["stats.json"] = json.dumps(snapshot, ensure_ascii=False, indent=2) + '\n'

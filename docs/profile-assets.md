@@ -47,7 +47,7 @@ reviewed desktop light/dark and mobile layouts.
 
 ## Profile statistics and repository shelf (preview)
 
-This design branch uses a 64-pixel strip with two values: contributions in the
+This design branch uses a borderless 30-pixel line below the identity and research interests with two values: contributions in the
 last 30 UTC calendar days (including today), and Stars earned by public,
 non-fork repositories, including archived repositories. It has no visible
 language groups, orbit, snapshot date, or footnote. Exact dates and scope are
@@ -72,10 +72,12 @@ count from a version-1 repository-only snapshot. The managed cloud environment
 blocks `api.github.com`; API access is exercised in the hosted refresh workflow,
 while local tests verify partial-data and publication-failure handling.
 
-The shelf uses light/dark cards generated from `profile/recommendations.json`
+The project section uses light/dark cards generated from `profile/recommendations.json`
 and `assets/recommendations/stats.json`. Each card shows a topic icon, name,
-one-line description, category label, and exact Star/Fork counts. Every repository
-is its own native HTML link. See
+one-line description and exact Star/Fork counts, under one of four group headings.
+The explicitly not-yet-public project has no link or counters and is skipped
+by metadata requests. Each public repository
+has its own native HTML link. See
 [the prototype notes](profile-shelf-prototype.md) for researched examples, source
 checks, selection rationale, and deployment instructions.
 

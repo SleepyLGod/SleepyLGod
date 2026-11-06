@@ -160,7 +160,7 @@ def summarize(snapshot):
 def render_card(snapshot, theme, mobile=False):
     data = summarize(snapshot)
     palette = PALETTES[theme]
-    width, height = (360, 64) if mobile else (760, 64)
+    width, height = (360, 30) if mobile else (520, 30)
     observed = datetime.fromisoformat(snapshot["captured_at"].replace("Z", "+00:00"))
     days = normalize_recent_days(snapshot["recent_days"], observed)
     contributions = sum(day["contributionCount"] for day in days)
@@ -172,15 +172,13 @@ def render_card(snapshot, theme, mobile=False):
     parts = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">',
              '<title id="title">Recent Contributions and Stars</title>',
              f'<desc id="desc">{escape(description)}</desc>',
-             f'<rect x="0.5" y="0.5" width="{width - 1}" height="63" rx="10" fill="{palette["background"]}" stroke="{palette["border"]}"/>',
-             f'<path d="M{width // 2} 16v32" stroke="{palette["border"]}"/>',
+             f'<path d="M{width // 2} 7v16" stroke="{palette["border"]}"/>',
              f'<g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif">']
     for index, (value, label) in enumerate(((contributions, "Contributions · 30 Days"), (data["stars"], "Stars"))):
-        x = 90 + index * 180 if mobile else 132 + index * 380
-        y, label_x, label_y = (29, x, 50) if mobile else (42, x + 16, 39)
-        anchor = "middle" if mobile else "end"
-        parts.append(f'<text x="{x}" y="{y}" font-size="{24 if mobile else 28}" text-anchor="{anchor}" font-weight="600" fill="{palette["dots"][0]}">{value:,}</text>')
-        parts.append(f'<text x="{label_x}" y="{label_y}" font-size="{10.5 if mobile else 12}" text-anchor="{anchor if mobile else "start"}" fill="{palette["muted"]}">{label}</text>')
+        x = (38, 267)[index] if mobile else (80, 384)[index]
+        label_x = x + (6 if mobile else 10)
+        parts.append(f'<text x="{x}" y="21" font-size="{15 if mobile else 16}" text-anchor="end" font-weight="600" fill="{palette["dots"][0]}">{value:,}</text>')
+        parts.append(f'<text x="{label_x}" y="20" font-size="{10.5 if mobile else 11.5}" fill="{palette["muted"]}">{label}</text>')
     parts.append("</g></svg>\n")
     return "\n".join(parts)
 

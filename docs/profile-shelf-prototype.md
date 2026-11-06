@@ -1,96 +1,72 @@
-# Repo Shelf prototype
+# Selected projects preview
 
-This branch is a design preview. The live profile on `main` is unchanged.
-The shelf uses manually chosen repositories rather than the account's pinned
-projects or an automatically changing list of recent Stars. It is not limited
-by GitHub's native pin count and can link to anyone's public repository.
+This branch previews the user's explicit 13-project list. The live profile on
+`main` is unchanged. The previous four suggested external repositories have been
+replaced with Skills (2), Toys / Tools (6), Research (4), and Teaching (1), in the
+user's requested order.
 
-## References checked on 2026-11-06
+## Presentation
 
-- [DenverCoder1's profile](https://github.com/DenverCoder1/DenverCoder1#-top-projects-ive-contributed-to)
-  uses linked cards for repositories owned by other accounts. The `owner/repo`
-  link, rather than the account's pins, determines which project appears.
-- [lowlighter/metrics Stars plugin](https://github.com/lowlighter/metrics/tree/master/source/plugins/stars)
-  generates a recently starred list in an SVG. This prototype uses a curated
-  list so a new Star does not silently change what the profile recommends.
-- [GitHub Readme Stats pin cards](https://github.com/anuraghazra/github-readme-stats#github-extra-pins)
-  also accept arbitrary owners and repositories. Its README describes the
-  public endpoint as best-effort and points to successors. No such endpoint is
-  used here.
+The contribution/Star summary is now one borderless line, 30 pixels high, below
+the identity and research interests and before the contact links. Counts and
+labels share the same baseline; there is no large number panel or footnote.
+Desktop output is 520 pixels wide; the mobile variant is 360 pixels wide.
 
-## Candidate selection
+The project section has four visible group headings and 80-pixel cards. Public
+cards retain a topic icon, repository name, one-line introduction, exact Stars
+and Forks, and a native HTML link. Narrow screens wrap the cards to one column.
+Descriptions were checked against the 12 public GitHub pages. The ETH arbitrage
+project is described as experimental, matching its public repository description.
 
-All four candidates were visible in
-[SleepyLGod's public Stars](https://github.com/SleepyLGod?tab=stars) when checked.
-Descriptions were checked against each project's public GitHub page. Being
-starred is the selection evidence, not a claim about production use or a formal
-endorsement. The user asked Codex to choose a sample.
+## Not-yet-public research
 
-| Candidate | Why it fits this sample |
-| --- | --- |
-| [feldera/feldera](https://github.com/feldera/feldera) | Incremental data processing and SQL. |
-| [pola-rs/polars](https://github.com/pola-rs/polars) | DataFrame processing and query execution. |
-| [deepseek-ai/DeepGEMM](https://github.com/deepseek-ai/DeepGEMM) | GPU kernels for LLM infrastructure. |
-| [Case3y/sleet-mono](https://github.com/Case3y/sleet-mono) | A lighter personal-interest choice: a programming typeface. |
+The user supplied the `vllm-sd` description: **Agentic scheduling on top of vLLM.**
+Its config explicitly has `public: false`. It is shown as Not Yet Public with a
+lock icon, without an anchor, external-link arrow, Star count, or Fork count.
+The metadata updater skips it before constructing or requesting any API URL.
+Only the user's supplied name and description are rendered; no private repository
+was accessed. Tests verify that the closed entry makes no network request, gets
+no invented zero counts, and cannot accidentally enter the public stats snapshot.
+
+## Configuration and refresh
 
 Edit `profile/recommendations.json`, then run `python scripts/build_repo_shelf.py`.
-Each entry has a category (`data`, `ai`, or `dev`) and topic icon. Cards are ordered
-by category and show a small category label, a vector topic icon, exact Stars,
-exact Forks (including zero), and the repository's one-line introduction. The
-compact two-column layout remains, wrapping to one column on narrow screens.
-Each 94-pixel card is its own native HTML link to the public repository.
+Each entry selects a category and vector topic icon. `public` defaults to true;
+non-public entries require an explicit boolean false. All 13 cards have local
+light and dark SVGs; `assets/recommendations/stats.json` contains only the 12
+public repositories' observed counts and source URLs.
 
-`assets/recommendations/stats.json` records counts, source URLs, and the original
-observation time. `--refresh` reads all selected public repositories from GitHub
-REST, validates every response, and renders all light/dark cards before replacing
-any cached file. Missing, private, or renamed repositories fail the refresh;
-partial data never overwrites the last successful snapshot. Ordinary offline
-rebuilds preserve the observation time and need no token.
+`--refresh` reads public metadata using GitHub REST. All selected public records
+must validate before any output is replaced. Public repositories unexpectedly
+becoming private, disappearing, or moving stop publication and preserve the last
+good images. Entries intentionally marked non-public are never queried and do
+not block a refresh. Ordinary offline rebuilds retain the observation time.
 
-## Automatic refresh
-
-The existing workflow now refreshes both the personal contribution/Star strip
-and all recommended repositories' Stars/Forks. It generates in temporary folders
-and publishes all images and both JSON snapshots in a single ordinary Git commit.
-The built-in `GITHUB_TOKEN` is enough; no additional secret or card service is
-used. Public page imports supplied the initial recommendation counts; hosted
-refreshes use the structured GitHub API instead of parsing rounded display text.
+GitHub Actions refreshes both the recent-activity strip and project counters,
+then publishes all images and both JSON snapshots in one ordinary Git commit.
+The built-in `GITHUB_TOKEN` is enough. No extra card service, font CDN, or always-on
+cloud computer is used.
 
 - Preview source: `codex/profile-repo-shelf-20261106`.
-- Preview image branch: `profile-shelf-preview-assets`, initialized before use.
-- Production image branch: `profile-assets`, separate from the preview.
-- Triggers: relevant source/config pushes and manual workflow dispatch.
-- After deployment to `main`, the existing daily schedule refreshes everything at
-  06:37 Hong Kong time. GitHub can delay scheduled jobs and image caches.
+- Preview image branch: `profile-shelf-preview-assets`.
+- Production image branch: `profile-assets`.
+- Preview triggers: relevant config/source pushes and manual dispatch.
+- After deployment to `main`: daily at 06:37 Hong Kong time, plus those triggers.
 
-The preview README already references the live preview image branch. The local
-preview builder embeds reviewed local copies of these images and keeps previews
-self-contained. On a production merge, regenerate the shelf using
+GitHub may delay jobs or cache image responses. The last successful publication
+continues to display if a refresh fails. The offline preview builder embeds
+reviewed local copies of the same-repository image URLs.
+
+Before a production merge, regenerate project image URLs with
 `--asset-base https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-assets/assets/recommendations/`
-and change the strip's four image URLs to the same production resource branch.
-The two publication targets keep preview updates from modifying the live profile.
+and change the strip's four image URLs to the production resource branch.
+Preview publications do not modify the current live profile.
 
-## Two-metric snapshot
+## Data scope
 
-The prototype replaces the language constellation with a 64-pixel strip:
-**contributions in the last 30 UTC calendar days**, including today, and **Stars
-earned by public, non-fork repositories** (including archived repositories).
-There is no visible heading, language legend, date, or footnote. Exact dates,
-source URLs, and repository scope remain in the SVG's accessible description
-and the JSON snapshot. Today's contribution count can still change.
-
-Snapshot version 2 requires all 30 days. Production refresh reads the repository
-list from GitHub REST and the contribution calendar from GitHub GraphQL. Both
-must succeed before any previous image is replaced. The preview was populated
-from complete official public repository and contribution-calendar pages;
-its counts are observed, not placeholders. GitHub Actions verifies the REST and GraphQL fetches together; failure of either
-source preserves the prior publication.
-
-## Verified hosted refresh
-
-[Run 42243033770](https://github.com/SleepyLGod/SleepyLGod/actions/runs/42243033770)
-completed successfully for source commit `8ef77a9`. It fetched recent activity
-through GitHub GraphQL, public repository data through REST, and each of the
-four recommendations' exact Stars/Forks. It published the complete image set
-and both snapshots to `profile-shelf-preview-assets` as a bot commit. The live
-profile's `main` and production `profile-assets` were not changed.
+The strip counts contributions in the last 30 UTC calendar days (including the
+current day) and Stars earned by public, non-fork account-owned repositories.
+Those totals are separate from per-card counters, which cover the exact public
+repository URLs the user selected, including their selected fork and organization
+repository. Precise observation dates and source URLs are kept in JSON and SVG
+accessible descriptions, with no visible date/footer clutter.
