@@ -1,0 +1,18 @@
+[
+  {
+    "repo": "feldera/feldera",
+    "description": "Incremental SQL over changing data."
+  },
+  {
+    "repo": "pola-rs/polars",
+    "description": "A fast, expressive DataFrame engine."
+  },
+  {
+    "repo": "deepseek-ai/DeepGEMM",
+    "description": "Efficient GPU kernels for LLM workloads."
+  },
+  {
+    "repo": "Case3y/sleet-mono",
+    "description": "A playful monospace for everyday code."
+  }
+]

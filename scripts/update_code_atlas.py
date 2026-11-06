@@ -1,16 +1,14 @@
 #!/usr/bin/env python3
-"""Build a repository-hosted Code Atlas from public, non-fork GitHub repositories.
+"""Build repository-hosted recent contribution and Star snapshots.
 
 Only Python's standard library is needed. A saved JSON snapshot can also be
 rendered offline without changing its observation date.
 """
 
 import argparse
-from collections import Counter
-from datetime import datetime, timedelta, timezone
+from datetime import date, datetime, timedelta, timezone
 from html import escape
 import json
-import math
 import os
 from pathlib import Path
 import re
@@ -40,7 +38,7 @@ def valid_username(username):
 
 
 def validate_snapshot(snapshot):
-    if not isinstance(snapshot, dict) or snapshot.get("version") != 1:
+    if not isinstance(snapshot, dict) or snapshot.get("version") != 2:
         raise ValueError("Unsupported Code Atlas snapshot")
     valid_username(snapshot.get("username"))
     captured = snapshot.get("captured_at")
@@ -70,6 +68,9 @@ def validate_snapshot(snapshot):
         language = repo.get("language")
         if language is not None and (not isinstance(language, str) or not language.strip()):
             raise ValueError("Invalid primary language")
+    normalize_recent_days(snapshot.get("recent_days"), observed)
+    if not isinstance(snapshot.get("recent_source"), str) or not snapshot["recent_source"].startswith("https://"):
+        raise ValueError("Snapshot needs a recent activity source")
     return snapshot
 
 
@@ -105,83 +106,81 @@ def fetch_repositories(username, token):
     raise ValueError("Repository pagination limit reached; refusing truncated data")
 
 
+def normalize_recent_days(raw, observed):
+    end = observed.astimezone(timezone.utc).date()
+    expected = [(end - timedelta(days=29 - index)).isoformat() for index in range(30)]
+    if not isinstance(raw, list):
+        raise ValueError("Expected 30 complete days of recent contributions")
+    selected = {}
+    for day in raw:
+        day_date = date.fromisoformat(day["date"]).isoformat()
+        count = day["contributionCount"]
+        if type(count) is not int or count < 0:
+            raise ValueError("Contribution counts must be nonnegative integers")
+        if day_date in expected:
+            if day_date in selected:
+                raise ValueError("Duplicate recent contribution date")
+            selected[day_date] = count
+    if set(selected) != set(expected):
+        raise ValueError("Expected 30 complete days of recent contributions")
+    return [{"date": day, "contributionCount": selected[day]} for day in expected]
+
+
+def fetch_recent_days(username, observed, token):
+    if not token:
+        raise ValueError("Recent contribution refresh needs GH_TOKEN or GITHUB_TOKEN")
+    first = observed.astimezone(timezone.utc).date() - timedelta(days=29)
+    query = """query($login: String!, $from: DateTime!, $to: DateTime!) {
+      user(login: $login) { contributionsCollection(from: $from, to: $to) {
+        contributionCalendar { weeks { contributionDays { date contributionCount } } }
+      } }
+    }"""
+    payload = json.dumps({"query": query, "variables": {"login": username,
+        "from": f"{first}T00:00:00Z", "to": observed.isoformat()}}).encode()
+    request = Request("https://api.github.com/graphql", data=payload, headers={
+        "Authorization": f"Bearer {token}", "Content-Type": "application/json",
+        "User-Agent": "SleepyLGod-Profile-Snapshot", "Accept": "application/vnd.github+json"})
+    try:
+        with urlopen(request, timeout=30) as response:
+            result = json.load(response)
+    except HTTPError as error:
+        raise RuntimeError(f"GitHub activity API returned HTTP {error.code}; keeping the previous snapshot") from None
+    if result.get("errors") or not (result.get("data") or {}).get("user"):
+        raise ValueError("GitHub did not return a complete recent activity calendar")
+    calendar = result["data"]["user"]["contributionsCollection"]["contributionCalendar"]
+    days = [day for week in calendar["weeks"] for day in week["contributionDays"]]
+    return normalize_recent_days(days, observed)
+
+
 def summarize(snapshot):
     repos = snapshot["repositories"]
-    languages = Counter(repo["language"] for repo in repos if repo["language"] is not None)
-    ordered = sorted(languages.items(), key=lambda item: (-item[1], item[0].casefold()))
-    # Keep three named groups, then account for every remaining language and
-    # repository without a detected language. Each repository is exactly one dot.
-    groups = ordered[:3]
-    if len(ordered) > 3:
-        groups.append(("Other Languages", sum(count for _, count in ordered[3:])))
-    unknown = sum(repo["language"] is None for repo in repos)
-    if unknown:
-        groups.append(("Unclassified", unknown))
-    return {"repos": len(repos), "stars": sum(repo["stars"] for repo in repos),
-            "languages": len(languages), "distribution": ordered, "groups": groups}
+    return {"repos": len(repos), "stars": sum(repo["stars"] for repo in repos)}
 
 
 def render_card(snapshot, theme, mobile=False):
     data = summarize(snapshot)
     palette = PALETTES[theme]
-    width, height = (360, 324) if mobile else (760, 224)
+    width, height = (360, 64) if mobile else (760, 64)
     observed = datetime.fromisoformat(snapshot["captured_at"].replace("Z", "+00:00"))
-    day = observed.astimezone(HONG_KONG).date()
-    language_summary = ", ".join(f"{name}: {count}" for name, count in data["distribution"])
-    description = (f'{snapshot["username"]}: {data["repos"]} public, non-fork repositories, '
-                   f'{data["stars"]} stars earned, {data["languages"]} primary languages. '
-                   f'One dot is one repository. Language groups count repositories, not code bytes or proficiency. '
-                   f'Includes archived repositories. {language_summary}. '
-                   f'Snapshot {day} Hong Kong time. Source: {snapshot["source"]}')
+    days = normalize_recent_days(snapshot["recent_days"], observed)
+    contributions = sum(day["contributionCount"] for day in days)
+    description = (f'{snapshot["username"]}: {contributions} contributions from {days[0]["date"]} '
+                   f'through {days[-1]["date"]} UTC; {data["stars"]} stars earned by '
+                   f'{data["repos"]} public, non-fork repositories, including archived repositories. '
+                   f'Snapshot {observed.astimezone(HONG_KONG).date()} Hong Kong time. '
+                   f'Sources: {snapshot["source"]}; {snapshot["recent_source"]}')
     parts = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">',
-             '<title id="title">Code Atlas · A Constellation of Code</title>',
+             '<title id="title">Recent Contributions and Stars</title>',
              f'<desc id="desc">{escape(description)}</desc>',
-             f'<rect x="0.5" y="0.5" width="{width - 1}" height="{height - 1}" rx="14" fill="{palette["background"]}" stroke="{palette["border"]}"/>',
-             f'<g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" fill="{palette["text"]}">']
-
-    def text(x, y, value, size=13, color=None, anchor="start", weight="400", spacing=None):
-        tracking = f' letter-spacing="{spacing}"' if spacing else ""
-        parts.append(f'<text x="{x}" y="{y}" font-size="{size}" fill="{color or palette["text"]}" text-anchor="{anchor}" font-weight="{weight}"{tracking}>{escape(str(value))}</text>')
-
-    text(22 if mobile else 24, 25, "A CONSTELLATION OF CODE", 11, palette["muted"], spacing="1.5")
-    text(180 if mobile else 736, 309 if mobile else 25, f"Snapshot {day} · HKT", 10,
-         palette["muted"], "middle" if mobile else "end")
-    cx, cy, radius = (94, 114, 58) if mobile else (126, 112, 64)
-    for ring in (radius - 13, radius + 13):
-        parts.append(f'<circle cx="{cx}" cy="{cy}" r="{ring}" fill="none" stroke="{palette["orbit"]}" stroke-dasharray="2 7"/>')
-    parts.append(f'<circle cx="{cx}" cy="{cy}" r="{radius}" fill="none" stroke="{palette["orbit"]}"/>')
-    dot_index = 0
-    top_languages = {name for name, _ in data["distribution"][:3]}
-    for group_index, (label, count) in enumerate(data["groups"]):
-        color_index = 4 if label == "Unclassified" else 3 if label == "Other Languages" else group_index
-        color = palette["dots"][color_index]
-        if label == "Other Languages":
-            group_repos = [repo for repo in snapshot["repositories"] if repo["language"] is not None and repo["language"] not in top_languages]
-        else:
-            group_repos = [repo for repo in snapshot["repositories"] if repo["language"] == (None if label == "Unclassified" else label)]
-        for repo in sorted(group_repos, key=lambda repo: repo["name"].casefold()):
-            angle = -math.pi / 2 + 2 * math.pi * dot_index / data["repos"]
-            x, y = cx + math.cos(angle) * radius, cy + math.sin(angle) * radius
-            dot_radius = min(4.8, 170 / data["repos"])
-            parts.append(f'<circle class="repo-dot" cx="{x:.2f}" cy="{y:.2f}" r="{dot_radius:.2f}" fill="{color}"><title>{escape(repo["name"])} · {escape(repo["language"] or "Unclassified")}</title></circle>')
-            dot_index += 1
-        column, row = group_index % 2, group_index // 2
-        lx, ly = (24 + column * 166, 216 + row * 23) if mobile else (268 + column * 230, 129 + row * 22)
-        parts.append(f'<circle cx="{lx}" cy="{ly - 4}" r="4" fill="{color}"/>')
-        text(lx + 13, ly, label, 12, palette["muted"])
-        text(lx + (136 if mobile else 182), ly, count, 13, anchor="end", weight="600")
-    text(cx, cy + 7, data["repos"], 40, palette["dots"][0], "middle", "600")
-    text(cx, cy + 30, "Original Repos", 12, palette["muted"], "middle")
-    metrics = ((data["stars"], "Stars Earned"), (data["languages"], "Primary Languages"))
-    for index, (value, label) in enumerate(metrics):
-        x, y = (252, 88 + index * 60) if mobile else (268 + index * 230, 74)
-        text(x, y, f"{value:,}", 30, palette["dots"][0], "middle" if mobile else "start", "600")
-        text(x, y + 21, label, 12, palette["muted"], "middle" if mobile else "start")
-    if mobile:
-        text(180, 289, "One Dot = One Repo · Color = Primary Language", 10, palette["muted"], "middle")
-    else:
-        text(24, 206, "One Dot = One Public Original Repo", 11, palette["muted"])
-        text(736, 206, "Color = Primary Language", 11, palette["muted"], "end")
+             f'<rect x="0.5" y="0.5" width="{width - 1}" height="63" rx="10" fill="{palette["background"]}" stroke="{palette["border"]}"/>',
+             f'<path d="M{width // 2} 16v32" stroke="{palette["border"]}"/>',
+             f'<g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif">']
+    for index, (value, label) in enumerate(((contributions, "Contributions · 30 Days"), (data["stars"], "Stars"))):
+        x = 90 + index * 180 if mobile else 132 + index * 380
+        y, label_x, label_y = (29, x, 50) if mobile else (42, x + 16, 39)
+        anchor = "middle" if mobile else "end"
+        parts.append(f'<text x="{x}" y="{y}" font-size="{24 if mobile else 28}" text-anchor="{anchor}" font-weight="600" fill="{palette["dots"][0]}">{value:,}</text>')
+        parts.append(f'<text x="{label_x}" y="{label_y}" font-size="{10.5 if mobile else 12}" text-anchor="{anchor if mobile else "start"}" fill="{palette["muted"]}">{label}</text>')
     parts.append("</g></svg>\n")
     return "\n".join(parts)
 
@@ -217,14 +216,19 @@ def main():
         if snapshot["username"].casefold() != args.username.casefold():
             raise ValueError("Snapshot belongs to another GitHub user")
     else:
-        repos = fetch_repositories(args.username, os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN"))
-        snapshot = {"version": 1, "username": args.username,
-                    "captured_at": datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
+        observed = datetime.now(timezone.utc)
+        token = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
+        repos = fetch_repositories(args.username, token)
+        recent_days = fetch_recent_days(args.username, observed, token)
+        snapshot = {"version": 2, "username": args.username,
+                    "captured_at": observed.isoformat(timespec="seconds").replace("+00:00", "Z"),
+                    "recent_days": recent_days, "recent_source": "https://api.github.com/graphql",
                     "source": f"https://api.github.com/users/{args.username}/repos",
                     "repositories": sorted(repos, key=lambda repo: repo["name"].casefold())}
     write_atlas(args.output, snapshot)
     stats = summarize(snapshot)
-    print(f'Updated Code Atlas: {stats["repos"]} public original repos, {stats["stars"]} stars, {stats["languages"]} primary languages')
+    contributions = sum(day["contributionCount"] for day in snapshot["recent_days"])
+    print(f'Updated profile snapshot: {contributions} contributions in 30 days, {stats["stars"]} stars')
 
 
 if __name__ == "__main__":

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="368" height="76" viewBox="0 0 368 76" role="img" aria-labelledby="title desc">
+<title id="title">feldera/feldera</title>
+<desc id="desc">Incremental SQL over changing data.</desc>
+<rect x="0.5" y="0.5" width="367" height="75" rx="10" fill="#ffffff" stroke="#d1d9e0"/>
+<g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif">
+<text x="17" y="29" font-size="15"><tspan fill="#59636e">feldera/</tspan><tspan fill="#8050b5" font-weight="600">feldera</tspan></text>
+<text x="17" y="54" font-size="12" fill="#59636e">Incremental SQL over changing data.</text>
+<path d="M342 27h8v8m0-8-10 10" fill="none" stroke="#59636e" stroke-width="1.3"/>
+</g></svg>

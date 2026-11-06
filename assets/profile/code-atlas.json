@@ -1,8 +1,131 @@
 {
-  "version": 1,
+  "version": 2,
   "username": "SleepyLGod",
-  "captured_at": "2026-10-21T11:58:02Z",
+  "captured_at": "2026-11-06T15:04:43Z",
   "source": "https://github.com/SleepyLGod?tab=repositories&type=source",
+  "recent_source": "https://github.com/users/SleepyLGod/contributions?from=2026-10-08&to=2026-11-06",
+  "recent_days": [
+    {
+      "date": "2026-10-08",
+      "contributionCount": 3
+    },
+    {
+      "date": "2026-10-09",
+      "contributionCount": 0
+    },
+    {
+      "date": "2026-10-10",
+      "contributionCount": 0
+    },
+    {
+      "date": "2026-10-11",
+      "contributionCount": 0
+    },
+    {
+      "date": "2026-10-12",
+      "contributionCount": 0
+    },
+    {
+      "date": "2026-10-13",
+      "contributionCount": 0
+    },
+    {
+      "date": "2026-10-14",
+      "contributionCount": 0
+    },
+    {
+      "date": "2026-10-15",
+      "contributionCount": 0
+    },
+    {
+      "date": "2026-10-16",
+      "contributionCount": 0
+    },
+    {
+      "date": "2026-10-17",
+      "contributionCount": 0
+    },
+    {
+      "date": "2026-10-18",
+      "contributionCount": 0
+    },
+    {
+      "date": "2026-10-19",
+      "contributionCount": 3
+    },
+    {
+      "date": "2026-10-20",
+      "contributionCount": 4
+    },
+    {
+      "date": "2026-10-21",
+      "contributionCount": 7
+    },
+    {
+      "date": "2026-10-22",
+      "contributionCount": 8
+    },
+    {
+      "date": "2026-10-23",
+      "contributionCount": 15
+    },
+    {
+      "date": "2026-10-24",
+      "contributionCount": 13
+    },
+    {
+      "date": "2026-10-25",
+      "contributionCount": 13
+    },
+    {
+      "date": "2026-10-26",
+      "contributionCount": 0
+    },
+    {
+      "date": "2026-10-27",
+      "contributionCount": 7
+    },
+    {
+      "date": "2026-10-28",
+      "contributionCount": 10
+    },
+    {
+      "date": "2026-10-29",
+      "contributionCount": 4
+    },
+    {
+      "date": "2026-10-30",
+      "contributionCount": 5
+    },
+    {
+      "date": "2026-10-31",
+      "contributionCount": 6
+    },
+    {
+      "date": "2026-11-01",
+      "contributionCount": 3
+    },
+    {
+      "date": "2026-11-02",
+      "contributionCount": 9
+    },
+    {
+      "date": "2026-11-03",
+      "contributionCount": 28
+    },
+    {
+      "date": "2026-11-04",
+      "contributionCount": 16
+    },
+    {
+      "date": "2026-11-05",
+      "contributionCount": 1
+    },
+    {
+      "date": "2026-11-06",
+      "contributionCount": 14
+    }
+  ],
   "repositories": [
     {
       "name": "accumulation",
@@ -22,6 +145,11 @@
     {
       "name": "AIST4020-Lab-Tutorials",
       "language": "Jupyter Notebook",
+      "stars": 0
+    },
+    {
+      "name": "AIST4020-OpenCode-Labs",
+      "language": "JavaScript",
       "stars": 0
     },
     {
@@ -55,6 +183,16 @@
       "stars": 1
     },
     {
+      "name": "jiangnan-fiction-craft-skill",
+      "language": "Python",
+      "stars": 1
+    },
+    {
+      "name": "jinyong-fiction-craft-skill",
+      "language": null,
+      "stars": 0
+    },
+    {
       "name": "mini-oft-llm",
       "language": "TeX",
       "stars": 0
@@ -63,6 +201,11 @@
       "name": "miscellaneous",
       "language": "C++",
       "stars": 4
+    },
+    {
+      "name": "moment-studio",
+      "language": "JavaScript",
+      "stars": 1
     },
     {
       "name": "oh-my-claude-code",

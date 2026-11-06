@@ -1,8 +1,8 @@
 # Profile visuals and optional services
 
-Every visible README image is checked into this repository. The automatically
-refreshed Code Atlas files live on the `profile-assets` branch; other images use
-`main`. Viewing the profile requires no third-party card endpoint, icon CDN, web
+Every visible README image is checked into this repository. The live automatically
+refreshed statistics live on the `profile-assets` branch; this design preview
+uses branch-local snapshots. Other images use `main` in production. Viewing the profile requires no third-party card endpoint, icon CDN, web
 font, or running Codex session.
 The identity and research interests appear first; awards, founder details,
 Selected Projects, and activity cards are preserved in HTML comments.
@@ -45,52 +45,45 @@ URLs are rejected. Comments in the README are excluded from
 the preview, including their images. Screenshots under `docs/previews/` show the
 reviewed desktop light/dark and mobile layouts.
 
-## GitHub statistics
+## Profile statistics and repository shelf (preview)
 
-The visible **Code Atlas** is a language constellation, not a contribution
-calendar. Each colored dot is one public, non-fork repository owned by this
-account, including archived repositories. Colors group repositories by their
-primary language; this measures repository counts, not code bytes or proficiency.
-The three most common languages are named, the others share one group, and
-repositories with no detected primary language have an Unclassified group.
-Stars Earned sums those same repositories' stars; Primary Languages counts
-distinct detected primary languages. Organization repositories are not included.
+This design branch uses a 64-pixel strip with two values: contributions in the
+last 30 UTC calendar days (including today), and Stars earned by public,
+non-fork repositories, including archived repositories. It has no visible
+language groups, orbit, snapshot date, or footnote. Exact dates and scope are
+preserved in the SVG description and version-2 JSON snapshot.
 
-The four committed SVGs cover desktop/mobile and dark/light themes. The compact
-desktop card is 760 × 224; the 360 × 324 mobile card places the orbit beside the
-two metrics, with the language legend below. On `profile-assets`, the committed
-`assets/profile/code-atlas.json` records the complete current public source data,
-source URL, and observation time. The reviewed snapshot is also kept on `main`
-for reproducible offline previews. The card displays its snapshot date in Hong Kong time.
-The initial snapshot was imported from the official public repository list,
-including all 24 results of its `type=source` filter. No estimated stats are used.
-
-`Refresh Code Atlas` fetches the official GitHub REST API using the workflow's
-built-in `GITHUB_TOKEN`. No personal access token or external deployment is needed.
-It runs on relevant `main` code changes, on manual dispatch from `main`, and daily
-at 06:37 Hong Kong time (GitHub may delay scheduled runs). Generation uses the
-current scripts from `main`, then commits only the atlas snapshot and SVGs to
-`profile-assets`. This keeps automated data publication separate from changes to
-the protected source branch. A failed fetch, validation, or render leaves the
-previous images and observation date intact. The profile always reads committed
-files through GitHub's raw-file URLs, never a live card endpoint. GitHub Actions
-shows each refresh's result and logs. The resource branch is initialized before
-the README starts referencing it; refreshes use ordinary, non-force pushes.
+The current prototype snapshot was imported from complete official public
+repository and contribution-calendar pages. Live refresh uses GitHub REST for
+repositories and GitHub GraphQL for contributions with the workflow's built-in
+`GITHUB_TOKEN`. Both sources are validated before writing any image; API errors
+or missing dates leave the last successful snapshot untouched.
 
 ```sh
 python -m unittest discover -s tests -v
 python scripts/update_code_atlas.py --username SleepyLGod
 python scripts/update_code_atlas.py --snapshot assets/profile/code-atlas.json
+python scripts/build_repo_shelf.py
 ```
 
-The second command fetches fresh data using an existing `GH_TOKEN` or
-`GITHUB_TOKEN` if present. The last command rebuilds offline and preserves the
-original snapshot date. The managed cloud environment blocks `api.github.com`,
-so it was used only for the initial public-page import and offline rendering.
+The offline rebuild keeps the original observation date. Snapshot version 2
+requires a complete 30-day activity window rather than inventing a contribution
+count from a version-1 repository-only snapshot. The managed cloud environment
+blocks `api.github.com`; the hosted refresh path is covered by mocked tests and
+must be exercised on GitHub when this design is deployed.
 
-The older contribution calendar and streak cards remain commented out because
-they repeat GitHub's native contribution section. Their generator, tests,
-manual-only workflow, and previous snapshot are retained for future use.
+The shelf uses local light/dark linked cards generated from
+`profile/recommendations.json`. Names and one-line descriptions are the only
+visible card content. Every repository is its own native HTML link. See
+[the prototype notes](profile-shelf-prototype.md) for researched examples, source
+checks, selection rationale, and deployment instructions.
+
+This preview references branch-local statistics to avoid changing the current
+live profile. The production publication workflow still writes to the dedicated
+`profile-assets` branch daily at 06:37 Hong Kong time. Restore the existing raw
+resource-branch URLs after publishing the new output when deploying this design.
+The old contribution calendar and streak cards remain commented out, with their
+manual-only generator and tests retained.
 
 ### Reusing an upstream renderer
 
@@ -105,7 +98,7 @@ currently says the repository is no longer maintained, recommends successor
 projects, and explicitly calls the shared public endpoint best-effort. It also
 documents an [Actions-based generation workflow](https://github.com/anuraghazra/github-readme-stats#github-actions).
 Choose a maintained successor, review and pin its version, and check which token
-scopes and card types it actually needs before enabling it. The current Code Atlas
+scopes and card types it actually needs before enabling it. The current snapshot
 uses a small standard-library renderer in this repository.
 
 Self-hosting reduces dependence on somebody else's deployment. GitHub API policy,
