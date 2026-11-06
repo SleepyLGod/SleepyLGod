@@ -19,7 +19,7 @@ PALETTES = {
     "dark": ("#0d1117", "#30363d", "#c5a0f5", "#a7b0bc"),
     "light": ("#ffffff", "#d1d9e0", "#8050b5", "#59636e"),
 }
-CATEGORIES = {"skills": "🪶 Skills", "tools": "🧰 Toys / Tools", "research": "🔬 Research", "teaching": "🎓 Teaching"}
+CATEGORIES = {"research": "🔬 Research", "tools": "🧰 Toys / Tools", "teaching": "🎓 Teaching", "skills": "🪶 Skills"}
 ASSET_BASE = "https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-shelf-preview-assets/assets/recommendations/"
 ICONS = {
     "database": '<ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 4 16 4 16 0V5M4 12c0 4 16 4 16 0"/>',
@@ -186,7 +186,10 @@ def main():
         (args.snapshot or ROOT / "assets/recommendations/stats.json").read_text())
     updated = None
     if not args.no_readme:
-        block = render_readme(repos, args.asset_base)
+        stats = validate_stats(snapshot, repos)
+        display_repos = sorted(repos, key=lambda repo: -stats[repo["repo"].casefold()]["stars"]
+                               if repo["category"] == "tools" and repo.get("public", True) else 0)
+        block = render_readme(display_repos, args.asset_base)
         updated, count = re.subn(r"(?<=<!-- REPO-SHELF:START -->).*?(?=<!-- REPO-SHELF:END -->)", lambda _: '\n' + block + '\n', (ROOT / "README.md").read_text(), flags=re.S)
         if count != 1:
             raise ValueError("Expected one repository shelf marker pair")

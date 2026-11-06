@@ -77,7 +77,7 @@ class RepoShelfTests(unittest.TestCase):
     def test_categories_preserve_native_links_to_each_repository(self):
         html = shelf.render_readme(self.repos(), "./assets/recommendations/")
         self.assertNotIn("<h4", html)
-        self.assertLess(html.index("Skills"), html.index("Research"))
+        self.assertLess(html.index("Research"), html.index("Skills"))
         for repo in self.repos():
             self.assertIn(f'<a href="https://github.com/{repo["repo"]}"><picture>', html)
 

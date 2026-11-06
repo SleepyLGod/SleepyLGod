@@ -2,8 +2,11 @@
 
 This branch previews the user's explicit 13-project list. The live profile on
 `main` is unchanged. The previous four suggested external repositories have been
-replaced with Skills (2), Toys / Tools (6), Research (4), and Teaching (1), in the
-user's requested order.
+replaced with Research (4), Toys / Tools (6), Teaching (1), and Skills (2). Research starts
+with agent-memory, then aibrix, eos-predictor, and the not-yet-public vllm-sd.
+Tools are sorted by descending Stars from the snapshot whenever the README is
+rebuilt; ties preserve their configured order. Teaching follows, then Skills.
+The image-only refresh keeps the source README's published order intact.
 
 ## Presentation
 
