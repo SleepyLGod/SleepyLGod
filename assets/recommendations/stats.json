@@ -1,78 +1,78 @@
 {
   "version": 1,
-  "captured_at": "2026-11-06T15:47:16Z",
+  "captured_at": "2026-11-06T15:54:07Z",
   "repositories": [
     {
       "repo": "SleepyLGod/jinyong-fiction-craft-skill",
       "stars": 0,
       "forks": 0,
-      "source": "https://github.com/SleepyLGod/jinyong-fiction-craft-skill"
+      "source": "https://api.github.com/repos/SleepyLGod/jinyong-fiction-craft-skill"
     },
     {
       "repo": "SleepyLGod/jiangnan-fiction-craft-skill",
       "stars": 1,
       "forks": 0,
-      "source": "https://github.com/SleepyLGod/jiangnan-fiction-craft-skill"
+      "source": "https://api.github.com/repos/SleepyLGod/jiangnan-fiction-craft-skill"
     },
     {
       "repo": "SleepyLGod/research-radar",
       "stars": 4,
       "forks": 0,
-      "source": "https://github.com/SleepyLGod/research-radar"
+      "source": "https://api.github.com/repos/SleepyLGod/research-radar"
     },
     {
       "repo": "SleepyLGod/moment-studio",
       "stars": 1,
       "forks": 0,
-      "source": "https://github.com/SleepyLGod/moment-studio"
+      "source": "https://api.github.com/repos/SleepyLGod/moment-studio"
     },
     {
       "repo": "SleepyLGod/oh-my-score",
       "stars": 20,
       "forks": 2,
-      "source": "https://github.com/SleepyLGod/oh-my-score"
+      "source": "https://api.github.com/repos/SleepyLGod/oh-my-score"
     },
     {
       "repo": "SleepyLGod/Tonepath",
       "stars": 4,
       "forks": 0,
-      "source": "https://github.com/SleepyLGod/Tonepath"
+      "source": "https://api.github.com/repos/SleepyLGod/Tonepath"
     },
     {
       "repo": "SleepyLGod/qwidget-demos",
       "stars": 32,
       "forks": 15,
-      "source": "https://github.com/SleepyLGod/qwidget-demos"
+      "source": "https://api.github.com/repos/SleepyLGod/qwidget-demos"
     },
     {
       "repo": "JumboArbitrage/arbitrage-public",
       "stars": 4,
       "forks": 0,
-      "source": "https://github.com/JumboArbitrage/arbitrage-public"
+      "source": "https://api.github.com/repos/JumboArbitrage/arbitrage-public"
     },
     {
       "repo": "SleepyLGod/eos-predictor",
       "stars": 2,
       "forks": 0,
-      "source": "https://github.com/SleepyLGod/eos-predictor"
+      "source": "https://api.github.com/repos/SleepyLGod/eos-predictor"
     },
     {
       "repo": "SleepyLGod/aibrix",
       "stars": 1,
       "forks": 0,
-      "source": "https://github.com/SleepyLGod/aibrix"
+      "source": "https://api.github.com/repos/SleepyLGod/aibrix"
     },
     {
       "repo": "SleepyLGod/agent-memory",
       "stars": 3,
       "forks": 1,
-      "source": "https://github.com/SleepyLGod/agent-memory"
+      "source": "https://api.github.com/repos/SleepyLGod/agent-memory"
     },
     {
       "repo": "SleepyLGod/hust-projects",
       "stars": 14,
       "forks": 0,
-      "source": "https://github.com/SleepyLGod/hust-projects"
+      "source": "https://api.github.com/repos/SleepyLGod/hust-projects"
     }
   ]
 }
