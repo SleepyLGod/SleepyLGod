@@ -20,7 +20,7 @@ PALETTES = {
     "light": ("#ffffff", "#d1d9e0", "#8050b5", "#59636e"),
 }
 CATEGORIES = {"research": "🔬 Research", "tools": "🧰 Toys / Tools", "teaching": "🎓 Teaching", "skills": "🪶 Skills"}
-ASSET_BASE = "https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-shelf-preview-assets/assets/recommendations/"
+ASSET_BASE = "https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-assets/assets/recommendations/"
 ICONS = {
     "database": '<ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 4 16 4 16 0V5M4 12c0 4 16 4 16 0"/>',
     "table": '<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M10 3v18"/>',

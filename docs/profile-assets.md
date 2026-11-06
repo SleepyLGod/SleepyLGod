@@ -1,8 +1,9 @@
 # Profile visuals and optional services
 
 Every visible README image is checked into this repository. The live automatically
-refreshed statistics live on the `profile-assets` branch; this design preview
-uses `profile-shelf-preview-assets`. Other images use `main` in production. Viewing the profile requires no third-party card endpoint, icon CDN, web
+refreshed statistics live on the `profile-assets` branch; the reviewed README now
+uses production URLs, with new summary filenames that leave the current live
+card intact before merge. Other images use `main` in production. Viewing the profile requires no third-party card endpoint, icon CDN, web
 font, or running Codex session.
 The identity and research interests appear first; awards, founder details,
 Selected Projects, and activity cards are preserved in HTML comments.
@@ -86,8 +87,9 @@ The preview publishes to `profile-shelf-preview-assets` on relevant preview
 source/config changes and manual dispatch. The production target remains
 `profile-assets`; merging the workflow into `main` adds recommendations to the
 existing daily refresh at 06:37 Hong Kong time. Both source datasets are fetched
-before a single atomic Git commit publishes all images. Production deployment
-uses the production resource-branch URLs described in the prototype notes.
+before a single atomic Git commit publishes all images. The README uses production resource-branch URLs. New summary files are published
+as `profile-summary-*.svg` and `profile-summary.json`, leaving the legacy live
+card files untouched before merge.
 The old contribution calendar and streak cards remain commented out, with their
 manual-only generator and tests retained.
 

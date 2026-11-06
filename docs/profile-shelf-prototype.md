@@ -1,7 +1,7 @@
 # Selected projects preview
 
-This branch previews the user's explicit 13-project list. The live profile on
-`main` is unchanged. The previous four suggested external repositories have been
+This branch contains the user's selected 13-project presentation, ready for
+review against `main`. The current live profile has not been changed. The previous four suggested external repositories have been
 replaced with Research (4), Toys / Tools (6), Teaching (1), and Skills (2). Research starts
 with agent-memory, then aibrix, eos-predictor, and the not-yet-public vllm-sd.
 Tools are sorted by descending Stars from the snapshot whenever the README is
@@ -65,10 +65,12 @@ GitHub may delay jobs or cache image responses. The last successful publication
 continues to display if a refresh fails. The offline preview builder embeds
 reviewed local copies of the same-repository image URLs.
 
-Before a production merge, regenerate project image URLs with
-`--asset-base https://raw.githubusercontent.com/SleepyLGod/SleepyLGod/profile-assets/assets/recommendations/`
-and change the strip's four image URLs to the production resource branch.
-Preview publications do not modify the current live profile.
+The README now references production `profile-assets` URLs. Project cards and
+the new `profile-summary-*.svg` files are seeded there before review. The new
+summary filenames leave the existing live `code-atlas-*.svg` cards untouched
+until the README is merged. The workflow publishes future summaries under these
+new names, while the source generator keeps its existing offline filenames.
+Preview CI publications still use their own resource branch.
 
 ## Data scope
 

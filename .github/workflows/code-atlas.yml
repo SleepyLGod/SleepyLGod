@@ -52,13 +52,15 @@ jobs:
         run: |
           git fetch --depth=1 origin "refs/heads/$PROFILE_ASSET_BRANCH:refs/remotes/origin/$PROFILE_ASSET_BRANCH"
           git switch --create "$PROFILE_ASSET_BRANCH" --track "origin/$PROFILE_ASSET_BRANCH"
-          cp "$RUNNER_TEMP"/code-atlas/code-atlas*.svg assets/profile/
-          cp "$RUNNER_TEMP"/code-atlas/code-atlas.json assets/profile/
+          for variant in dark light mobile-dark mobile-light; do
+            cp "$RUNNER_TEMP/code-atlas/code-atlas-$variant.svg" "assets/profile/profile-summary-$variant.svg"
+          done
+          cp "$RUNNER_TEMP"/code-atlas/code-atlas.json assets/profile/profile-summary.json
           cp "$RUNNER_TEMP"/recommendations/*.svg assets/recommendations/
           cp "$RUNNER_TEMP"/recommendations/stats.json assets/recommendations/
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/profile/code-atlas*.svg assets/profile/code-atlas.json assets/recommendations/*.svg assets/recommendations/stats.json
+          git add assets/profile/profile-summary*.svg assets/profile/profile-summary.json assets/recommendations/*.svg assets/recommendations/stats.json
           if git diff --cached --quiet; then
             echo "Profile images are already current."
             exit 0

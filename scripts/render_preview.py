@@ -58,6 +58,9 @@ def embed(match):
             # Use reviewed local snapshots for self-contained offline previews.
             relative = local + relative.removeprefix(prefix)
             break
+    # Published summaries have their own names so existing live cards are not
+    # replaced before the README change is merged.
+    relative = relative.replace("./assets/profile/profile-summary-", "./assets/profile/code-atlas-")
     path = (ROOT / relative).resolve()
     if not path.is_relative_to(ROOT):
         raise ValueError("Preview images must stay inside the repository")
