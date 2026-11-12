@@ -1,12 +1,8 @@
 {
   "version": 2,
   "username": "SleepyLGod",
-  "captured_at": "2026-11-11T02:10:40Z",
+  "captured_at": "2026-11-12T03:17:50Z",
   "recent_days": [
-    {
-      "date": "2026-10-13",
-      "contributionCount": 0
-    },
     {
       "date": "2026-10-14",
       "contributionCount": 0
@@ -121,6 +117,10 @@
     },
     {
       "date": "2026-11-11",
+      "contributionCount": 6
+    },
+    {
+      "date": "2026-11-12",
       "contributionCount": 0
     }
   ],
@@ -226,6 +226,11 @@
       "name": "openclaw-gateway-bundles",
       "stars": 1,
       "language": "Shell"
+    },
+    {
+      "name": "planvalve",
+      "stars": 1,
+      "language": "TypeScript"
     },
     {
       "name": "QCPresentation",
