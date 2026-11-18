@@ -1,12 +1,8 @@
 {
   "version": 2,
   "username": "SleepyLGod",
-  "captured_at": "2026-11-17T04:44:02Z",
+  "captured_at": "2026-11-18T03:49:30Z",
   "recent_days": [
-    {
-      "date": "2026-10-19",
-      "contributionCount": 3
-    },
     {
       "date": "2026-10-20",
       "contributionCount": 4
@@ -121,6 +117,10 @@
     },
     {
       "date": "2026-11-17",
+      "contributionCount": 0
+    },
+    {
+      "date": "2026-11-18",
       "contributionCount": 0
     }
   ],
