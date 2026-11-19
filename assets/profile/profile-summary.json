@@ -1,12 +1,8 @@
 {
   "version": 2,
   "username": "SleepyLGod",
-  "captured_at": "2026-11-18T03:49:30Z",
+  "captured_at": "2026-11-19T03:48:05Z",
   "recent_days": [
-    {
-      "date": "2026-10-20",
-      "contributionCount": 4
-    },
     {
       "date": "2026-10-21",
       "contributionCount": 7
@@ -121,6 +117,10 @@
     },
     {
       "date": "2026-11-18",
+      "contributionCount": 2
+    },
+    {
+      "date": "2026-11-19",
       "contributionCount": 0
     }
   ],
@@ -150,7 +150,7 @@
     {
       "name": "AIST4020-OpenCode-Labs",
       "stars": 0,
-      "language": "JavaScript"
+      "language": "HTML"
     },
     {
       "name": "dong-blog",
